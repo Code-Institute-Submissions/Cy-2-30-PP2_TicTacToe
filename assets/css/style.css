@@ -6,9 +6,17 @@
 --magnolia: #f3eaf3ff;
 --night: #131313ff;
 */
+
 body{
     background-color: #6f00ffff;
+    color: #131313ff;
 }
+a{
+    text-decoration: none;
+  }
+a:hover{
+    cursor: pointer;
+  }
 .logo{
     height: 60px;
     width: 70px;
@@ -18,4 +26,14 @@ body{
     width: 250px;
     background-color: #04d9faff;
     border: 2px solid #f53a91ff;
+}
+.button{
+    background-color: #7947d6ff;
+    border: 2px solid #f53a91ff;
+    width: 80px;
+    height: 30px;
+}
+.start{
+    width: 10px;
+    height: 10px;
 }
