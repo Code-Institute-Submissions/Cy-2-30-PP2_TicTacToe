@@ -1,0 +1,21 @@
+/* CSS HEX 
+--deep-pink: #f53a91ff;
+--majorelle-blue: #7947d6ff;
+--electric-indigo: #6f00ffff;
+--vivid-sky-blue: #04d9faff;
+--magnolia: #f3eaf3ff;
+--night: #131313ff;
+*/
+body{
+    background-color: #6f00ffff;
+}
+.logo{
+    height: 60px;
+    width: 70px;
+}
+.playground{
+    height: 250px;
+    width: 250px;
+    background-color: #04d9faff;
+    border: 2px solid #f53a91ff;
+}
