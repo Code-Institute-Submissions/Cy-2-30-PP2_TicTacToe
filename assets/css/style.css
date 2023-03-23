@@ -31,8 +31,8 @@ a:hover{
     background-color: #04d9faff;
     border: 2px solid #f53a91ff;
 }
-.button{
-    font-family: 'Kalam', cursive;
+button{
+    font-family: 'Caveat', cursive;
     background-color: #7947d6ff;
     border: 2px solid #f53a91ff;
     width: 80px;
