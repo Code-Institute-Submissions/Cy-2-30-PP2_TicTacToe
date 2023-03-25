@@ -15,37 +15,63 @@ body{
     background-color: #6f00ffff;
     font-family: 'Kalam', cursive;
     color: #131313ff;
+    height: 100vh;
+    padding-top: 1px;
 }
-h1{
-    
-}
+
 a{
     text-decoration: none;
   }
+
 a:hover{
     cursor: pointer;
   }
+
 .logo{
     height: 60px;
     width: 70px;
 }
-.playground{
-    height: 250px;
-    width: 250px;
+
+.game-board{
+    margin: 0 auto;
     background-color: #04d9faff;
-    border: 2px solid #f53a91ff;
+    border: 1px solid #f53a91ff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
 }
+.game-board-hard{
+    margin: 0 auto;
+    background-color: #04d9faff;
+    border: 1px solid #f53a91ff;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    max-width: 500px;
+}
+
 button{
     font-family: 'Caveat', cursive;
     background-color: #7947d6ff;
-    border: 2px solid #f53a91ff;
-    width: 80px;
-    height: 30px;
-}
-.start{
-    width: 10px;
-    height: 10px;
-}
-.blocks{
     border: 1px solid #f53a91ff;
+}
+
+#power-on{
+
+}
+
+#exit{
+
+}
+
+.tile {
+    border: 1px solid #f53a91ff;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
 }
