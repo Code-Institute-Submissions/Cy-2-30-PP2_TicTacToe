@@ -6,6 +6,9 @@
 --magnolia: #f3eaf3ff;
 --night: #131313ff;
 */
+* {
+    box-sizing: border-box;
+  }
 
 body{
     background-color: #6f00ffff;
@@ -41,4 +44,7 @@ button{
 .start{
     width: 10px;
     height: 10px;
+}
+.blocks{
+    border: 1px solid #f53a91ff;
 }
