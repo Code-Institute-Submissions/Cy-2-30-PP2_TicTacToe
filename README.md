@@ -1,4 +1,4 @@
-![XO Game](assets/images/logo.jpg) 
+![XO Game](assets/images/logo.png) 
 
 # Tic Tac Toe Game
 
