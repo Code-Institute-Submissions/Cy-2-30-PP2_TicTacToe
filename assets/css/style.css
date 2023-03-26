@@ -55,6 +55,12 @@ button{
     font-family: 'Caveat', cursive;
     background-color: #7947d6ff;
     border: 1px solid #f53a91ff;
+    border-radius: 4px;
+}
+button:hover{
+  background-color: #f53a91ff;
+  color: #7947d6ff;
+  transition-duration: 0.4s;
 }
 
 #power-on{
