@@ -1,4 +1,4 @@
-![XO Game](assets/images/logo.png) 
+![XO Game](assets/images/logo-6kb-250x250.png) 
 
 # Tic Tac Toe Game
 
@@ -66,7 +66,7 @@ A game created for easy leve and intermediate level.
 ## Color Scheme Used 
 
 
-![Color Palette](assets/images/color-palette.png) 
+![Color Palette](assets/images/colorpalette-3kb-500x152.png) 
 
 * __#04D9fAFF__ __Vivid Sky Blue:__-
 * __#F53A91FF__ __Deep Pink:__-
@@ -82,30 +82,28 @@ Google fonts **Caveat** paired with **Kalam** has been used and **Cursive**  use
 
 ## Wireframe 
 
-### Logo
+### Landing Page
 * 
 * 
 * 
+![](assets/images/wireframe/landingpage-3kb-257x400.png) 
 
-### Menu
+### Easy Level
 * 
 *  
 * 
+![](assets/images/wireframe/easylevel-4kb-257x400.png) 
 
-### Game Board
+### Hard Level
 * 
-
-### Controls
-*  
-
-![](assets/wireframe) 
-
+* 
+![](assets/images/wireframe/hardlevel-4kb-257x400.png) 
 
 
 
 ## Features 
 
-
+### Controls
 
 
 
