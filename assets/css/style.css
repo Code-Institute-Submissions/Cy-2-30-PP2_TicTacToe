@@ -19,12 +19,9 @@ body{
     padding-top: 1px;
 }
 
-.landingmenu{
-  font-size: 50px;
-}
-
 a{
     text-decoration: none;
+    color: #131313ff;
   }
 
 a:hover{
@@ -34,6 +31,38 @@ a:hover{
 .logo{
     height: 60px;
     width: 70px;
+}
+
+nav{
+  background-color: #7947d6ff;
+  border: 1px double #f53a91ff;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+}
+
+nav:hover{
+  background-color: #f53a91ff;
+  border: 1px solid #7947d6ff;
+  color: #7947d6ff;
+  transition-duration: 0.4s;
+}
+
+.easy{
+  padding: 5px;
+  border-right: 1px solid #131313ff;
+}
+
+.landingmenu{
+  font-size: 50px;
+  float: 150px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .game-board{
