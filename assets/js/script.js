@@ -17,6 +17,7 @@
     let currentPlayer = "X";
     let isGameActive = false;
 
+    /********** START GAME ON MOUSE CLICK! **************/
     initializeGame();
 
     function initializeGame(){
@@ -26,6 +27,7 @@
         isGameActive = true;
     }
     
+    /************* SHOW CLICKS ON THE BOARD AND CHECK WINNING **************/
     function cellClicked(){
         const cellIndex = this.getAttribute("cellIndex");
     
@@ -37,15 +39,19 @@
         checkWinner();
     }
 
+    /************* UPDATE THE CELL ON THE ACTIVE PLAYER **************/
     function updateCell(cell, index){
         choiceCells[index] = currentPlayer;
         cell.textContent = currentPlayer;
     }
+
+    /************** SHOW MESSAGE DISPLAYING PLAYER'S TURNS ****************/
     function changePlayer(){
         currentPlayer = (currentPlayer == "X") ? "O" : "X";
         popUp.textContent = `${currentPlayer}'s turn`;
     } 
 
+    /*************** CHECK FOR WINNER AND DRAWS AND STOP THE GAME ***************/
     function checkWinner(){
         let roundWon = false;
     
@@ -77,14 +83,21 @@
         }
     }
 
+    /**************** AFTER A WIN OR DRAW START THE GAME AGAIN ******************/
+    function restartGame(){
+        currentPlayer = "X";
+        choiceCells = ["", "", "", "", "", "", "", "", ""];
+        popUp.textContent = `${currentPlayer}'s turn`;
+        cells.forEach(cell => cell.textContent = "");
+        isGameActive = true;
+    }
+    
+
     /* Indexes within the board easy level
     [0] [1] [2]
     [3] [4] [5]
     [6] [7] [8]
 
-const PLAYERX_WON = 'PlayerX_Won';
-    const PLAYERO_WON = 'PlayerO_Won';
-    const TIE = 'TIE';
     hard level
 
     [0] [1] [2] [3] [4]
@@ -111,60 +124,7 @@ const PLAYERX_WON = 'PlayerX_Won';
         [0, 6, 12, 18, 24],
         [4, 8, 12, 16, 20]
     ]; 
-     function handleResultValidation() {
-        let roundWon = false;
-        for (let i = 0; i <= 7; i++) {
-            const winningCondition = winningCondition[i];
-            const a = board[winningCondition[0]];
-            const b = board[winningCondition[1]];
-            const c = board[winningCondition[2]];
-            const d = board[winningCondition[3]];
-            const e = board[winningCondition[4]];
-            if (a === '' || b === '' || c === '' || d=== '' || e ==='') {
-                continue;
-            }
-            if (a === b && b === c && c === d && d === e ) {
-                roundWon = true;
-                break;
-            }
-        }
-        if (roundWon) {
-            arletor(currentPlayer === 'X' ? PLAYER1_WON : PLAYER2_WON);
-            isGameActive = false;
-            return;
-        }
-        if (!board.includes(''))
-            arletor(TIE);
-    }
+  
 
 
    
-
-    function handleResultValidation() {
-        let roundWon = false;
-        for (let i = 0; i <= 7; i++) {
-            const winningCondition = winningCondition[i];
-            const a = board[winningCondition[0]];
-            const b = board[winningCondition[1]];
-            const c = board[winningCondition[2]];
-            if (a === '' || b === '' || c === '') {
-                continue;
-            }
-            if (a === b && b === c) {
-                roundWon = true;
-                break;
-            }
-        }
-        if (roundWon) {
-            announce(currentPlayer === 'X' ? PLAYER1_WON : PLAYER2_WON);
-            isGameActive = false;
-            return;
-        }
-        if (!board.includes(''))
-            arlertor(TIE);
-    }
- 
-
-
-
- */
