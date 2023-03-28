@@ -18,19 +18,23 @@
     <body>
         <main class="background">
             <section class="title">
-                <h1>
-                    <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">What are the odds!
-                </h1> 
+                <div>
+                    <div>  
+                      <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
+                    </div>
+                  <h1>Tic Tac Toe!</h1>
+                  </div>  
             </section>
-        
+    
             <section class="game-active">
                 <button id="power-on">
                     <i class="fa-solid fa-power-off fa-beat"></i>
                 </button>
-                <button id="exit">
-                    <a class="landing" href="landing.html" alt="">Exit</a>
-                    <i class="fa-solid fa-xmark fa-beat"></i>
-                </button>
+                <a class="landingpage-link" href="landing.html" alt="">
+                    <button id="exit" action="landing.html">
+                        <i class="fa-solid fa-xmark fa-beat"></i>
+                    </button>
+                </a>
             </section>
         
             <section>
@@ -40,44 +44,44 @@
                 </nav> 
             </section>
         
-            <section class="hide">
-                <button class="player1">Player 1</button>
-                <button class="player2">Player 2</button>
-            </section>
+            <section class="display-player popup"></section>
         
             <section class="game-board-hard">
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
+                <div class="tile" cellindex="0"></div>
+                <div class="tile" cellindex="1"></div>
+                <div class="tile" cellindex="2"></div>
+                <div class="tile" cellindex="3"></div>
+                <div class="tile" cellindex="4"></div>
+                <div class="tile" cellindex="5"></div>
+                <div class="tile" cellindex="6"></div>
+                <div class="tile" cellindex="7"></div>
+                <div class="tile" cellindex="8"></div>
+                <div class="tile" cellindex="9"></div>
+                <div class="tile" cellindex="10"></div>
+                <div class="tile" cellindex="11"></div>
+                <div class="tile" cellindex="12"></div>
+                <div class="tile" cellindex="13"></div>
+                <div class="tile" cellindex="14"></div>
+                <div class="tile" cellindex="15"></div>
+                <div class="tile" cellindex="16"></div>
+                <div class="tile" cellindex="17"></div>
+                <div class="tile" cellindex="18"></div>
+                <div class="tile" cellindex="19"></div>
+                <div class="tile" cellindex="20"></div>
+                <div class="tile" cellindex="21"></div>
+                <div class="tile" cellindex="22"></div>
+                <div class="tile" cellindex="23"></div>
+                <div class="tile" cellindex="24"></div>
             </section>
         
-            <section>
-                <button class="time">Time:
+            <section class="controls">
+                <button id="reset">Reset
+                    <i class="fa-solid fa-trash-can-arrow-up"></i>
+                </button>
+                <button id="time">Time:
                     <i class="fa-regular fa-hourglass-half fa-fade"></i>
                 </button>
-                <button class="score2">Life:
+                <button id="score">Life:
                     <i class="fa-solid fa-heart-pulse fa-shake"></i>
                 </button>
             </section>
