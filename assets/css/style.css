@@ -60,7 +60,7 @@ nav:hover{
   font-size: 20px;
 }
 
-.menu-allign{
+.menu-allign, .game-active{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -81,7 +81,13 @@ nav:hover{
 .landingmenu{
   font-size: 50px;
 }
+#power-on{
 
+}
+
+#exit{
+
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -97,7 +103,7 @@ ul {
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
 }
-/*
+
 .game-board-hard{
     margin: 0 auto;
     background-color: #04d9faff;
@@ -107,7 +113,7 @@ ul {
     grid-template-rows: 20% 20% 20% 20% 20%;
     max-width: 500px;
 }
-*/
+
 button{
   font-family: 'Caveat', cursive;
   background-color: #7947d6ff;
@@ -125,14 +131,6 @@ width: 60px;
 font-size: 20px;
 }
 
-#power-on{
-
-}
-
-#exit{
-
-}
-
 .tile {
     border: 1px solid #f53a91ff;
     min-width: 100px;
@@ -147,4 +145,6 @@ font-size: 20px;
 .controls{
   margin: 10px;
   padding: 10px;
+  display: flex;
+
 }
