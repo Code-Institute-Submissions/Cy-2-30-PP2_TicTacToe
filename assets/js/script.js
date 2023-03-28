@@ -1,8 +1,7 @@
-
     const cells = Array.from(document.querySelectorAll('.tile'));
     const popUp = document.querySelector('.popup');
     const resetButton = document.querySelector('#reset');
-    const winningCondition = [
+    const winConditions = [
         [0, 1, 2],
         [3, 4, 5],
         [6, 7, 8],

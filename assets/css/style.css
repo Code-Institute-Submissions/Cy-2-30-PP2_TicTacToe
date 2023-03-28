@@ -41,6 +41,10 @@ a:hover{
   font-size: 14px;
 }
 
+.popup{
+  font-size: 30px;
+}
+
 nav{
   background-color: #7947d6ff;
   border: 1px double #f53a91ff;
@@ -55,9 +59,9 @@ nav:hover{
   color: #7947d6ff;
   transition-duration: 0.4s;
   width: 110px;
-  padding: 5px;
-  margin: 5px;
-  font-size: 20px;
+  padding: 3px;
+  
+  
 }
 
 .menu-allign, .game-active{
@@ -93,17 +97,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-*/
-.game-board{
-    margin: 0 auto;
-    background-color: #04d9faff;
-    border: 1px solid #f53a91ff;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
-}
-
 .game-board-hard{
     margin: 0 auto;
     background-color: #04d9faff;
@@ -113,6 +106,17 @@ ul {
     grid-template-rows: 20% 20% 20% 20% 20%;
     max-width: 500px;
 }
+*/
+.game-board{
+    margin: 0 auto;
+    background-color: #04d9faff;
+    border: 1px solid #f53a91ff;
+    box-shadow: -5px -5px 15px 5px #7947d6ff, 5px 5px 15px 7px #7947d6ff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
 
 button{
   font-family: 'Caveat', cursive;
@@ -120,6 +124,7 @@ button{
   border: 1px solid #f53a91ff;
   border-radius: 4px;
   width: 50px;
+  height: 30px;
 }
 
 button:hover{
