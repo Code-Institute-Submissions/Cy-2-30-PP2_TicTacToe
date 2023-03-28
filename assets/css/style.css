@@ -129,7 +129,7 @@ button{
 
 button:hover{
 background-color: #f53a91ff;
-border: 1px solid #7947d6ff;
+border: 2px solid #7947d6ff;
 color: #131313ff;
 transition-duration: 0.4s;
 width: 60px;
@@ -137,7 +137,7 @@ font-size: 20px;
 }
 
 .tile {
-    border: 1px solid #f53a91ff;
+    border: 2px solid #f53a91ff;
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -145,6 +145,26 @@ font-size: 20px;
     align-items: center;
     font-size: 50px;
     cursor: pointer;
+}
+
+.tile:nth-child(odd) {
+  border-right: none;
+}
+
+.tile:nth-child(even) {
+  border-right: none;
+}
+
+.tile:nth-child(7) {
+  border-bottom: none;
+}
+
+.tile:nth-child(8) {
+  border-bottom: none;
+}
+
+.tile:nth-child(9) {
+  border-bottom: none;
 }
 
 .controls{
