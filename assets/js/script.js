@@ -36,7 +36,18 @@
         updateCell(this, cellIndex);
         checkWinner();
     }
-    
+
+    function updateCell(cell, index){
+        choiceCells[index] = currentPlayer;
+        cell.textContent = currentPlayer;
+    }
+    function changePlayer(){
+        currentPlayer = (currentPlayer == "X") ? "O" : "X";
+        popUp.textContent = `${currentPlayer}'s turn`;
+    } 
+
+
+
     /* Indexes within the board easy level
     [0] [1] [2]
     [3] [4] [5]
