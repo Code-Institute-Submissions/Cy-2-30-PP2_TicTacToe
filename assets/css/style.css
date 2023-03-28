@@ -34,7 +34,7 @@ a:hover{
     box-shadow: 2px 2px 2px 2px #7947d6ff;
 }
 
-.popup, .title{
+.popup, .title, .controls{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,6 @@ nav{
   border-radius: 4px;
   width: 100px;
   height: 30px;
-  padding: 5px;
 }
 
 nav:hover{
@@ -55,13 +54,30 @@ nav:hover{
   border: 1px solid #7947d6ff;
   color: #7947d6ff;
   transition-duration: 0.4s;
+  width: 110px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
 }
 
-.easy{
+.menu-allign{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
   padding: 5px;
+}
+
+.linebtwn-menu{
+  margin: 0 2px 0 5px;
+  padding: 0 5px 2px 2px;
   border-right: 1px solid #131313ff;
 }
 /*
+.hardmenuli {
+
+}
+
 .landingmenu{
   font-size: 50px;
 }
@@ -106,6 +122,7 @@ border: 1px solid #7947d6ff;
 color: #131313ff;
 transition-duration: 0.4s;
 width: 60px;
+font-size: 20px;
 }
 
 #power-on{
@@ -127,3 +144,7 @@ width: 60px;
     cursor: pointer;
 }
 
+.controls{
+  margin: 10px;
+  padding: 10px;
+}
