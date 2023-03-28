@@ -21,7 +21,7 @@
 
     function initializeGame(){
         cells.forEach(cell => cell.addEventListener("click", cellClicked));
-        resetBtn.addEventListener("click", restartGame);
+        resetButton.addEventListener("click", restartGame);
         popUp.textContent = `${currentPlayer}'s turn`;
         isGameActive = true;
     }
@@ -46,7 +46,36 @@
         popUp.textContent = `${currentPlayer}'s turn`;
     } 
 
-
+    function checkWinner(){
+        let roundWon = false;
+    
+        for(let i = 0; i < winConditions.length; i++){
+            const condition = winConditions[i];
+            const cellA = choiceCells[condition[0]];
+            const cellB = choiceCells[condition[1]];
+            const cellC = choiceCells[condition[2]];
+    
+            if(cellA == "" || cellB == "" || cellC == ""){
+                continue;
+            }
+            if(cellA == cellB && cellB == cellC){
+                roundWon = true;
+                break;
+            }
+        }
+    
+        if(roundWon){
+            statusText.textContent = `${currentPlayer} wins!`;
+            isGameActive = false;
+        }
+        else if(!choiceCells.includes("")){
+            popUp.textContent = `Draw!`;
+            isGameActive = false;
+        }
+        else{
+            changePlayer();
+        }
+    }
 
     /* Indexes within the board easy level
     [0] [1] [2]
