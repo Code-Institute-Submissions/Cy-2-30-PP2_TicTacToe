@@ -1,30 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const tiles = Array.from(document.querySelectorAll('.tile'));
-    const playerDisplay = document.querySelector('.display-player');
+
+    const cells = Array.from(document.querySelectorAll('.tile'));
+    const popUp = document.querySelector('.popup');
     const resetButton = document.querySelector('#reset');
-    const arlertor = document.querySelector('.arlet');
-
-    let board = ['', '', '', '', '', '', '', '', ''];
-    let currentPlayer = "X";
-    let isGameActive = true;
-
-    const PLAYER1_WON = 'Player1_Won';
-    const PLAYER2_WON = 'Player2_Won';
-    const TIE = 'TIE';
-
-    /* Indexes within the board easy level
-    [0] [1] [2]
-    [3] [4] [5]
-    [6] [7] [8]
-
-    hard level
-    [0] [1] [2] [3] [4]
-    [5] [6] [7] [8] [9]
-    [10] [11] [12] [13] [14]
-    [15] [16] [17] [18] [19]
-    [20] [21] [22] [23] [24]
-    */
-
     const winningCondition = [
         [0, 1, 2],
         [3, 4, 5],
@@ -34,7 +11,32 @@ window.addEventListener('DOMContentLoaded', () => {
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6]
-    ];
+        ];
+
+    let choiceCells = ['', '', '', '', '', '', '', '', ''];
+    let currentPlayer = "X";
+    let isGameActive = false;
+
+    
+
+    /* Indexes within the board easy level
+    [0] [1] [2]
+    [3] [4] [5]
+    [6] [7] [8]
+
+const PLAYERX_WON = 'PlayerX_Won';
+    const PLAYERO_WON = 'PlayerO_Won';
+    const TIE = 'TIE';
+    hard level
+    
+    [0] [1] [2] [3] [4]
+    [5] [6] [7] [8] [9]
+    [10] [11] [12] [13] [14]
+    [15] [16] [17] [18] [19]
+    [20] [21] [22] [23] [24]
+    */
+
+  
 
     /*
     const winningCondition = [
@@ -78,7 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    */
+   
 
     function handleResultValidation() {
         let roundWon = false;
@@ -111,3 +113,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
     resetButton.addEventListener('click', resetBoard);
 });
+ */
