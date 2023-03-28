@@ -18,11 +18,10 @@
     <body>
         <main class="background">
             <section class="title">
-                <h1>
-                    <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">What are the odds!
-                </h1> 
+                    <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
+                    <h1>Tic Tac Toe!</h1>     
             </section>
-        
+    
             <section class="game-active">
                 <button id="power-on">
                     <i class="fa-solid fa-power-off fa-beat"></i>
@@ -40,20 +39,20 @@
                 </nav> 
             </section>
         
-            <section class="display">
-                Player <span class="display-player player1">1</span>'s turn!
+            <section class="display-player">
+                
             </section>
         
             <section class="game-board">
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
+                <div class="tile" cellindex="0"></div>
+                <div class="tile" cellindex="1"></div>
+                <div class="tile" cellindex="2"></div>
+                <div class="tile" cellindex="3"></div>
+                <div class="tile" cellindex="4"></div>
+                <div class="tile" cellindex="5"></div>
+                <div class="tile" cellindex="6"></div>
+                <div class="tile" cellindex="7"></div>
+                <div class="tile" cellindex="8"></div>
             </section>
 
             <section class="display alert hide"></section>
@@ -71,7 +70,7 @@
             </section>
             
             <!-- JAVASCRIPT FILE LINK -->
-            <script src="assets/js/script.js"></script>
+            <script src="assets/js/index.js"></script>
         </main>
     </body>
 </html>
