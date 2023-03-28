@@ -17,8 +17,26 @@
     let currentPlayer = "X";
     let isGameActive = false;
 
-    
+    initializeGame();
 
+    function initializeGame(){
+        cells.forEach(cell => cell.addEventListener("click", cellClicked));
+        resetBtn.addEventListener("click", restartGame);
+        popUp.textContent = `${currentPlayer}'s turn`;
+        isGameActive = true;
+    }
+    
+    function cellClicked(){
+        const cellIndex = this.getAttribute("cellIndex");
+    
+        if(choiceCells[cellIndex] != "" || !isGameActive){
+            return;
+        }
+    
+        updateCell(this, cellIndex);
+        checkWinner();
+    }
+    
     /* Indexes within the board easy level
     [0] [1] [2]
     [3] [4] [5]
@@ -28,7 +46,7 @@ const PLAYERX_WON = 'PlayerX_Won';
     const PLAYERO_WON = 'PlayerO_Won';
     const TIE = 'TIE';
     hard level
-    
+
     [0] [1] [2] [3] [4]
     [5] [6] [7] [8] [9]
     [10] [11] [12] [13] [14]
@@ -107,10 +125,6 @@ const PLAYERX_WON = 'PlayerX_Won';
     }
  
 
-    tiles.forEach((tile, index) => {
-        tile.addEventListener('click', () => userAction(tile, index));
-    });
 
-    resetButton.addEventListener('click', resetBoard);
-});
+
  */
