@@ -22,12 +22,12 @@
                <h1>
                     <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
                </h1> 
-               <p>Tic Tac Toe!</p>
+               <p class="landingpage-title">Tic Tac Toe!</p>
             </section>
 
             <section class="menu-bar">      
                 <div class="option-selection">
-                    <select id="level-option" name="level-option" onchange="location = index.html;" required>
+                    <select id="level-option" name="level-option" required>
                         <option disabled selected hidden>Level Option</option>
                         <option value="easy">Easy</option>
                         <option value="medium">Medium</option>
@@ -35,16 +35,17 @@
                     </select>
                 </div>
                     
-                <div> 
-                    <a href="index.html" alt="">
-                        <button id="oneplayer">One Player</button>
-                    </a>
-                </div> 
-
-                <div>
-                    <a href="index.html" alt="">
-                        <button id="twoplayer">Two Player</button>
-                    </a>
+                <div class="player-links"> 
+                    <div id="btn1">
+                        <a href="index.html" alt="">
+                            <button id="oneplayer">One Player</button>
+                        </a>
+                    </div>
+                    <div id="btn2">
+                        <a href="index.html" alt="">
+                            <button id="twoplayer">Two Player</button>
+                        </a>
+                    </div>
                 </div>
             </section>  
 
@@ -59,6 +60,24 @@
         
             <!-- JAVASCRIPT FILE LINK -->
             <script src="/assets/js/script.js"></script>
+
+            <section class="social-media-icons">
+                <a href="https://www.instagram.com/" class="instagram icon-button">
+                    <i class="fa-brands fa-instagram"></i><span></span>
+                </a>
+                <a href="https://www.linkedin.com/" class="linkedin icon-button">
+                    <i class="fa-brands fa-linkedin"></i><span></span>
+                </a>
+                <a href="https://twitter.com/?lang=en" class="twitter icon-button">
+                    <i class="fa-brands fa-square-twitter"></i><span></span>
+                </a>
+                <a href="https://www.facebook.com/" class="facebook icon-button">
+                    <i class="fa-brands fa-facebook"></i><span></span>
+                </a>
+                <a href="https://www.youtube.com/" class="youtube icon-button">
+                    <i class="fa-brands fa-youtube"></i><span></span>
+                </a>
+            </section>
         </main>
     </body>
 </html>

@@ -19,6 +19,15 @@ body{
     padding-top: 1px;
 }
 
+.landing-page{
+  background-color: #7947d6ff;
+  -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
+  box-shadow:  6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+  margin: 40px;
+  padding: 0px;
+  height: 80%;
+}
+
 a{
     text-decoration: none;
     color: #131313ff;
@@ -41,11 +50,79 @@ a:hover{
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  padding: 5px
 }
 
 .popup{
   font-size: 30px;
 }
+
+.landingpage-title{
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+
+.menu-bar{
+  background-color: #6f00ffff;
+  box-shadow:2px -2px 2px 2px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
+  border-radius: 8px;
+  width: 170px;
+  padding: 10px;
+  margin: auto;
+}
+
+.menu-bar:hover{
+  background-color: #f53a91ff;
+  box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
+  color: #131313ff;
+}
+
+select, option{
+  font-family: 'Kalam', cursive;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#btn1 button{
+  font-family: 'Kalam', cursive;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  padding: 10px;
+  width: fit-content;
+}
+
+#btn2 button{
+  font-family: 'Kalam', cursive;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  padding: 10px;
+  width: fit-content;
+}
+
+#btn1:hover{
+  background-color: #7947d6ff;
+  border-radius: 5px;
+  width: 150px;
+}
+
+#btn2:hover{
+  background-color: #7947d6ff;
+  border-radius: 5px;
+  width: 150px;
+}
+
+select:hover{
+  background-color: #7947d6ff;
+  border-radius: 5px;
+  width: 150px;
+}
+
 
 nav{
   background-color: #7947d6ff;
@@ -185,6 +262,106 @@ font-size: 20px;
   display: flex;
 }
 
+
+
+/***************** SOCIAL MEDIA ICONS ************************/
+
+/* Wrapper */
+.icon-button {
+	background-color: #f3eaf3ff;
+	border-radius: 1.5rem;
+	display: inline-block;
+	font-size: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 1rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 1rem;
+	height: 1.2rem;
+	border-radius: 1.5rem;
+	margin: -1.8rem;
+}
+.instagram span {
+	background-color: #c13561;
+}
+.linkedin span {
+	background-color: #0073a4;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.youtube span {
+	background-color: #e64a41;
+}
+
+/* Icons */
+.icon-button i {
+	background: #131313ff;
+	color: #f3eaf3ff;
+	height: 1.2rem;
+	left: 0;
+	line-height: 1.2rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 1rem;
+	z-index: 10;
+}
+.icon-button .fa-instagram {
+	color: #c13561;
+}
+.icon-button .fa-linkedin {
+	color: #0073a4;
+}
+.icon-button .fa-square-twitter {
+	color: #3B5998;
+}
+.icon-button .fa-facebook {
+	color: #4099ff;
+}
+.icon-button .fa-youtube {
+	color: #e64a41;
+}
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-linkedin,
+.icon-button:hover .fa-square-twitter, 
+icon-button:hover .fa-facebook,
+icon-button:hover .fa-youtube{
+	color: #f3eaf3ff;
+}
+
+/***************** MEDIA QUERY FOR TABLET ************************/
 @media only screen and (min-width: 600px){
   #background{
     background-color: #7947d6ff;
@@ -256,6 +433,7 @@ font-size: 20px;
   }
 }
 
+/***************** MEDIA QUERY FOR DESKTOP ************************/
 @media only screen and (min-width: 1080px){
   .tablet-border{
     border: 10px solid transparent;
@@ -270,4 +448,5 @@ font-size: 20px;
     
 
 
+}
 }
