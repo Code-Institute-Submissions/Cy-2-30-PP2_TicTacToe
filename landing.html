@@ -14,28 +14,51 @@
         <!--CSS STYLE LINK FILE -->
         <link rel="stylesheet" href="assets/css/style.css">
         <title>XO Game</title>
-<body>
-    <main class="landingpage">
-        <section class="title">
-            <h1>
-                <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
-            </h1> 
-                <p>Tic Tac Toe!</p>
-        </section>
+    </head>
 
-        <nav class="game-options landingmenu">
-            <ul class="menulist">
-                <li id="editname">
-                    <input name="playername" type="text" id="playername" placeholder="Player Name" action="">
-                </li>
-                <li>
-                    <a class="easy" href="index.html" alt="">Easy</a>
-                </li>
-                <li>
-                    <a class="hard" href="hard.html" alt="">Hard</a>
-                </li>
-            </ul>
-        </nav> 
-    </main>
-</body>
+    <body>
+        <main class="landing-page">
+            <section class="title">
+               <h1>
+                    <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
+               </h1> 
+               <p>Tic Tac Toe!</p>
+            </section>
+
+            <section class="menu-bar">      
+                <div class="option-selection">
+                    <select id="level-option" name="level-option" onchange="location = index.html;" required>
+                        <option disabled selected hidden>Level Option</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Difficult</option>
+                    </select>
+                </div>
+                    
+                <div> 
+                    <a href="index.html" alt="">
+                        <button id="oneplayer">One Player</button>
+                    </a>
+                </div> 
+
+                <div>
+                    <a href="index.html" alt="">
+                        <button id="twoplayer">Two Player</button>
+                    </a>
+                </div>
+            </section>  
+
+            <div class="center" style="visibility: hidden" >
+                <div id="playerinfo ">
+                    <input class="inputplayer" type="text" placeholder="Player 1 name 🔴" />
+                    <input class="inputplayer" type="text" placeholder="Player 2 name ❌" />
+                    <p style="visibility: hidden" id="input-warning">Player names can't be the same</p>
+                    <button id="playerbtn" onclick="setPlayerName()">Send</button>
+                </div>
+            </div>
+        
+            <!-- JAVASCRIPT FILE LINK -->
+            <script src="/assets/js/script.js"></script>
+        </main>
+    </body>
 </html>

@@ -191,7 +191,6 @@ font-size: 20px;
     -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
     box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
     margin: 80px;
-    margin-bottom: 50px;
     padding: 0px;
   }
 
@@ -200,10 +199,6 @@ font-size: 20px;
     width: 120px;
     border-radius: 5px;
     box-shadow: 10px 10px -10px 0 #04d9faff;
-  }
-
-  .game-board{
-    
   }
 
   .title{
@@ -259,31 +254,16 @@ font-size: 20px;
   width: 70px;
   padding: 6px;
   }
-
-  .tile{
-    box-shadow: 10px 10px -10px 0 #04d9faff;
-  }
 }
 
 @media only screen and (min-width: 1080px){
-  #background{
-    background-color: #f53a91ff;
-  }
-
-  .menu-allign{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .tablet-border{
-    background-color: #7947d6ff;
-    border: 15px solid transparent;
-    border-image: linear-gradient(to bottom right, #6f00ffff 0%, #f53a91ff 10%, #7947d6ff 25%, #04d9faff 75%, #f3eaf3ff 100%);
-    border-image-slice: 15;
-    max-width: 750px;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
+    border-image-slice: 1;
+    max-width: 700px;
     margin: auto;
-    padding: 50px;
+    padding: 60px;
   }
 
   .tile {
