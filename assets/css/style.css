@@ -32,6 +32,7 @@ a:hover{
     height: 80px;
     width: 90px;
     box-shadow: 2px 2px 2px 2px #7947d6ff;
+    border-radius: 5px;
 }
 
 .popup, .title, .controls{
@@ -143,6 +144,7 @@ font-size: 20px;
     align-items: center;
     font-size: 50px;
     cursor: pointer;
+    margin: auto;
 }
 
 .tile:nth-child(1) {
@@ -184,10 +186,24 @@ font-size: 20px;
 }
 
 @media only screen and (min-width: 600px){
+  #background{
+    background-color: #7947d6ff;
+    -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
+    box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
+    margin: 80px;
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+
   .logo{
     height: 120px;
     width: 120px;
-    box-shadow: 5px 5px -5px 0 #7947d6ff;
+    border-radius: 5px;
+    box-shadow: 10px 10px -10px 0 #04d9faff;
+  }
+
+  .game-board{
+    
   }
 
   .title{
@@ -217,12 +233,12 @@ font-size: 20px;
   .menu-allign{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .tablet-border{
     border: 10px solid transparent;
-    border-image: linear-gradient(to bottom right, #f53a91ff 0%, #7947d6ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
+    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
     border-image-slice: 1;
     max-width: 500px;
     margin: auto;
@@ -243,9 +259,17 @@ font-size: 20px;
   width: 70px;
   padding: 6px;
   }
-  
+
+  .tile{
+    box-shadow: 10px 10px -10px 0 #04d9faff;
+  }
 }
+
 @media only screen and (min-width: 1080px){
+  #background{
+    background-color: #f53a91ff;
+  }
+
   .menu-allign{
     display: flex;
     flex-direction: row;
