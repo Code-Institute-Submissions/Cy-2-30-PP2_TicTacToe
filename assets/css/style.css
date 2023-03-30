@@ -6,6 +6,7 @@
 --magnolia: #f3eaf3ff;
 --night: #131313ff;
 */
+/******************** GLOBAL STYLE **************************/
 * {
     padding: 0;
     margin: 0;
@@ -19,6 +20,15 @@ body{
     padding-top: 1px;
 }
 
+a{
+    text-decoration: none;
+    color: #131313ff;
+  }
+
+  a:hover{
+    cursor: pointer;
+  }
+
 .landing-page{
   background-color: #7947d6ff;
   -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
@@ -28,21 +38,29 @@ body{
   height: 80%;
 }
 
-a{
-    text-decoration: none;
-    color: #131313ff;
-  }
 
-a:hover{
-    cursor: pointer;
-  }
+/******************** DROP DOWN MENU STYLE FOR MOBILE **************************/
+.dropbtn {
+  background-color: #7947d6ff;
+  color: #131313ff;;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
+
+
+
+
+/******************** LOGO STYLE **************************/
 .logo{
     height: 80px;
     width: 90px;
     box-shadow: 2px 2px 2px 2px #7947d6ff;
     border-radius: 5px;
 }
+
 
 .popup, .title, .controls{
   display: flex;
@@ -64,20 +82,7 @@ a:hover{
 
 
 
-.menu-bar{
-  background-color: #6f00ffff;
-  box-shadow:2px -2px 2px 2px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
-  border-radius: 8px;
-  width: 170px;
-  padding: 10px;
-  margin: auto;
-}
 
-.menu-bar:hover{
-  background-color: #f53a91ff;
-  box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
-  color: #131313ff;
-}
 
 select, option{
   font-family: 'Kalam', cursive;
@@ -432,7 +437,20 @@ icon-button:hover .fa-youtube{
   padding: 6px;
   }
 }
+.menu-bar{
+  background-color: #6f00ffff;
+  box-shadow:2px -2px 2px 2px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
+  border-radius: 8px;
+  width: 170px;
+  padding: 10px;
+  margin: auto;
+}
 
+.menu-bar:hover{
+  background-color: #f53a91ff;
+  box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
+  color: #131313ff;
+}
 /***************** MEDIA QUERY FOR DESKTOP ************************/
 @media only screen and (min-width: 1080px){
   .tablet-border{

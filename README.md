@@ -82,22 +82,21 @@ Google fonts **Caveat** paired with **Kalam** has been used and **Cursive**  use
 
 ## Wireframe 
 
-### Landing Page
+### 
 * 
 * 
-* 
-![](assets/images/wireframe/landingpage-3kb-257x400.png) 
-
-### Easy Level
+* ### 
 * 
 *  
 * 
-![](assets/images/wireframe/easylevel-4kb-257x400.png) 
 
-### Hard Level
+![](assets/wireframe/mobileView-32kb-764x391.png) 
+
+
+### Tablet and Desktop View
 * 
 * 
-![](assets/images/wireframe/hardlevel-4kb-257x400.png) 
+![](assets/wireframe/TabletView-19kb-540x771.png) 
 
 
 
