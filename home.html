@@ -4,38 +4,39 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- GOOGLE FONTS -->
+        <!-------------------------- GOOGLE FONTS ----------------------------->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@700&display=swap" rel="stylesheet">
-        <!-- FONTAWESOME ICONS -->
+        <!---------------------- FONTAWESOME ICONS ---------------------------->
         <link href="./assets/fontawsome/css/all.css" rel="stylesheet">  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!--CSS STYLE LINK FILE -->
+        <!------------------------- CSS STYLE LINK FILE ----------------------->
         <link rel="stylesheet" href="assets/css/style.css">
         <title>XO Game</title>
     </head>
 
     <body>
-        <main class="landing-page">
+        <main class="home-page">
+             <!-------------------------- LOGO & TITLE ----------------------------->
             <section class="title">
                <h1>
                     <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
                </h1> 
-               <p class="landingpage-title">Tic Tac Toe!</p>
+               <p class="title">Tic Tac Toe!</p>
             </section>
 
+            <!-------------------------- MENU BUTTONS ----------------------------->
             <section class="menu-bar">      
-                <div class="option-selection">
-                    <select id="level-option" name="level-option" required>
-                        <option disabled selected hidden>Level Option</option>
-                        <option value="easy">Easy</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Difficult</option>
+                <div class="player-selection">
+                    <select id="player-option" name="player-option" required>
+                        <option disabled selected hidden>Player Option</option>
+                        <option value="easy">One Player</option>
+                        <option value="medium">Two Player</option>
                     </select>
                 </div>
                     
-                <div class="player-links"> 
+                <!--<div class="player-links"> 
                     <div id="btn1">
                         <a href="index.html" alt="">
                             <button id="oneplayer">One Player</button>
@@ -46,7 +47,7 @@
                             <button id="twoplayer">Two Player</button>
                         </a>
                     </div>
-                </div>
+                </div>-->
             </section>  
 
             <div class="center" style="visibility: hidden" >
@@ -57,27 +58,33 @@
                     <button id="playerbtn" onclick="setPlayerName()">Send</button>
                 </div>
             </div>
-        
-            <!-- JAVASCRIPT FILE LINK -->
-            <script src="/assets/js/script.js"></script>
 
+            <!-------------------------- MENU BUTTONS ----------------------------->
             <section class="social-media-icons">
-                <a href="https://www.instagram.com/" class="instagram icon-button">
-                    <i class="fa-brands fa-instagram"></i><span></span>
+                <a href="https://www.instagram.com/" class="instagram icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on instagram (opens a new window)">
+                    <i class="fa-brands fa-instagram"></i></i><span></span>
                 </a>
-                <a href="https://www.linkedin.com/" class="linkedin icon-button">
-                    <i class="fa-brands fa-linkedin"></i><span></span>
+                <a href="https://www.linkedin.com/" class="linkedin icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on linkedin (opens a new window)">
+                    <i class="fa-brands fa-linkedin-in"></i><span></span>
                 </a>
-                <a href="https://twitter.com/?lang=en" class="twitter icon-button">
-                    <i class="fa-brands fa-square-twitter"></i><span></span>
+                <a href="https://twitter.com/?lang=en" class="twitter icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on twitter (opens a new window)">
+                    <i class="fa-brands fa-twitter"></i></i><span></span>
                 </a>
-                <a href="https://www.facebook.com/" class="facebook icon-button">
-                    <i class="fa-brands fa-facebook"></i><span></span>
+                <a href="https://www.facebook.com/" class="facebook icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on facebook (opens a new window)">
+                    <i class="fa-brands fa-facebook-f"></i><span></span>
                 </a>
-                <a href="https://www.youtube.com/" class="youtube icon-button">
+                <a href="https://www.youtube.com/" class="youtube icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on youtube (opens a new window)">
                     <i class="fa-brands fa-youtube"></i><span></span>
                 </a>
+                <a href="https://slack.com/" class="Slack icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on slack (opens a new window)">
+                    <i class="fa-brands fa-slack"></i><span></span>
+                </a>
+                <a href="https://github.com/" class="github icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on github (opens a new window)">
+                    <i class="fa-brands fa-github"></i></i></i><span></span>
+                </a>
             </section>
+            <!-------------------------- JavaScript Script ----------------------------->
+            <script src="/assets/js/script.js"></script>
         </main>
     </body>
 </html>
