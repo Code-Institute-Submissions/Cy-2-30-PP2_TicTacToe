@@ -13,7 +13,7 @@
     margin: 0;
   }
 
-/*** BACKGROUND ANIMATION ***/
+/*********** BACKGROUND ANIMATION ***********/
 body{
   background-position: 10px 10px, 10px 10px;
   background-size: 160px 160px;
@@ -89,46 +89,87 @@ a:hover{
   padding-top: 50px;
 }
 
-.menu-bar div{
-  background-color: #7947d6ff;
-  -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
-  box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-  width: 120px;
-}
-
-.menubtn{
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-  border: 1px dotted #f53a91ff;
-  border-radius: 5px;
+#changetrasparecy{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+  margin: auto;
   padding: 10px;
-  margin: 40px;
 }
 
-.menubtn:hover, .menubtn:focus{
- background-color: #f53a91ff;
+/**************** MENU BUTTONS STYLE ******************/
+
+.menu-bar{
+  margin: auto;
 }
 
 .menubtn a{
-  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: space-between;
+  background-color: #7947d6ff;
+  -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
+  box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+  border: 1px dotted #f53a91ff; 
+  border-radius: 5px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  line-height: 1.5;
+  width: 100px;
+  height: 30px;
+  padding: 10px;
 }
 
-/***POP UP WINDOW BEFORE STARTING THE GAME***/
+.menubtn a:hover, .menubtn a:focus{
+  background-color: #f53a91ff;
+ border: 1px dotted #7947d6ff;
+ transition-duration: 0.4s;
+}
+
+/*********POP UP WINDOW BEFORE STARTING THE GAME***********/
 .startgamepopup{
   display: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #04d9faff;
-  opacity: .5;
+  border: 1PX dotted #f53a91ff;
   border-radius: 10px;
   height: 120px;
   width: 200px;
-  margin:auto;
+  margin: auto;
   padding: 10px;
   }
 
+  select, option{
+  font-family: 'Kalam', cursive;
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.popbtn{
+  display: block;
+  margin: 5px;
+}
+
+.popbtn button{
+  margin: 5px;
+  padding: 5px;
+}
+
+.popbtn button:hover, .popbtn button:focus{
+  background-color: #f53a91ff;
+  border: 1PX dotted #7947d6ff;  
+}
+
+#playertwo{
+  display: none;
+}
 /************ SOCIAL MEDIA ICONS *************/
 
 /* Wrapper */
@@ -243,11 +284,12 @@ a:hover{
 
 .dropmenu:hover, .dropmenu:focus {
   background-color: #f53a91ff;
+  border: 1px solid #7947d6ff;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
@@ -286,13 +328,7 @@ a:hover{
 
 
 /*
-select, option{
-  font-family: 'Kalam', cursive;
-  background-color: transparent;
-  border: 0;
-  font-size: 20px;
-  padding: 10px;
-}
+
 
 #btn1 button{
   font-family: 'Kalam', cursive;
@@ -328,24 +364,6 @@ select:hover{
   background-color: #7947d6ff;
   border-radius: 5px;
   width: 150px;
-}
-
-
-nav{
-  background-color: #7947d6ff;
-  border: 1px double #f53a91ff;
-  border-radius: 4px;
-  width: 100px;
-  height: 30px;
-}
-
-nav:hover{
-  background-color: #f53a91ff;
-  border: 1px solid #7947d6ff;
-  color: #7947d6ff;
-  transition-duration: 0.4s;
-  width: 110px;
-  padding: 3px;
 }
 
 
@@ -450,18 +468,6 @@ font-size: 20px;*/
 .popup{
   font-size: 30px;
 }
-
-
-/*
-.hardmenuli {
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-
 
 
 /***************** CONTACT PAGE ************************/
@@ -614,10 +620,10 @@ padding: 10px;
     width: 180px; 
   }
 
-  .menubtn div{
+  /*.menubtn div{
     font-size: 25px;
     line-height: 40px;
-  }
+  }*/
 
 
   /******************** CONTACT PAGE **************************/
@@ -753,30 +759,14 @@ padding: 10px;
     width: 200px; 
     margin: 60px;
   }
-
+/*
   .menubtn{
     font-size: 40px;
     line-height: 50px;
     border-radius: 8px;
     padding: 20px;
   }
-
- /* .menu-bar{
-    background-color: #6f00ffff;
-    box-shadow:10px -10px 10px 10px #f3eaf3ff, -10px -10px 10px 10px #131313ff;
-    border-radius: 8px;
-    width: 170px;
-    padding: 10px;
-    margin: auto;
-  }
-  
-  .menu-bar:hover{
-    background-color: #f53a91ff;
-    box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
-    color: #131313ff;
-  }*/
-
-
+*/
   /******************** CONTACT PAGE **************************/
 
 

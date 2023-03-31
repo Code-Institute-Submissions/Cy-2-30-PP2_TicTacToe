@@ -1,6 +1,5 @@
 
-const beforeGameOpen = document.querySelector('.startgamepopup');
-
+/********** DROP DOWN ON HOVER CLICK! **************/
 function beforeGameOpen(){
 
 }
