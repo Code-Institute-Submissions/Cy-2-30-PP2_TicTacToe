@@ -4,46 +4,56 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- GOOGLE FONTS -->
+        <!-------------------------- GOOGLE FONTS ----------------------------->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@700&display=swap" rel="stylesheet">
-        <!-- FONTAWESOME ICONS -->
-        <link href="./assets/fontawsome/css/all.css" rel="stylesheet">  
+        <!---------------------- FONTAWESOME ICONS ---------------------------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!--CSS STYLE LINK FILE -->
+        <!------------------------- CSS STYLE LINK FILE ----------------------->
         <link rel="stylesheet" href="assets/css/style.css">
         <title>XO Game</title>
     </head>
 
     <body>
-        <main id="background">
-            <section class="">
+        <main id="background" class="content-page">
+          <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
+          <section class="menu">
                 <div class="title">
-                    <div>  
+                    <h1>  
                       <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
-                    </div>
-                  <h1>Tic Tac Toe!</h1>
+                    </h1>
+                  <p class="title-heading">Tic Tac Toe!</p>
                 </div>
 
-                <nav class="nav-bar menu-allign">
+                <!--- DROP DOWN FOR MOBILE MENU --->
+                <nav class="nav-bar menu-allign hide">
                     <div class="dropdown">
-                      <button onclick="dropFunction()" class="dropbtn">
+                      <button onclick="dropDownFunction()" class="dropmenu">
                         <i class="fa-solid fa-bars"></i>
                       </button>
                         <div id="myDropdown" class="dropdown-content">
-                          <a class="" href="home.html" alt="The link leads to home page">Home</a>
-                          <a class="" href="about.html" alt="The link leads to about page">About</a>
-                          <a class="linebtwn-menu" href="index.html" alt="The link leads to game page">Game</a>
-                          <a class="" href="contact.html" alt="The link leads to contact page">Contact</a> 
+                          <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
+                          <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
+                          <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
+                          <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
                         </div>
+                    </div>
+
+                    <!--- MENU BAR FOR 600XP UP --->
+                    <div class="menu-inrow hideonmobile">
+                      <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
+                          <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
+                          <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
+                          <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
                     </div>
                 </nav> 
             </section>
 
-
-            <section class="form">
-                <form class="" action="">
+          <!-------------------------- FORM & SUBMISSION POP UP WINDOW ----------------------------->
+          <section class="">
+            <form class="" action="">
+              <fieldset>
                     <header>
                         <h1></h1>
                     </header>
@@ -79,13 +89,18 @@
                   
                   <div>
                     <button id="reset" type="reset">Reset</button>
-                   </div>   
+                   </div>  </fieldset> 
                 </form>
+
+                <div class="popwindow">
+                  <p>Thank you for your feedback.</p>
+                </div>
             </section>
             
         </div>
-            <!-- JAVASCRIPT FILE LINK -->
-            <script src="/assets/js/script.js"></script>
+
+        <!-------------------------- JavaScript Script ----------------------------->
+        <script src="/assets/js/script.js"></script>
         </main>
     </body>
 </html>
