@@ -65,8 +65,8 @@ a:hover{
 
 /******************** LOGO & TITLE STYLE **************************/
 .logo{
-    height: 80px;
-    width: 90px;
+    height: 60px;
+    width: 80px;
     box-shadow: 2px 2px 2px 2px #7947d6ff;
     border-radius: 5px;
 }
@@ -75,8 +75,8 @@ a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
-  padding: 10px
+  font-size: 15px;
+  padding: 5px
 }
 
 /******************** LANDING PAGE STYLE **************************/
@@ -98,21 +98,24 @@ a:hover{
 
 .menubtn{
   letter-spacing: 5px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 20px;
   border: 1px dotted #f53a91ff;
   border-radius: 5px;
   padding: 10px;
   margin: 40px;
 }
 
-/*.menubtn a:hover, .menubtn a:focus{
+.menubtn:hover, .menubtn:focus{
  background-color: #f53a91ff;
- opacity: .2;
-}*/
+}
 
-/***POP UP WINDO BEFORE STARTING THE GAME***/
+.menubtn a{
+  border: none;
+}
+
+/***POP UP WINDOW BEFORE STARTING THE GAME***/
 .startgamepopup{
   display: none;
   font-size: 16px;
@@ -233,9 +236,9 @@ a:hover{
   border-radius: 5px;
   color: #131313ff;
   height: 30px;
-  width: 100px;
+  width: 50px;
   padding: 5px;
-  border: none;
+  border: 1px solid #f53a91ff;
 }
 
 .dropmenu:hover, .dropmenu:focus {
@@ -345,13 +348,6 @@ nav:hover{
   padding: 3px;
 }
 
-.menu-allign{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5px;
-  padding: 5px;
-}
 
 .linebtwn-menu{
   margin: 0 2px 0 5px;
@@ -381,23 +377,23 @@ nav:hover{
     max-width: 300px;
 }
 
-/*button{
+button{
   font-family: 'Caveat', cursive;
   background-color: #7947d6ff;
   border: 1px solid #f53a91ff;
   border-radius: 4px;
-  width: 50px;
-  height: 30px;
+ /* width: 50px;
+  height: 30px;*/
 }
 
-button:hover{
+button:hover button:focus{
 background-color: #f53a91ff;
 border: 2px solid #7947d6ff;
 color: #131313ff;
 transition-duration: 0.4s;
-width: 60px;
-font-size: 20px;
-}*/
+/*width: 60px;
+font-size: 20px;*/
+}
 
 .tile {
     border: 4px solid #7947d6ff;
@@ -469,14 +465,63 @@ ul {
 
 
 /***************** CONTACT PAGE ************************/
+#game-background{
+  background-color: transparent;
+  -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #131313ff, -14px -9px 35px 2px #131313ff; 
+  box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px 131313ff, -14px -9px 35px 2px #131313ff; 
+  height: 400px;
+  }
 
+.menu-allign{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+  header h1{
+    font-size: 16px;
+  }
+
+  fieldset{
+    border: none;
+  }
+
+  form{
+    background-color: #f3eaf3ff;
+    border: 3px solid #f53a91ff;
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 5px;
+    padding: 5px;
+  }
+
+  .formbtn button{
+    display: inline;
+    font-weight: bold;
+    background-color: #7947d6ff;
+    border: 1px solid #f53a91ff;
+    height: 30px;
+    width: 40px;
+    padding: 5px;
+  }
+
+  .formbtn button:hover, .formbtn button:focus{
+    background-color: #f53a91ff;
+    border: 1px solid #7947d6ff;
+  }
+
+  input, textarea{
+    border: 1px solid #7947d6ff;
+    border-radius: 5px;
+  }
   /*** POP UP WINDOW STYLE ***/
 .popwindow{
 display: none;
 font-size: 16px;
 font-weight: bold;
 background-color: #04d9faff;
-opacity: .5;
+border: 1px dotted #f53a91ff;
 border-radius: 10px;
 height: 50px;
 width: 200px;
@@ -489,7 +534,7 @@ padding: 10px;
 @media only screen and (min-width: 600px){
 
   /*** GLOBAL BACKGROUND ***/
- /* #background{
+ /* #game-background{
     background-color: #7947d6ff;
     -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
     box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
@@ -500,27 +545,27 @@ padding: 10px;
   /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
   .content-background{
     background-color: transparent;
-    height: 600px;
-    width: 400px;
+    height: 800px;
+    width: 600px;
     margin: auto;
     padding: 15px;
-    padding-top: 50px;
+    padding-top: 40px;
     }
     
   .content-background nav{
-    padding-left: 50px;
+    padding-left: 10px;
   }
 
   .logo{
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 110px;
     -webkit-box-shadow: 5px 5px 5px 5px #7947d6ff;
     box-shadow: 5px 5px 5px 5px #7947d6ff;
     border-radius: 8px;
     }
 
   .title{
-    font-size: 40px;
+    font-size: 20px;
   }
   
   /*h1{
@@ -542,12 +587,7 @@ padding: 10px;
     padding: 6px;
   }
 
-  .menu-allign{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
+  
   .tablet-border{
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
@@ -575,17 +615,37 @@ padding: 10px;
   }
 
   .menubtn div{
-    letter-spacing: 5px;
     font-size: 25px;
-    font-weight: bold;
     line-height: 40px;
-    border-radius: 5px;
-    margin: 40px;
   }
 
-  .menubtn a{
-    padding: 15px;
+
+  /******************** CONTACT PAGE **************************/
+  .menu-allign{
+    
+    }
+
+  .menu-inrow a{
+    display: inline;
+    background-color: #7947d6ff;
+    border-radius: 5px;
+    color: #131313ff;
+    border: 1px solid #f53a91ff;
   }
+
+  .rowbtn{
+    margin: 5px;
+    display: inline;
+    font-size: 20px;
+    padding: 10px; 
+   
+  }
+
+  .rowbtn:hover, .rowbtn:focus {
+    background-color: #f53a91ff;
+    transition-duration: 0.4s;
+  }
+  
 /*
   button{
     border: 3px solid #f53a91ff;
@@ -619,7 +679,7 @@ padding: 10px;
 }
 /***************** MEDIA QUERY FOR DESKTOP ************************/
 @media only screen and (min-width: 1080px){
- /* #background{
+ /* #game-background{
     background-color: #7947d6ff;
     -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
     box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
@@ -715,5 +775,32 @@ padding: 10px;
     box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
     color: #131313ff;
   }*/
+
+
+  /******************** CONTACT PAGE **************************/
+
+
+  .menu-inrow a{
+    display: inline;
+    background-color: #7947d6ff;
+    border-radius: 5px;
+    color: #131313ff;
+    border: 1px dotted #f53a91ff;
+    -webkit-box-shadow: 5px 5px 5px 5px #131313ff;
+    box-shadow: 5px 5px 5px 5px #131313ff;
+  }
+
+  .rowbtn{
+    display: inline;
+    font-size: 20px;
+    padding: 10px; 
+   
+  }
+
+  .rowbtn:hover, .rowbtn:focus {
+    background-color: #f53a91ff;
+    transition-duration: 0.4s;
+  }
+  
 
 }

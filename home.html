@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <!------------------------- CSS STYLE LINK FILE ----------------------->
         <link rel="stylesheet" href="assets/css/style.css">
-        <title>XO Game</title>
+        <title>Tic Tac Toe Game</title>
     </head>
 
     <body>
@@ -20,19 +20,19 @@
             <!-------------------------- LOGO & TITLE ----------------------------->
             <div id="changetrasparecy">
                 <section class="title" id="title-home">
-                <h1>
-                        <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="Logo image">
-                </h1> 
-                <p class="title-heading">Tic Tac Toe!</p>
+                    <h1>
+                            <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="Logo image">
+                    </h1> 
+                    <p class="title-heading">Tic Tac Toe!</p>
                 </section>
 
                 <!-------------------------- MENU BUTTONS ----------------------------->
                 <nav class="menu-bar">
                     <div class="menubtn">
-                        <a href="about.html" class="aboutbtn" aria-label="Leads to about page">About</a>
+                        <a href="about.html" class="menubtn" aria-label="Leads to about page">About</a>
                     </div>
                     <div class="menubtn" onclick="">
-                        <a href="#gameoptions" class="aboutbtn" aria-label="Leads to game options">Game</a>
+                        <a href="#gameoptions" class="menubtn" aria-label="Leads to game options">Game</a>
                         
                             <form id="gameoptions" class="player-selection startgamepopup" action="index.html">
                                 <select id="player-option" name="player-option" required>
@@ -40,12 +40,13 @@
                                     <option value="easy">One Player</option>
                                     <option value="medium">Two Player</option>
                                 </select>
-                                <input name="playername" type="text" placeholder="Player Name">
+                                <input name="playername" type="text" placeholder="Player 'X' Name">
+                                <input name="playername" type="text" placeholder="Player 'O' Name">
                                 <button class="submitbtn" type="submit" action>Submit</button>
                             </form>
                     </div>  
                     <div class="menubtn" onclick="contact.html">
-                        <a href="contact.html" class="aboutbtn" aria-label="Leads to contact page">Contact</a>
+                        <a href="contact.html" class="menubtn" aria-label="Leads to contact page">Contact</a>
                     </div>     
                     <!--
                         
@@ -71,8 +72,6 @@
                 </div>
                 -->
                 </nav>  
-
-            
 
                 <!-------------------------- SOCIAL MEDIA ICONS ----------------------------->
                 <section class="social-media-icons">
@@ -100,7 +99,7 @@
                 </section>
         </div>
 
-            <!-------------------------- JavaScript Script ----------------------------->
+            <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
             <script src="/assets/js/script.js"></script>
         </main>
     </body>

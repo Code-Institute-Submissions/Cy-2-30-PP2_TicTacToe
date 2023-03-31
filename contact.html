@@ -16,90 +16,93 @@
     </head>
 
     <body>
-        <main id="background" class="content-page">
+        <main id="background" class="content-background">
           <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
           <section class="menu">
-                <div class="title">
-                    <h1>  
-                      <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
-                    </h1>
-                  <p class="title-heading">Tic Tac Toe!</p>
+            <div class="title">
+              <h1>  
+                <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
+              </h1>
+            </div>  
+
+            <div class="menu-allign">
+              <div class="title menu-allign">
+                <p class="title-heading">Tic Tac Toe!</p>
+            </div>
+
+              <!--- DROP DOWN FOR MOBILE MENU --->
+            <nav class="nav-bar menu-allign" id="menu-allign">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropmenu">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="DropDown" class="dropdown-content dropmenu">
+                  <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
+                  <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
+                  <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
+                  <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
                 </div>
+              </div> 
 
-                <!--- DROP DOWN FOR MOBILE MENU --->
-                <nav class="nav-bar menu-allign">
-                    <div class="dropdown">
-                      <button onclick="myFunction()" class="dropmenu">
-                        <i class="fa-solid fa-bars"></i>
-                      </button>
-                        <div id="DropDown" class="dropdown-content">
-                          <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
-                          <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
-                          <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
-                          <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
-                        </div>
-                    </div> 
-
-                    <!--- MENU BAR FOR 600XP UP --->
-                    <div class="menu-inrow hideonmobile">
-                      <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
-                          <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
-                          <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
-                          <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
-                    </div>
-                </nav> 
-            </section>
+              <!--- MENU BAR FOR 600XP UP --->
+              <div class="menu-inrow hideonmobile">
+                <div class="rowbtn">
+                  <a class="rowbtn" href="home.html" aria-label="The link leads to home page">Home</a>
+                </div>
+                <div class="rowbtn">
+                  <a class="rowbtn" href="about.html" aria-label="The link leads to about page">About</a>
+                </div>
+                <div class="rowbtn">
+                  <a class="rowbtn" href="index.html" aria-label="The link leads to game page">Game</a>
+                </div>
+                <div class="rowbtn">
+                  <a class="rowbtn" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
+                </div>     
+              </div>
+            </nav> 
+          </section>
 
           <!-------------------------- FORM & SUBMISSION POP UP WINDOW ----------------------------->
-          <section class="">
-            <form class="" action="">
+          <section class="contactus">
+            <form class="form" action="#popup" onclick="">
               <fieldset>
                     <header>
-                        <h1></h1>
+                        <h1>Contact us here</h1>
                     </header>
 
-                    <div>
-                        <label class="" id="" for="">Full Name</label>
-                        <div>
-                          <input id="" name="" type="text" class="" value="" size="" tabindex="">
-                        </div>
-                      </div>
-                        
+                    <div class="inputbtn">
                       <div>
-                        <label class="" id="" for="">
-                          Email
-                        </label>
-                        <div>
-                          <input id="" name="" type="email" spellcheck="false" value="" maxlength="" tabindex="" placeholder="example@me.ie"> 
-                       </div>
+                        <input id="name" name="name" type="text" class="formbtn" value="" size="23" tabindex="" placeholder="Full Name">
                       </div>
-                        
-                      <div>
-                        <label class="" id="" for="">
-                          Message
-                        </label>
                       
-                        <div>
-                          <textarea id="" name="" spellcheck="true" rows="5" cols="20" tabindex=""></textarea>
-                        </div>
+                      <div>
+                        <input id="email" name="email" type="email" class="formbtn" spellcheck="false" value="" size="23" maxlength="28" tabindex="" placeholder="example@me.ie"> 
                       </div>
-                   <div>
-                    <button id="submit" type="submit">Submit</button>
-                   </div>   
-                  
-                  <div>
-                    <button id="reset" type="reset">Reset</button>
-                   </div>  </fieldset> 
-                </form>
 
-                <div class="popwindow">
-                  <p>Thank you for your feedback.</p>
+                      <div>
+                        <input id="messagehd" name="messagehd" type="text" class="formbtn" value="" size="23" tabindex="" placeholder="Full Name">
+                      </div>
+
+                      <div>
+                        <textarea id="messageare" name="messagearea" class="formbtn" spellcheck="true" rows="5" cols="20" tabindex="" placeholder="Write to us..."></textarea>
+                      </div>
+                    </div>
+
+                <div class="formbtn">
+                    <button class="formbtn" id="submit" type="submit">Submit</button>
+                    <button class="formbtn" id="reset" type="reset">Reset</button>
                 </div>
+              </fieldset> 
+            </form>
+
+            <div class="popwindow" id="popup">
+              <p>Thank you for your feedback.</p>
+            </div>
             </section>
             
         </div>
 
-        <!-------------------------- JavaScript Script ----------------------------->
+        <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
         <script src="/assets/js/script.js"></script>
         </main>
     </body>
