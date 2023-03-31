@@ -14,14 +14,46 @@
   }
 
 body{
-    background-color: #f3eaf3ff;
+  background-position: 10px 10px, 10px 10px;
+  background-size: 160px 160px;
+  background-image: linear-gradient(35deg, #04dafaff 25%, transparent 75%, transparent 50%, #04dafaff 75%, #04dafaff 100%),linear-gradient(95deg, #04dafaff 25%, #f53a91ff 30%, #f53a91ff 75%, #04dafaff 50%, #04dafaff 100%);
+  -webkit-animation: AnimateBG 40s ease infinite;
+  animation: AnimateBG 40s ease infinite;
+  }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+   }
+  50% {
+    background-position: 100% 50%;
+    }
+  100% {
+    background-position: 0% 50%;
+    }
+  }
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+    }
+  50% {
+    background-position: 100% 50%;
+    }
+  100% {
+    background-position: 0% 50%;
+    }
+    
+  }
+
+main{
     font-family: 'Kalam', cursive;
     color: #131313ff;
     height: 100vh;
     padding-top: 1px;
-}
+  } 
 
-a{
+a{  
     text-decoration: none;
     color: #131313ff;
   }
@@ -368,42 +400,20 @@ font-size: 20px;
 /*
 .hardmenuli {
 
-}
-
-.landingmenu{
-  font-size: 50px;
-}
-#power-on{
-
-}
-
-#exit{
-
-}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.game-board-hard{
-    margin: 0 auto;
-    background-color: #04d9faff;
-    border: 1px solid #f53a91ff;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    max-width: 500px;
-}
-*/
 
 
 
 
 /***************** CONTACT PAGE ************************/
 
-  /*** POP UP WINDOW style ***/
+  /*** POP UP WINDOW STYLE ***/
 .popwindow{
-display: ;
+display: none;
 font-size: 16px;
 font-weight: bold;
 background-color: #04d9faff;
