@@ -103,8 +103,7 @@ a:hover{
   line-height: 40px;
   border: 1px dotted #f53a91ff;
   border-radius: 5px;
-  padding: 5px;
-  padding-left: 10px;
+  padding: 10px;
   margin: 40px;
 }
 
@@ -226,7 +225,7 @@ a:hover{
 
 /******************** DROP DOWN MENU STYLE FOR MOBILE **************************/
 .dropdown{
-  display: block;
+  display: none;
 }
 
 .dropmenu{
@@ -258,7 +257,6 @@ a:hover{
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   display: block;
 }
@@ -268,7 +266,9 @@ a:hover{
   opacity: .3;
 }
 
-.show {display: block;}
+.show {
+  display: block;
+}
 
 .hideonmobile{
   display: none;
@@ -489,39 +489,48 @@ padding: 10px;
 @media only screen and (min-width: 600px){
 
   /*** GLOBAL BACKGROUND ***/
-  #background{
+ /* #background{
     background-color: #7947d6ff;
-    -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
-    box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
+    -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
+    box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
     margin: 80px;
     padding: 0px;
-  }
+    }*/
   
-    /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+  /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+  .content-background{
+    background-color: transparent;
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    padding-top: 50px;
+    }
+    
+  .content-background nav{
+    padding-left: 50px;
+  }
+
   .logo{
     height: 120px;
     width: 120px;
-    border-radius: 5px;
-    box-shadow: 10px 10px -10px 0 #04d9faff;
-  }
+    -webkit-box-shadow: 5px 5px 5px 5px #7947d6ff;
+    box-shadow: 5px 5px 5px 5px #7947d6ff;
+    border-radius: 8px;
+    }
 
   .title{
-    font-size: 30px;
+    font-size: 40px;
   }
   
-  h1{
+  /*h1{
     margin: 15px;
     padding: 15px;
-  }
-  .dropdown{
-    display: none;
-  }
+  }*/
 
-  .hideonmobile{
-    display: inline;
-  }
+ 
 
-  nav{
+  /*nav{
     border: 3px solid #f53a91ff;
     width: 110px;
     height: 35px;
@@ -547,27 +556,37 @@ padding: 10px;
     margin: auto;
     padding: 50px;
   }
+  /*** HOME PAGE STYLE ***/
+   .dropdown{
+    display: none;
+  }
+
+  .hideonmobile{
+    display: inline;
+  }
 
   .menu-bar div{
+    font-size: 30px;
     background-color: #7947d6ff;
-    -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
-    box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-    width: 120px;
+    -webkit-box-shadow: 12px -6px 14px 6px #131313ff, -10px -8px 32px 2px #131313ff; 
+    box-shadow:  1px -6px 14px 6px #131313ff, -10px -8px 32px 2px #131313ff;  
+    padding: 15px;
+    width: 180px; 
   }
-  
-  .menubtn{
+
+  .menubtn div{
     letter-spacing: 5px;
     font-size: 25px;
     font-weight: bold;
     line-height: 40px;
-    border: 1px dotted #f53a91ff;
     border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
     margin: 40px;
-  
   }
 
+  .menubtn a{
+    padding: 15px;
+  }
+/*
   button{
     border: 3px solid #f53a91ff;
     width: 60px;
@@ -585,7 +604,7 @@ padding: 10px;
 
 .menu-bar{
   background-color: #6f00ffff;
-  box-shadow:2px -2px 2px 2px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
+  box-shadow:5px -5px 5px 5px #f3eaf3ff, -5px -5px 5px 5px #131313ff;
   border-radius: 8px;
   width: 170px;
   padding: 10px;
@@ -596,11 +615,45 @@ padding: 10px;
   background-color: #f53a91ff;
   box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
   color: #131313ff;
-}
+}*/
 }
 /***************** MEDIA QUERY FOR DESKTOP ************************/
 @media only screen and (min-width: 1080px){
-  .tablet-border{
+ /* #background{
+    background-color: #7947d6ff;
+    -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
+    box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
+    margin: 80px;
+    padding: 0px;
+    }
+*/
+  .title{
+      font-size: 50px;
+    }
+
+  /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+  .content-background{
+    background-color: pink;
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    padding-top: 50px;
+    }
+    
+  .content-background nav{
+    padding-left: 90px;
+  }
+
+  .logo{
+    -webkit-box-shadow: 8px 8px 8px 8px #7947d6ff;
+    box-shadow: 8px 8px 8px 8px #7947d6ff;
+    }
+
+  
+
+
+ /* .tablet-border{
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
     border-image-slice: 1;
@@ -609,15 +662,58 @@ padding: 10px;
     padding: 60px;
   }
 
-  .tile {}
+  .tile {}*/
 
  /******************** LOGO, TITLE & MENU STYLE FOR MOBILE **************************/   
+  
+
+
+  /*** HOME PAGE STYLE ***/
+  .content-background{
+    background-color: transparent;
+    height: 700px;
+    width: 500px;
+    margin: auto;
+    padding-left: 20px;
+    }
+
   .dropdown{
     display: none;
   }
-  
+
   .hideonmobile{
     display: inline;
   }
+
+  .menu-bar div{
+    font-size: 30px;
+    background-color: #7947d6ff;
+    -webkit-box-shadow: 18px -12px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff; 
+    box-shadow:  3px -9px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;  
+    width: 200px; 
+    margin: 60px;
+  }
+
+  .menubtn{
+    font-size: 40px;
+    line-height: 50px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+ /* .menu-bar{
+    background-color: #6f00ffff;
+    box-shadow:10px -10px 10px 10px #f3eaf3ff, -10px -10px 10px 10px #131313ff;
+    border-radius: 8px;
+    width: 170px;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .menu-bar:hover{
+    background-color: #f53a91ff;
+    box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
+    color: #131313ff;
+  }*/
 
 }
