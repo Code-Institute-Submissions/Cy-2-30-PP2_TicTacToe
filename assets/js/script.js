@@ -1,4 +1,32 @@
-    const cells = Array.from(document.querySelectorAll('.tile'));
+
+const beforeGameOpen = document.querySelector('.startgamepopup');
+
+function beforeGameOpen(){
+
+}
+
+/********** DROP DOWN ON HOVER CLICK! **************/
+
+
+function myFunction(){
+    document.getElementById('DropDown').classList.toggle('show');
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropmenu')){
+        var dropdowns = document.getElementsByClassName('dropdown-content')
+        var i;
+        for(i = 0; i < dropdowns.length; i++){
+            var openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')){
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+
+const cells = Array.from(document.querySelectorAll('.tile'));
     const popUp = document.querySelector('.popup');
     const resetButton = document.querySelector('#reset');
     const winConditions = [

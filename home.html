@@ -16,9 +16,9 @@
     </head>
 
     <body>
-        <main class="content-page">
+        <main class="content-background">
             <!-------------------------- LOGO & TITLE ----------------------------->
-            <section class="title">
+            <section class="title" id="title-home">
                <h1>
                     <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="Logo image">
                </h1> 
@@ -30,8 +30,8 @@
                 <div class="mebubtn">
                     <a href="about.html" class="aboutbtn" aria-label="Leads to about page">About</a>
                 </div>
-                <div class="mebubtn">
-                        <div>Game</div>
+                <div class="menubtn" onclick="startgamepopupFunction()">Game
+                        
                         <form class="player-selection startgamepopup" action="index.html">
                             <select id="player-option" name="player-option" required>
                                 <option disabled selected hidden>Player Options</option>
@@ -42,7 +42,7 @@
                             <button class="submitbtn" type="submit" action>Submit</button>
                         </form>
                 </div>  
-                <div>
+                <div class="menubtn">
                     <a href="contact.html" class="aboutbtn" aria-label="Leads to contact page">Contact</a>
                 </div>     
                 <!--
