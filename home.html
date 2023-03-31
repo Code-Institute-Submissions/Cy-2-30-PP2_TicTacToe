@@ -16,29 +16,36 @@
     </head>
 
     <body>
-        <main class="home-page">
-             <!-------------------------- LOGO & TITLE ----------------------------->
+        <main class="content-page">
+            <!-------------------------- LOGO & TITLE ----------------------------->
             <section class="title">
                <h1>
-                    <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
+                    <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="Logo image">
                </h1> 
-               <p class="title">Tic Tac Toe!</p>
+               <p class="title-heading">Tic Tac Toe!</p>
             </section>
 
             <!-------------------------- MENU BUTTONS ----------------------------->
-            <section class="menu-bar">
-                <button>About
-                    <
-                </button>
-                <button onclick="index.html">Game</button>  
-                <button>Contact</button>     
-                <!--<div class="player-selection">
-                    <select id="player-option" name="player-option" required>
-                        <option disabled selected hidden>Player Option</option>
-                        <option value="easy">One Player</option>
-                        <option value="medium">Two Player</option>
-                    </select>
+            <nav class="menu-bar">
+                <div class="mebubtn">
+                    <a href="about.html" class="aboutbtn" aria-label="Leads to about page">About</a>
                 </div>
+                <div class="mebubtn">Game
+                   <!-- <a href="index.html" class="aboutbtn" aria-label="Leads to game page"></a>-->
+                        <form class="player-selection startgamepopup" action="index.html">
+                            <select id="player-option" name="player-option" required>
+                                <option disabled selected hidden>Player Options</option>
+                                <option value="easy">One Player</option>
+                                <option value="medium">Two Player</option>
+                            </select>
+                            <input name="playername" type="text" placeholder="Player Name">
+                            <button class="submitbtn" type="submit" action>Submit</button>
+                        </form>
+                </div>  
+                <div>
+                    <a href="contact.html" class="aboutbtn" aria-label="Leads to contact page">Contact</a>
+                </div>     
+                <!--
                     
                 <div class="player-links"> 
                     <div id="btn1">
@@ -51,10 +58,8 @@
                             <button id="twoplayer">Two Player</button>
                         </a>
                     </div>
-                </div>-->
-            </section>  
-
-            <div class="center" style="visibility: hidden" >
+                </div> 
+                <div class="center" style="visibility: hidden" >
                 <div id="playerinfo ">
                     <input class="inputplayer" type="text" placeholder="Player 1 name 🔴" />
                     <input class="inputplayer" type="text" placeholder="Player 2 name ❌" />
@@ -62,6 +67,10 @@
                     <button id="playerbtn" onclick="setPlayerName()">Send</button>
                 </div>
             </div>
+            -->
+        </nav>  
+
+           
 
             <!-------------------------- SOCIAL MEDIA ICONS ----------------------------->
             <section class="social-media-icons">

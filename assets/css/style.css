@@ -6,6 +6,7 @@
 --magnolia: #f3eaf3ff;
 --night: #131313ff;
 */
+
 /******************** GLOBAL STYLE **************************/
 * {
     padding: 0;
@@ -13,7 +14,7 @@
   }
 
 body{
-    background-color: #6f00ffff;
+    background-color: #f3eaf3ff;
     font-family: 'Kalam', cursive;
     color: #131313ff;
     height: 100vh;
@@ -50,6 +51,118 @@ a{
   flex-direction: column;
   font-size: 20px;
   padding: 5px
+}
+
+/******************** LANDING PAGE STYLE **************************/
+
+.startgamepopup{
+  display: ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #04d9faff;
+  opacity: .5;
+  border-radius: 10px;
+  height: 120px;
+  width: 200px;
+  margin:auto;
+  padding: 10px;
+  }
+
+/************ SOCIAL MEDIA ICONS *************/
+
+/* Wrapper */
+.icon-button {
+	background-color: #f3eaf3ff;
+	border-radius: 1.5rem;
+	display: inline-block;
+	font-size: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 1rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 1rem;
+	height: 1.2rem;
+	border-radius: 1.5rem;
+	margin: -1.8rem;
+}
+.instagram span {
+	background-color: #c13561;
+}
+.linkedin span {
+	background-color: #0073a4;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.youtube span {
+	background-color: #e64a41;
+}
+
+/* Icons */
+.icon-button i {
+	background: #131313ff;
+	color: #f3eaf3ff;
+	height: 1.2rem;
+	left: 0;
+	line-height: 1.2rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 1rem;
+	z-index: 10;
+}
+.fa-instagram:hover {
+	color: #c13561;
+}
+.icon-button .fa-linkedin {
+	color: #0073a4;
+}
+.icon-button .fa-square-twitter {
+	color: #3B5998;
+}
+.icon-button .fa-facebook {
+	color: #4099ff;
+}
+.icon-button .fa-youtube {
+	color: #e64a41;
+}
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-linkedin,
+.icon-button:hover .fa-square-twitter, 
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-youtube{
+	color: #f3eaf3ff;
 }
 
 /******************** DROP DOWN MENU STYLE FOR MOBILE **************************/
@@ -285,102 +398,7 @@ ul {
 
 
 
-/***************** SOCIAL MEDIA ICONS ************************/
 
-/* Wrapper */
-.icon-button {
-	background-color: #f3eaf3ff;
-	border-radius: 1.5rem;
-	display: inline-block;
-	font-size: 1.2rem;
-	height: 1.2rem;
-	line-height: 1.2rem;
-	margin: 0;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 1rem;
-}
-
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 1rem;
-	height: 1.2rem;
-	border-radius: 1.5rem;
-	margin: -1.8rem;
-}
-.instagram span {
-	background-color: #c13561;
-}
-.linkedin span {
-	background-color: #0073a4;
-}
-
-.twitter span {
-	background-color: #4099ff;
-}
-.facebook span {
-	background-color: #3B5998;
-}
-.youtube span {
-	background-color: #e64a41;
-}
-
-/* Icons */
-.icon-button i {
-	background: #131313ff;
-	color: #f3eaf3ff;
-	height: 1.2rem;
-	left: 0;
-	line-height: 1.2rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 1rem;
-	z-index: 10;
-}
-.fa-instagram:hover {
-	color: #c13561;
-}
-.icon-button .fa-linkedin {
-	color: #0073a4;
-}
-.icon-button .fa-square-twitter {
-	color: #3B5998;
-}
-.icon-button .fa-facebook {
-	color: #4099ff;
-}
-.icon-button .fa-youtube {
-	color: #e64a41;
-}
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-linkedin,
-.icon-button:hover .fa-square-twitter, 
-.icon-button:hover .fa-facebook,
-.icon-button:hover .fa-youtube{
-	color: #f3eaf3ff;
-}
 /***************** CONTACT PAGE ************************/
 
   /*** POP UP WINDOW style ***/
@@ -389,6 +407,8 @@ display: ;
 font-size: 16px;
 font-weight: bold;
 background-color: #04d9faff;
+opacity: .5;
+border-radius: 10px;
 height: 50px;
 width: 200px;
 margin:auto;
