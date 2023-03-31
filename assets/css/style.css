@@ -82,7 +82,7 @@ a:hover{
 /******************** LANDING PAGE STYLE **************************/
 .content-background{
   background-color: transparent;
-  height: 500px;
+  height: 300px;
   width: 200px;
   margin: auto;
   padding: 10px;
@@ -172,99 +172,46 @@ a:hover{
 }
 /************ SOCIAL MEDIA ICONS *************/
 
-/* Wrapper */
+/**** WRAPPER *****/
 .icon-button {
-	background-color: #f3eaf3ff;
-	border-radius: 1.5rem;
+	background-color:transparent;
+	border-radius: 5px;
 	display: inline-block;
-	font-size: 1.2rem;
-	height: 1.2rem;
-	line-height: 1.2rem;
-	margin: 0;
-	position: relative;
+	height: 18px;
+	line-height: 1.2;
+	margin: 5px;
 	text-align: center;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
-	width: 1rem;
+	width: 25px;
 }
 
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 1rem;
-	height: 1.2rem;
-	border-radius: 1.5rem;
-	margin: -1.8rem;
-}
-.instagram span {
-	background-color: #c13561;
-}
-.linkedin span {
-	background-color: #0073a4;
+/**** CHANGE COLOR ON HOVER *****/
+.linkedin:hover, .linkedin:focus {
+	color: #0073a4;
 }
 
-.twitter span {
-	background-color: #4099ff;
+.twitter span:hover, .twitter span:focus {
+	color: #4099ff;
 }
-.facebook span {
-	background-color: #3B5998;
+
+.slack span:hover, .slack span:focus {
+	color: linear-gradient(to right #36C5F0, #2EB67D, #E01E5A, #ECB22E);
 }
-.youtube span {
-	background-color: #e64a41;
+
+.github span:hover, .github span:focus {
+	color: #131313ff;
+  font-size: large;
 }
 
 /* Icons */
-.icon-button i {
-	background: #131313ff;
-	color: #f3eaf3ff;
-	height: 1.2rem;
-	left: 0;
-	line-height: 1.2rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 1rem;
-	z-index: 10;
-}
-.fa-instagram:hover {
-	color: #c13561;
-}
-.icon-button .fa-linkedin {
-	color: #0073a4;
-}
-.icon-button .fa-square-twitter {
-	color: #3B5998;
-}
-.icon-button .fa-facebook {
-	color: #4099ff;
-}
-.icon-button .fa-youtube {
-	color: #e64a41;
-}
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-linkedin,
-.icon-button:hover .fa-square-twitter, 
-.icon-button:hover .fa-facebook,
-.icon-button:hover .fa-youtube{
-	color: #f3eaf3ff;
+ .fa-linkedin,
+.fa-square-twitter, 
+.fa-github,
+ .fa-slack{
+	color: #131313ff;
 }
 
 /******************** DROP DOWN MENU STYLE FOR MOBILE **************************/
@@ -463,15 +410,60 @@ font-size: 20px;*/
   display: flex;
 }
 
-/******************** t STYLE **************************/
+/******************** ABOUT PAGE STYLE **************************/
+.about-background{
+  background-color: transparent;
+  -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #131313ff, -14px -9px 35px 2px #131313ff; 
+  box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px 131313ff, -14px -9px 35px 2px #131313ff; 
+  height: 500px;
+  width: 300px;
+  margin: auto;
+  }
 
-.popup{
-  font-size: 30px;
+ h1{
+    font-size: 14px;
+   padding: 5px;
+   text-align: center;
+  }
+
+.content{
+    background-color: #f3eaf3ff;
+    border: 3px solid #f53a91ff;
+    border-radius: 5px;
+    height: 480px;
+    width: auto;
+    margin: auto;
+    padding: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+.content p{
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: normal;
+  line-height: 1.2;
+
+}
+
+.content div, ul{
+  border: transparent;
+  box-shadow: 2px 2px 2px 2px #7947d6ff;
+  border-radius: 5px;
+}
+
+ul{
+  margin: 15px;
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: normal;
+  line-height: 1.2;
 }
 
 
 /***************** CONTACT PAGE ************************/
-#game-background{
+.content-background{
   background-color: transparent;
   -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #131313ff, -14px -9px 35px 2px #131313ff; 
   box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px 131313ff, -14px -9px 35px 2px #131313ff; 

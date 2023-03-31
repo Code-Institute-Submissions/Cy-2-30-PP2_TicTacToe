@@ -17,24 +17,53 @@
     </head>
 
     <body>
-        <main id="background">
-            <section class="">
-                <div class="title">
-                    <div>  
-                      <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
-                    </div>
-                  <h1>Tic Tac Toe!</h1>
+        <main id="background" class="about-background">
+            <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
+          <section class="menu" id="about-background">
+            <div class="title">
+              <h1>  
+                <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
+              </h1>
+            </div>  
+
+            <div class="menu-allign">
+              <div class="title menu-allign">
+                <p class="title-heading">Tic Tac Toe!</p>
+            </div>
+
+              <!--- DROP DOWN FOR MOBILE MENU --->
+            <nav class="nav-bar menu-allign" id="menu-allign">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropmenu">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="DropDown" class="dropdown-content dropmenu">
+                  <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
+                  <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
+                  <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
+                  <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
                 </div>
+              </div> 
 
-                <nav class="nav-bar menu-allign">
-                    <a class="" href="home.html" alt="">Home</a>
-                    <a class="" href="about.html" alt="">About</a>
-                    <a class="linebtwn-menu" href="index.html" alt="">Game</a>
-                    <a class="" href="contact.html" alt="">Contact</a>
-                </nav> 
-            </section>
+              <!--- MENU BAR FOR 600XP UP --->
+              <div class="menu-inrow hideonmobile">
+                <div class="rowbtn">
+                  <a class="rowbtn" href="home.html" aria-label="The link leads to home page">Home</a>
+                </div>
+                <div class="rowbtn">
+                  <a class="rowbtn" href="about.html" aria-label="The link leads to about page">About</a>
+                </div>
+                <div class="rowbtn">
+                  <a class="rowbtn" href="index.html" aria-label="The link leads to game page">Game</a>
+                </div>
+                <div class="rowbtn">
+                  <a class="rowbtn" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
+                </div>     
+              </div>
+            </nav> 
+          </section>
 
-            <section class=""></section>
+            <section class="content">
                 <div class="hitory" >
                     <h1>Tic Tac Toe Origin</h1>
                         <p>Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on roofing tiles dating from around 1300 BC. </p>
