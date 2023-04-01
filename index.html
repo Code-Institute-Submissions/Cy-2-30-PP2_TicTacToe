@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <main id="game-background">
+        <main id="game-background" class="border">
             <!-------------------------- LOGO & TITLE ----------------------------->
             <section class="title">
                     <div>  
@@ -26,7 +26,7 @@
             </section>
            <!-------------------------- HELP & EXIT BUTTONS ----------------------------->
             <section class="menu-allign">
-                <div class="control-options">
+                <div class="control-options gamebtn">
                     <a href="about.html" class="menubtn" aria-label="Leads to about page"></a>
                             <i class="fa-solid fa-info fa-bounce"></i>
                         </button>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="exitbtn">
                     <a href="home.html" class="menubtn" aria-label="Leads to page page">
-                        <button id="exitbtn" action="home.html">
+                        <button id="exitbtn" action="home.html" class="gamebtn">
                             <i class="fa-solid fa-arrow-right-from-bracket fa-shake"></i>
                         </button>
                     </a>
@@ -42,7 +42,7 @@
             </section>
 
             <!-------------------------- GAME CONTAINER & CONTROLS ----------------------------->
-            <div class="tablet-border">
+            <div class="tablet-border ">
 
                 <section class="playername-holder"></section>
 
@@ -61,7 +61,7 @@
                 </section>
 
                 <section class="controls">
-                    <button id="reset">
+                    <button id="reset gamebtn">
                         <i class="fa-solid fa-trash-can-arrow-up"></i>
                     </button>
                 </section>
