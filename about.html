@@ -4,23 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- GOOGLE FONTS -->
+        <!-------------------------- GOOGLE FONTS ----------------------------->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@700&display=swap" rel="stylesheet">
-        <!-- FONTAWESOME ICONS -->
-        <link href="./assets/fontawsome/css/all.css" rel="stylesheet">  
+        <!---------------------- FONTAWESOME ICONS ---------------------------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!--CSS STYLE LINK FILE -->
+        <!------------------------- CSS STYLE LINK FILE ----------------------->
         <link rel="stylesheet" href="assets/css/style.css">
-        <title>XO Game</title>
+        <title>Tic Tac Toe</title>
     </head>
 
     <body>
-        <main id="background" class="about-background">
-            <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
-          <section class="menu" id="about-background">
-            <div class="title">
+        <main id="background">
+          <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
+          <header class="menu">
+            <div class="tclass="title-logo">
               <h1>  
                 <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
               </h1>
@@ -31,70 +30,86 @@
                 <p class="title-heading">Tic Tac Toe!</p>
             </div>
 
-              <!--- DROP DOWN FOR MOBILE MENU --->
-            <nav class="nav-bar menu-allign" id="menu-allign">
+
+            <!------------------------------------------------
+            - Code extracted from https://www.w3schools.com/
+            --------------------------------------------------
+
+            --- DROP DOWN FOR MOBILE MENU --->
+            <nav class="nav-bar menu-allign">
               <div class="dropdown">
-                <button onclick="myFunction()" class="dropmenu">
+                <button onclick="" class="dropmenu">
                   <i class="fa-solid fa-bars"></i>
                 </button>
-                <div id="DropDown" class="dropdown-content dropmenu">
-                  <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
-                  <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
-                  <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
-                  <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
+                <div id="dropmenu" class="dropdown-content dropmenu">
+                  <a class="dropmenu" href="home.html" aria-label="The link leads to home page">Home</a>
+                  <a class="dropmenu" href="about.html" aria-label="The link leads to about page">About</a>
+                  <a class="dropmenu" href="index.html" aria-label="The link leads to game page">Game</a>
+                  <a class="dropmenu" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
                 </div>
               </div> 
 
-              <!--- MENU BAR FOR 600XP UP --->
+              <!--- MENU BAR FOR 768XP UP --->
               <div class="menu-inrow hideonmobile">
-                <div class="rowbtn">
-                  <a class="rowbtn" href="home.html" aria-label="The link leads to home page">Home</a>
-                </div>
-                <div class="rowbtn">
-                  <a class="rowbtn" href="about.html" aria-label="The link leads to about page">About</a>
-                </div>
-                <div class="rowbtn">
-                  <a class="rowbtn" href="index.html" aria-label="The link leads to game page">Game</a>
-                </div>
-                <div class="rowbtn">
-                  <a class="rowbtn" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
-                </div>     
+                <a class="rowbtn" href="home.html" aria-label="The link leads to home page">Home</a>
+                <a class="rowbtn" href="about.html" aria-label="The link leads to about page">About</a>
+                <a class="rowbtn" href="index.html" aria-label="The link leads to game page">Game</a>
+                <a class="rowbtn" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
               </div>
             </nav> 
-          </section>
+          </header>
 
-            <section class="content">
-                <div class="hitory" >
-                    <h1>Tic Tac Toe Origin</h1>
-                        <p>Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on roofing tiles dating from around 1300 BC. </p>
-                        <p>An early variation of tic-tac-toe was played in the Roman Empire, around the first century BC. It was called terni lapilli (three pebbles at a time) and instead of having any number of pieces, each player had only three; thus, they had to move them around to empty spaces to keep playing. </p>
-                        <p>The game's grid markings have been found chalked all over Rome. Another closely related ancient game is three men's morris which is also played on a simple grid and requires three pieces in a row to finish,  and Picaria, a game of the Puebloans.</p>
-                </div>
+          <section class="content">
 
-                <div class="instruction" >
-                    <h1>The strategy to playing the game</h1>
-                        <p>The best way for "X" player is to start in middle. In each grid, the shaded red X denotes the optimal move, and the location of O's next move gives the next sub grid to examine.</p>
-                        <p>Note that only two sequences of moves by O (both starting with the centre, top-right, left-mid) lead to a draw, with the remaining sequences leading to wins from X.</p>
-                        <p>Optimal strategy for player O. Player O can only force a win or draw by playing in the centre first.</p>
-                </div>
+            <!------------------------------------------------------------------------    
+            The content was extracted from https://en.wikipedia.org/wiki/Tic-tac-toe#
+            --------------------------------------------------------------------------> 
+            <sub class="contentbox">
+              <div class="infoimage">
+                <img style="height: 160px; width: 160px;" src="/assets/images/info-3kb-250x250.png" alt="An info icon"> 
+              </div> 
+              <h1 class="pheading">The origin  of Tic Tac Toe game </h1>
+                <p>Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on 
+                  roofing tiles dating from around  <em>1300 BC</em>. </p>
+                <p>An early variation of <i>tic-tac-toe</i> was played in the Roman Empire, around the <em>first century BC</em>. It was called <i>terni lapilli 
+                  (three pebbles at a time)</i> and instead of having any number of pieces, each player had only three; thus, they had to move them 
+                  around to empty spaces to keep playing. </p>
+                <p>The game's grid markings have been found chalked all over Rome. Another closely related ancient game is <i>three men's morris</i> which
+                  is also played on a simple grid and requires three pieces in a row to finish,  and <i>Picaria</i>, a game of the Puebloans.</p>
+            </sub>
 
-                <div class="rules" >
-                    <h1>How to win or draw!</h1>
-                        <p>A player can play a perfect game of tic-tac-toe (to win or at least draw) if, each time it is their turn to play, they choose the first available move from the following list, as used in Newell and Simon's 1972 tic-tac-toe program.</p>
-                        <ul>Tips to follow:
-                            <li>Win: If the player has two in a row, they can place a third to get three in a row.</li>
-                            <li>Block: If the opponent has two in a row, the player must play the third themselves to block the opponent.</li>
-                            <li>Fork: Cause a scenario where the player has two ways to win (two non-blocked lines of 2).</li>
-                            <li>Blocking an opponent's fork: If there is only one possible fork for the opponent, the player should block it. </li>
-                            <li>5.	Centre: A player marks the centre. (If it is the first move of the game, playing a corner move gives the second player more opportunities to make a mistake and may therefore be the better choice; however, it makes no difference between perfect players.)</li>
-                        </ul>
-                        <p>The first player, who shall be designated "X", has three possible strategically distinct positions to mark during the first turn. </p>
-                </div>
+            <sub class="contentbox">
+              <h1 class="pheading">The strategy to playing the game</h1>
+                <p>
+                  The best way for <strong>"X"</strong> player is to start in middle. In each &#x2610;, the shaded red <strong style="color: red;">X</strong> denotes the optimal move, and the 
+                  location of <strong>O's</strong> next move gives the next sub grid to examine.</p>
+                <p>Note that only two sequences of moves by <strong>O</strong> (both starting with the centre, top-right, left-mid) lead to a draw, 
+                  with the remaining sequences leading to wins from <strong>X</strong>.</p>
+                <p>Optimal strategy for player <strong>O</strong>. Player <strong>O</strong> can only force a <i>win</i> or <i>draw</i> by playing in the centre first.</p>
+            </sub>
+
+            <sub class="contentbox" >
+              <h1 class="pheading">How to win or draw!</h1>
+
+                <p>A player can play a perfect game of <i>tic-tac-toe</i> (to win or at least draw) if, each time it is their turn to play, they choose 
+                  the first available move from the following list, as used in <em>Newell and Simon's</em> 1972 <i>tic-tac-toe</i> program.</p>
+
+                <ul>Tips to follow:
+                    <li class="list"><strong>Win:</strong> If the player has two in a row, they can place a third to get three in a row.</li>
+                    <li class="list"><strong>Block:</strong> If the opponent has two in a row, the player must play the third themselves to block the opponent.</li>
+                    <li class="list"><strong>Fork: </strong>Cause a scenario where the player has two ways to win (two non-blocked lines of 2).</li>
+                    <li class="list">Blocking an opponent's <strong>fork:</strong> If there is only one possible fork for the opponent, the player should block it. </li>
+                    <li class="list"><strong>Centre: </strong>A player marks the centre. (If it is the first move of the game, playing a corner move gives the 
+                      second player more opportunities to make a mistake and may therefore be the better choice; however, it makes no difference between perfect players.)</li>
+                </ul>
+
+                <p>The first player, who shall be designated <strong>"X"</strong>, has three possible strategically distinct positions to mark during the first turn. </p>
+            </sub>
                   
-            </section>
-
-            <!-- JAVASCRIPT FILE LINK -->
-            <script src="/assets/js/script.js"></script>
-        </main>
+          </section>
+        </main>      
+      
+      <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
+      <script src="/assets/js/script.js"></script>  
     </body>
 </html>

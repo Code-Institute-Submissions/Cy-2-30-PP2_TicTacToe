@@ -4,7 +4,7 @@
 
 ## Introductions
 
-Welcome to my second project. The project is to showcase I have learned so far with **HTML** , **CSS** and **JavaScript** programming languages. Is to apply everything learned into pratical live project. For this project I chose to create a **Tic Tac Toe** game. Something so simple and yet many enyoy playing, to detress! The logo above I wanted it to represent all the color combination of the website. And as the game is about **X** and **O**, I thought it would be fitting to create the logo that best represents the game. I saw it fit to display JavaScript functions I have learned so far. I wanted to create something fun and enjoyable for a destressor, while applying my skills
+Welcome to my second project. The project is to showcase what I have learned so far with **HTML** , **CSS** and **JavaScript** programming languages. Is to apply everything learned into pratical live project. For this project I chose to create a **Tic Tac Toe** game. Something so simple and yet many enyoy playing, to distress! The logo above I wanted it to represent all the color combination of the website. And as the game is about **X** and **O**, I thought it would be fitting to create the logo that best represents the game. I saw it fit to display JavaScript functions I have learned so far using this game. I wanted to create something fun and enjoyable for a distressor, while applying my skills
 
 ![Website look]()
 [Github](https:)
@@ -80,10 +80,10 @@ Welcome to my second project. The project is to showcase I have learned so far w
 I choose to go for the fun neon like colors. To make the site fun and to go with the logo. 
 ![Color Palette](assets/images/colorpalette-3kb-500x152.png) 
 
-* __#04D9fAFF__ __Vivid Sky Blue:__ - It is used as an interactive background animation and pop up windows. 
 * __#F53A91FF__ __Deep Pink:__ - It is used to highlight and emphasise buttons and menu bar.
 * __#7947D6FF__ __Majorelle Blue:__ - It is used togethor with **Deep Pink** for menu and buttons.
 * __#6F00FFFF__ __Electric Indigo:__ - It is on the game background board and to create shadow effect.
+* __#04D9fAFF__ __Vivid Sky Blue:__ - It is used as an interactive background animation and pop up windows. 
 * __#F3EAF3FF__ __Magnolia:__ - It is use on the form and the about page for a clean redable bacground.
 * __#131313FF__ __Night:__ - It is used for the font and creating shadow on background and buttons.
 

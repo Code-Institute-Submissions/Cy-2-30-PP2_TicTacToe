@@ -18,7 +18,7 @@
     <body>
         <main id="background" class="content-background">
           <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
-          <section class="menu">
+          <header class="menu">
             <div class="title">
               <h1>  
                 <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
@@ -30,10 +30,14 @@
                 <p class="title-heading">Tic Tac Toe!</p>
             </div>
 
-              <!--- DROP DOWN FOR MOBILE MENU --->
+              <!------------------------------------------------
+              - Code extracted from https://www.w3schools.com/
+              --------------------------------------------------
+
+              --- DROP DOWN FOR MOBILE MENU --->
             <nav class="nav-bar menu-allign" id="menu-allign">
               <div class="dropdown">
-                <button onclick="myFunction()" class="dropmenu">
+                <button onclick="" class="dropmenu">
                   <i class="fa-solid fa-bars"></i>
                 </button>
                 <div id="DropDown" class="dropdown-content dropmenu">
@@ -60,10 +64,10 @@
                 </div>     
               </div>
             </nav> 
-          </section>
+          </header>
 
           <!-------------------------- FORM & SUBMISSION POP UP WINDOW ----------------------------->
-          <section class="contactus">
+          <section class="form">
             <form class="form" action="#popup" onclick="">
               <fieldset>
                     <header>
@@ -98,12 +102,10 @@
             <div class="popwindow" id="popup">
               <p>Thank you for your feedback.</p>
             </div>
-            </section>
-            
-        </div>
-
-        <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
-        <script src="/assets/js/script.js"></script>
+          </section>
         </main>
+        
+        <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
+        <script src="/assets/js/script.js"></script>  
     </body>
 </html>

@@ -1,20 +1,62 @@
-/* CSS HEX 
+/***************************************
+* CSS HEX 
+* Extracted form https://coolors.co/
+****************************************
 --deep-pink: #f53a91ff;
 --majorelle-blue: #7947d6ff;
 --electric-indigo: #6f00ffff;
 --vivid-sky-blue: #04d9faff;
 --magnolia: #f3eaf3ff;
 --night: #131313ff;
-*/
 
-/******************** GLOBAL STYLE **************************/
+****************************************
+* UNIFORM ACROSS ALL PAGES
+****************************************/
 * {
     padding: 0;
     margin: 0;
   }
 
-/*********** BACKGROUND ANIMATION ***********/
-body{
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #131313ff;
+    height: 100vh;
+    padding-top: 1px;
+  } 
+
+a{  
+    text-decoration: none;
+    color: #131313ff;
+  }
+
+a:hover{
+    cursor: pointer;
+  }
+
+em{
+  font-weight: bold;
+}
+
+i{
+  font-weight: bolder;
+}
+
+h1,
+button, 
+input, 
+select, 
+option, 
+ul, li,
+textarea, 
+.title-heading{
+  font-family: 'Kalam', 'Caveat', cursive;
+}
+
+/********************************************************
+* BACKGROUND ANIMATION 
+* The code extracted from https://stackoverflow.com/
+*********************************************************/
+body {
   background-position: 10px 10px, 10px 10px;
   background-size: 160px 160px;
   background-image: linear-gradient(35deg, #04dafaff 25%, transparent 75%, transparent 50%, #04dafaff 75%, #04dafaff 100%),linear-gradient(95deg, #04dafaff 25%, #f53a91ff 30%, #f53a91ff 75%, #04dafaff 50%, #04dafaff 100%);
@@ -44,42 +86,442 @@ body{
   100% {
     background-position: 0% 50%;
     }
-    
   }
 
-main{
-    font-family: 'Kalam', cursive;
-    color: #131313ff;
-    height: 100vh;
-    padding-top: 1px;
-  } 
-
-a{  
-    text-decoration: none;
-    color: #131313ff;
+/*********************************************************************
+* TRANSPARENT BACKGROUND
+* The code is extracted from https://developer.mozilla.org/en-US/
+*********************************************************************/
+#background{
+  background-color: transparent;
+  -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #131313ff, -14px -9px 35px 2px #131313ff; 
+  box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px 131313ff, -14px -9px 35px 2px #131313ff; 
+  border-radius: 5px;
+  height: 550px;
+  width: 300px;
+  margin: auto;
+  padding: 10px;
   }
 
-a:hover{
-    cursor: pointer;
-  }
-
-/******************** LOGO & TITLE STYLE **************************/
+/****************************************
+****** RESPOSIVE AS PER VIEWPORT *******
+*****************************************
+*** LOGO & TITLE STYLE ***/
 .logo{
     height: 60px;
-    width: 80px;
+    width: 75px;
     box-shadow: 2px 2px 2px 2px #7947d6ff;
     border-radius: 5px;
+    padding: 0;
+  }
+
+
+
+/****************************************
+* HOME PAGE STYLE
+****************************************/
+
+/*** LOGO & TITLE STYLE ***/
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kalam', 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+.title-heading{
+    font-family: 'Kalam', 'Caveat', cursive;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
 }
+
+/******* MENU BUTTONS STYLE *******/
+.menu-bar{
+  margin: ;
+}
+
+.menu-bar div{
+  background-color: #7947d6ff;
+  -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
+  box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+  border: 1px dotted #f53a91ff; 
+  border-radius: 5px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 35px;
+  width: 140px;
+  line-height: 1.5;
+  height: 30px;
+  padding: 10px;
+}
+
+.menubtn:hover, .menubtn:focus{
+  background-color: #f53a91ff;
+ border: 1px dotted #7947d6ff;
+ transition-duration: 0.4s;
+}
+
+
+
+/****************************************
+* ABOUT PAGE STYLE
+****************************************/
+
+/*********** DROP DOWN MENU **********/
+.menu-allign, .title-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+.hideonmobile{
+  display: none;
+} 
+
+.dropdown{
+  display: block;
+}
+
+.show{
+  display: none;
+}
+
+/******* CONTENT HOLDER ***********/
+.content{
+  background-color: #f3eaf3ff;
+  border: 1px solid #f53a91ff;
+  border-radius: 5px;
+  height: 480px;
+  width: 280px;
+  margin: auto;
+  padding: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.pheading{
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  }
+
+ul{
+    border: transparent;
+    box-shadow: 2px 2px 2px 2px #7947d6ff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1.5;
+    line-height: 1.2;
+  }
+
+  ul .list{
+    font-weight: lighter;
+    list-style-position: inside;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+
+/****************************************
+* GAME PAGE STYLE 
+****************************************/
+
+
+
+
+/****************************************
+* CONTACT PAGE STYLE
+****************************************/
+
+
+
+
+
+
+
+
+/* ABOUT PAGE STYLE
+****************************************/
+
+
+
+
+
+
+
+
+
+
+/* 
+*****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************
+* MEDIA QUERY FOR 480 VIEWPORT
+***********************************************************/
+@media only screen and (min-width: 480px){
+
+  /* LOGO & TITLE STYLING 
+  ****************************************/
+  .logo{
+      height: 70px;
+      width: 85px;
+      box-shadow: 3px 3px 3px 3px #7947d6ff;
+      border-radius: 6px;
+    }
+
+  .title{
+  font-size: 32px;  
+    }
+
+
+  /* TRANSPARENT BACKGROUND
+  ***************************/
+  #background{
+    height: 650px;
+    width: 450px;
+    margin: auto;
+    }
+
+
+/* ABOUT PAGE STYLE
+****************************************/
+  .dropdown{
+    display: none;
+  }
+
+  .hideonmobile{
+    display: inline-block;
+  }
+
+  .show{
+    display: inline-block;
+  }
+
+  .title-heading{
+    font-size: 16px;
+  }
+ /* 
+ *************************/
+
+
+
+  /* Content Page Background
+  **************************/  
+  .content{
+    border: 2px solid #f53a91ff;
+    border-radius: 6px;
+    height: 580px;
+    width: 420px;
+    margin: auto;
+    padding: 6px;
+    }
+
+
+}
+
+
+
+/***********************************************************
+*MEDIA QUERY FOR 770 VIEWPORT
+************************************************************/
+@media only screen and (min-width: 770px){
+
+ /* TRANSPARENT BACKGROUND
+ *************************/
+ #background{
+  height: 900px;
+  width: 700px;
+  margin: auto;
+  }
+
+.logo{
+    height: 80px;
+    width: 90px;
+    box-shadow: 4px 4px 4px 4px #7947d6ff;
+    border-radius: 7px;
+    }
+
+  .title{
+    font-size: 34px;  
+    }
+
+/* ABOUT PAGE STYLE
+****************************************/
+.title-heading{
+  font-size: 18px;
+}
+
+.dropdown{
+  display: none;
+}
+
+.hideonmobile{
+  display: inline-block;
+}
+
+.show{
+  display: inline-block;
+}
+
+
+/******** MENU BAR **********/
+.dropdown{
+  display: none;
+}
+
+
+
+/* Content holder
+*****************/
+.content{
+  border: 4px solid #f53a91ff;
+  border-radius: 7px;
+  height: 800px;
+  width: 600px;
+  margin: auto;
+  padding: 7px;
+
+}
+
+
+
+  
+
+
+ }
+
+ 
+/***********************************************************
+*MEDIA QUERY FOR 1280 VIEWPORT
+************************************************************/
+@media only screen and (min-width: 1280px){
+
+  /* HOME PAGE
+  *************************/
+  .logo{
+    height: 95px;
+    width: 100px;
+    box-shadow: 5px 5px 5px 5px #7947d6ff;
+    border-radius: 8px;
+    }
 
 .title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 15px;
-  padding: 5px
+    font-size: 36px;  
+    }
+
+  /* TRANSPARENT BACKGROUND
+  *************************/
+  #background{
+      height: 1100px;
+      width: 1250px;
+      margin: auto;
+      }
+
+  /* ABOUT PAGE STYLE
+  ****************************************/
+  .title-heading{
+    font-size: 20px;
+  }
+
+  /******** MENU BAR **********/
+  .dropdown{
+    display: none;
+  }
+
+  .hideonmobile{
+    display: inline-block;
+  }
+
+  .show{
+    display: inline-block;
+  }
+  
+
+  /* Content holder
+  *****************/
+  .content{
+    border: 5px solid #f53a91ff;
+    border-radius: 10px;
+    height: 1000px;
+    width: 1150px;
+    margin: auto;
+    padding: 10px;
+  }
+
+
 }
 
-/******************** LANDING PAGE STYLE **************************/
+
+/***********************************************************
+*MEDIA QUERY FOR 1600 VIEWPORT
+************************************************************/
+@media only screen and (min-width: 1600px){
+
+  /* UNIFORM ACROSS ALL PAGES
+  ****************************************/
+  .logo{
+    height: 100px;
+    width: 110px;
+    box-shadow: 6px 6px 6px 6px #7947d6ff;
+    border-radius: 9px;
+    }
+    
+    .title{
+      font-size: 38px;  
+      }
+    
+    /* ABOUT PAGE STYLE
+****************************************/
+.title-heading{
+  font-size: 22px;
+}
+
+/******** MENU BAR **********/
+.dropdown{
+  display: none;
+}
+
+.hideonmobile{
+  display: inline-block;
+}
+
+.show{
+  display: inline-block;
+}
+
+
+}
+ 
+
+
+
+
+#22222222222222222222222222222222
+
+
+
+
+/******************** LANDING PAGE STYLE **************************
 .content-background{
   background-color: transparent;
   height: 300px;
@@ -98,40 +540,10 @@ a:hover{
   padding: 10px;
 }
 
-/**************** MENU BUTTONS STYLE ******************/
 
-.menu-bar{
-  margin: auto;
-}
 
-.menubtn a{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-content: space-between;
-  background-color: #7947d6ff;
-  -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
-  box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-  border: 1px dotted #f53a91ff; 
-  border-radius: 5px;
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 5px;
-  line-height: 1.5;
-  width: 100px;
-  height: 30px;
-  padding: 10px;
-}
-
-.menubtn a:hover, .menubtn a:focus{
-  background-color: #f53a91ff;
- border: 1px dotted #7947d6ff;
- transition-duration: 0.4s;
-}
-
-/*********POP UP WINDOW BEFORE STARTING THE GAME***********/
-.startgamepopup{
+*********POP UP WINDOW BEFORE STARTING THE GAME***********/
+/**.startgamepopup{
   display: none;
   font-size: 20px;
   font-weight: bold;
@@ -169,11 +581,12 @@ a:hover{
 
 #playertwo{
   display: none;
-}
+}**/
 /************ SOCIAL MEDIA ICONS *************/
 
 /**** WRAPPER *****/
-.icon-button {
+
+/**** .icon-button {
 	background-color:transparent;
 	border-radius: 5px;
 	display: inline-block;
@@ -187,8 +600,7 @@ a:hover{
 	        user-select: none;
 	width: 25px;
 }
-
-/**** CHANGE COLOR ON HOVER *****/
+CHANGE COLOR ON HOVER 
 .linkedin:hover, .linkedin:focus {
 	color: #0073a4;
 }
@@ -206,16 +618,16 @@ a:hover{
   font-size: large;
 }
 
-/* Icons */
+Icons 
  .fa-linkedin,
 .fa-square-twitter, 
 .fa-github,
  .fa-slack{
 	color: #131313ff;
-}
+}**/
 
 /******************** DROP DOWN MENU STYLE FOR MOBILE **************************/
-.dropdown{
+/**.dropdown{
   display: none;
 }
 
@@ -271,7 +683,7 @@ a:hover{
   padding: 10px;
 }
 
-
+**/
 
 
 /*
@@ -322,7 +734,7 @@ select:hover{
 */
 
 /********************  GAME PAGE STYLE **************************/
-
+/**
 .popup, .controls{
   display: flex;
   flex-direction: column;
@@ -421,9 +833,9 @@ font-size: 20px;
   padding: 10px;
   display: flex;
 }
-
+**/
 /******************** ABOUT PAGE STYLE **************************/
-.about-background{
+/**.about-background{
   background-color: transparent;
   -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #131313ff, -14px -9px 35px 2px #131313ff; 
   box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px 131313ff, -14px -9px 35px 2px #131313ff; 
@@ -438,55 +850,17 @@ font-size: 20px;
    text-align: center;
   }
 
-.content{
-    background-color: #f3eaf3ff;
-    border: 3px solid #f53a91ff;
-    border-radius: 5px;
-    height: 480px;
-    width: auto;
-    margin: auto;
-    padding: 5px;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-
-.content p{
-  margin: 5px;
-  padding: 5px;
-  font-size: 12px;
-  letter-spacing: normal;
-  line-height: 1.2;
-
-}
-
-.content div, ul{
-  border: transparent;
-  box-shadow: 2px 2px 2px 2px #7947d6ff;
-  border-radius: 5px;
-}
-
-ul{
-  margin: 15px;
-  padding: 5px;
-  font-size: 12px;
-  letter-spacing: normal;
-  line-height: 1.2;
-}
-
+**/
 
 /***************** CONTACT PAGE ************************/
-.content-background{
+/**.content-background{
   background-color: transparent;
   -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #131313ff, -14px -9px 35px 2px #131313ff; 
   box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px 131313ff, -14px -9px 35px 2px #131313ff; 
   height: 400px;
   }
 
-.menu-allign{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  }
+
 
   header h1{
     font-size: 16px;
@@ -524,9 +898,9 @@ ul{
   input, textarea{
     border: 1px solid #7947d6ff;
     border-radius: 5px;
-  }
+  }**/
   /*** POP UP WINDOW STYLE ***/
-.popwindow{
+/**.popwindow{
 display: none;
 font-size: 16px;
 font-weight: bold;
@@ -537,13 +911,12 @@ height: 50px;
 width: 200px;
 margin:auto;
 padding: 10px;
-}
+}***/
 
 
-/***************** MEDIA QUERY FOR TABLET ************************/
-@media only screen and (min-width: 600px){
 
-  /*** GLOBAL BACKGROUND ***/
+
+  GLOBAL BACKGROUND ***/
  /* #game-background{
     background-color: #7947d6ff;
     -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
@@ -553,7 +926,7 @@ padding: 10px;
     }*/
   
   /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
-  .content-background{
+/**  .content-background{
     background-color: transparent;
     height: 800px;
     width: 600px;
@@ -574,10 +947,8 @@ padding: 10px;
     border-radius: 8px;
     }
 
-  .title{
-    font-size: 20px;
-  }
-  
+ 
+  **/
   /*h1{
     margin: 15px;
     padding: 15px;
@@ -607,7 +978,7 @@ padding: 10px;
     padding: 50px;
   }
   /*** HOME PAGE STYLE ***/
-   .dropdown{
+  /** .dropdown{
     display: none;
   }
 
@@ -622,7 +993,7 @@ padding: 10px;
     box-shadow:  1px -6px 14px 6px #131313ff, -10px -8px 32px 2px #131313ff;  
     padding: 15px;
     width: 180px; 
-  }
+  }**/
 
   /*.menubtn div{
     font-size: 25px;
@@ -631,9 +1002,7 @@ padding: 10px;
 
 
   /******************** CONTACT PAGE **************************/
-  .menu-allign{
-    
-    }
+ /** 
 
   .menu-inrow a{
     display: inline;
@@ -655,7 +1024,7 @@ padding: 10px;
     background-color: #f53a91ff;
     transition-duration: 0.4s;
   }
-  
+  **/
 /*
   button{
     border: 3px solid #f53a91ff;
@@ -685,24 +1054,21 @@ padding: 10px;
   background-color: #f53a91ff;
   box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
   color: #131313ff;
-}*/
-}
-/***************** MEDIA QUERY FOR DESKTOP ************************/
-@media only screen and (min-width: 1080px){
- /* #game-background{
+}*
+
+
+ #game-background{
     background-color: #7947d6ff;
     -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
     box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
     margin: 80px;
     padding: 0px;
     }
-*/
-  .title{
-      font-size: 50px;
-    }
 
+  
+*/
   /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
-  .content-background{
+ /** .content-background{
     background-color: pink;
     height: 600px;
     width: 400px;
@@ -719,7 +1085,7 @@ padding: 10px;
     -webkit-box-shadow: 8px 8px 8px 8px #7947d6ff;
     box-shadow: 8px 8px 8px 8px #7947d6ff;
     }
-
+**/
   
 
 
@@ -739,7 +1105,7 @@ padding: 10px;
 
 
   /*** HOME PAGE STYLE ***/
-  .content-background{
+  /***.content-background{
     background-color: transparent;
     height: 700px;
     width: 500px;
@@ -762,7 +1128,7 @@ padding: 10px;
     box-shadow:  3px -9px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;  
     width: 200px; 
     margin: 60px;
-  }
+  }***/
 /*
   .menubtn{
     font-size: 40px;
@@ -773,7 +1139,7 @@ padding: 10px;
 */
   /******************** CONTACT PAGE **************************/
 
-
+/**
   .menu-inrow a{
     display: inline;
     background-color: #7947d6ff;
@@ -798,3 +1164,4 @@ padding: 10px;
   
 
 }
+**/
