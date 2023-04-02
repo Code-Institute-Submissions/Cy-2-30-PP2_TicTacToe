@@ -18,7 +18,7 @@
   }
 
 main{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Kalam', 'Caveat', cursive;
     color: #131313ff;
     height: 100vh;
     padding-top: 1px;
@@ -41,17 +41,15 @@ i{
   font-weight: bolder;
 }
 
-h1,
-button, 
-input, 
-select, 
-option, 
-ul, li,
-textarea, 
-.title-heading{
-  font-family: 'Kalam', 'Caveat', cursive;
+.contentbox p, .contentbox ul{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+#background{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /********************************************************
 * BACKGROUND ANIMATION 
 * The code extracted from https://stackoverflow.com/
@@ -141,7 +139,11 @@ body {
 
 /******* MENU BUTTONS STYLE *******/
 .menu-bar{
-  margin: ;
+  font-family: 'Kalam', 'Caveat', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 1.5;
 }
 
 .menu-bar div{
@@ -150,12 +152,8 @@ body {
   box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
   border: 1px dotted #f53a91ff; 
   border-radius: 5px;
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-weight: bold;
   margin: 35px;
   width: 140px;
-  line-height: 1.5;
   height: 30px;
   padding: 10px;
 }
@@ -240,7 +238,66 @@ ul{
 /****************************************
 * CONTACT PAGE STYLE
 ****************************************/
+input,
+textarea,
+button{
+  font-family: 'Kalam', 'Caveat', cursive;
+  padding: 3px;
+  margin:3px;
+}
 
+input, textarea{
+  width: 180px;
+}
+
+fieldset{
+  border: none;
+}
+
+form{
+  background-color: #f3eaf3ff;
+  border: 3px solid #f53a91ff;
+  border-radius: 5px;
+  height: 300px;
+  width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.formbtn button{
+  display: inline;
+  font-weight: bold;
+  background-color: #7947d6ff;
+  border: 1px solid #f53a91ff;
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+  padding: 5px;
+}
+
+.formbtn button:hover, .formbtn button:focus {
+  background-color: #f53a91ff;
+  border: 1px solid #7947d6ff;
+}
+
+input, textarea{
+  border: 1px solid #7947d6ff;
+  border-radius: 5px;
+}
+
+/*** POP UP WINDOW STYLE ***/
+.popwindow{
+display: none;
+font-size: 16px;
+font-weight: bold;
+background-color: #04d9faff;
+border: 1px dotted #f53a91ff;
+border-radius: 10px;
+height: 50px;
+width: 200px;
+margin: auto;
+padding: 10px;
+}
 
 
 
@@ -281,7 +338,7 @@ ul{
 @media only screen and (min-width: 480px){
 
   /* LOGO & TITLE STYLING 
-  ****************************************/
+  ************************/
   .logo{
       height: 70px;
       width: 85px;
@@ -295,7 +352,7 @@ ul{
 
 
   /* TRANSPARENT BACKGROUND
-  ***************************/
+  **************************/
   #background{
     height: 650px;
     width: 450px;
@@ -304,7 +361,7 @@ ul{
 
 
 /* ABOUT PAGE STYLE
-****************************************/
+********************/
   .dropdown{
     display: none;
   }
@@ -320,13 +377,12 @@ ul{
   .title-heading{
     font-size: 16px;
   }
- /* 
- *************************/
+
 
 
 
   /* Content Page Background
-  **************************/  
+  ***************************/  
   .content{
     border: 2px solid #f53a91ff;
     border-radius: 6px;
@@ -336,6 +392,47 @@ ul{
     padding: 6px;
     }
 
+  /* CONTACT PAGE STYLE
+  ****************************************/
+  input,
+  textarea,
+  button{
+    padding: 4px;
+    margin: 4px;
+    }
+    
+    input, textarea{
+      width: 200px;
+    }
+
+  form{
+    border: 4px solid #f53a91ff;
+    border-radius: 6px;
+    font-size: 14px;
+    height: 320px;
+    width: 240px;
+    padding: 20px;
+    }
+    
+    .formbtn button{
+      border-radius: 6px;
+      height: 32px;
+      width: 64px;
+      padding: 6px;
+    }
+    
+    input, textarea{
+      border-radius: 6px;
+    }
+    
+    /*** POP UP WINDOW STYLE ***/
+    .popwindow{
+    font-size: 18px;
+    border-radius: 11px;
+    height: 55px;
+    width: 210px;
+    padding: 11px;
+    }
 
 }
 
@@ -404,7 +501,51 @@ ul{
 }
 
 
+/* CONTACT PAGE STYLE
+  ****************************************/
+  fieldset{
+    border: 1px solid #6f00ffff;
+    padding: 10px;
+  }
 
+  input,
+  textarea,
+  button{
+    padding: 5px;
+    margin: 5px;
+    }
+    
+    input, textarea{
+      width: 220px;
+    }
+
+  form{
+    border-radius: 8px;
+    font-size: 16px;
+    height: 340px;
+    width: 280px;
+    padding: 40px;
+    }
+    
+    .formbtn button{
+      border-radius: 7px;
+      height: 34px;
+      width: 68px;
+      padding: 7px;
+    }
+    
+    input, textarea{
+      border-radius: 7px;
+    }
+    
+    /*** POP UP WINDOW STYLE ***/
+    .popwindow{
+    font-size: 20px;
+    border-radius: 12px;
+    height: 60px;
+    width: 220px;
+    padding: 12px;
+    }
   
 
 
@@ -432,8 +573,8 @@ ul{
   /* TRANSPARENT BACKGROUND
   *************************/
   #background{
-      height: 1100px;
-      width: 1250px;
+      height: 1000px;
+      width: 1000px;
       margin: auto;
       }
 
@@ -465,10 +606,55 @@ ul{
     height: 1000px;
     width: 1150px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
   }
 
+/* CONTACT PAGE STYLE
+  ****************************************/
+  fieldset{
+    border: 2px solid #6f00ffff;
+    padding: 15px;
+  }
 
+  input,
+  textarea,
+  button{
+    padding: 10px;
+    margin: 10px;
+    }
+    
+    input, textarea{
+      width: 230px;
+    }
+
+  form{
+    border-radius: 10px;
+    font-size: 18px;
+    height: 440px;
+    width: 320px;
+    padding: 50px;
+    }
+    
+    .formbtn button{
+      border-radius: 8px;
+      height: 36px;
+      width: 70px;
+      padding: 8px;
+    }
+    
+    input, textarea{
+      border-radius: 8px;
+    }
+    
+    /*** POP UP WINDOW STYLE ***/
+    .popwindow{
+    font-size: 22px;
+    border-radius: 14px;
+    height: 60px;
+    width: 240px;
+    padding: 14px;
+    }
+  
 }
 
 
@@ -866,53 +1052,7 @@ font-size: 20px;
     font-size: 16px;
   }
 
-  fieldset{
-    border: none;
-  }
-
-  form{
-    background-color: #f3eaf3ff;
-    border: 3px solid #f53a91ff;
-    border-radius: 5px;
-    height: fit-content;
-    width: fit-content;
-    margin-left: 5px;
-    padding: 5px;
-  }
-
-  .formbtn button{
-    display: inline;
-    font-weight: bold;
-    background-color: #7947d6ff;
-    border: 1px solid #f53a91ff;
-    height: 30px;
-    width: 40px;
-    padding: 5px;
-  }
-
-  .formbtn button:hover, .formbtn button:focus{
-    background-color: #f53a91ff;
-    border: 1px solid #7947d6ff;
-  }
-
-  input, textarea{
-    border: 1px solid #7947d6ff;
-    border-radius: 5px;
-  }**/
-  /*** POP UP WINDOW STYLE ***/
-/**.popwindow{
-display: none;
-font-size: 16px;
-font-weight: bold;
-background-color: #04d9faff;
-border: 1px dotted #f53a91ff;
-border-radius: 10px;
-height: 50px;
-width: 200px;
-margin:auto;
-padding: 10px;
-}***/
-
+  
 
 
 
