@@ -24,6 +24,10 @@ Welcome to my second project. The project is to showcase what I have learned so 
     3. [Game Page](#game-page)
     4. [Contact Page](#contact-page)
 6. [Features](#features)
+    1. [Landing Page](#landing-page)
+    2. [About Page](#about-page)
+    3. [Game Page](#game-page)
+    4. [Contact Page](#contact-page)
 7. [Technologies](#technologies)
     1. [Code Language](#technologies)
     2. [Frameworks and libraries](#technologies)
@@ -146,6 +150,41 @@ The game is built from mobile up. I have created a responsive breaking points on
 
 
 ## Features 
+The website site consist of the following features. 
+
+### Home Page
+
+### About Page
+
+### Game Page
+
+### Contant Page
+* There is a logo on the top center of the page. Both **About Page** and **Contact Page** have the same heading. 
+* For viewport below **480px** there is a drop down menu on the right coner.
+* The website game name is on the left, inline with the menu. 
+* There is a form for feedback. 
+* On submission there is a pop up window with "Thank you message".
+
+![](assets/images/contactPageLook/contactpage.png) 
+
+* There drop down menu changes color on hover.
+* The menu drops on focus.
+* Each menu option lead to a page in the website.
+
+![](assets/images/contactPageLook/dropdownmenu.png) 
+
+* For viewport of **770px** and above, there is a inline menu.
+* Each menu button changes color on hover.
+* Each button lead to it's respective link in the website.
+
+![](assets/images/contactPageLook/inlinemenu.png) 
+
+* On form submission there is a pop up message. 
+* The message fade away in 10sec.
+
+![](assets/images/contactPageLook/popupwindow.png) 
+
+
 
 ### Controls
 
