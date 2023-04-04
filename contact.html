@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-------------------------- GOOGLE FONTS ----------------------------->
+        <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@700&display=swap" rel="stylesheet">
-        <!---------------------- FONTAWESOME ICONS ---------------------------->
+        <!-- FONTAWESOME ICONS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!------------------------- CSS STYLE LINK FILE ----------------------->
+        <!-- CSS STYLE LINK FILE -->
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Tic Tac Toe</title>
         <script>
@@ -18,14 +18,14 @@
               * Code extracted from https://www.w3schools.com/
             ****************************************************
 
-          /********** DROP DOWN ON HOVER CLICK! **************/
+          ********** DROP DOWN ON HOVER CLICK! **************/
           function myFunction(){
               document.getElementById('DropDown').classList.toggle('show');
           }
 
           window.onclick = function(event){
               if(!event.target.matches('.dropmenu')){
-                  var dropdowns = document.getElementsByClassName('dropdown-content')
+                  var dropdowns = document.getElementsByClassName('dropdown-content');
                   var i;
                   for(i = 0; i < dropdowns.length; i++){
                       var openDropdown = dropdowns[i];
@@ -34,8 +34,9 @@
                       }
                   }
               }
-          }
+          };
 
+          /********** POP UP MESSAGE AFTER FORM SUBMISSION **************/
           function popFunction(){
               document.getElementById('popup').classList.toggle('alertwindow');
           }
@@ -44,75 +45,76 @@
 
     <body>
         <main id="background" class="content-background">
-          <!-------------------------- LOGO, TITLE & MENU BAR ----------------------------->
+          <!-- LOGO, TITLE & MENU BAR -->
           <header class="menu">
             <div class="title">
               <h1>  
                 <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="logo image">
               </h1>
             </div>  
-
+          
             <div class="menu-allign">
               <div class="title menu-allign">
                 <p class="title-heading heading" >Tic Tac Toe!</p>
-            </div>
-
-              <!------------------------------------------------
-              - Code extracted from https://www.w3schools.com/
-              --------------------------------------------------
-
-              --- DROP DOWN FOR MOBILE MENU --->
-            <nav class="nav-bar menu-allign" id="menu-allign">
-              <div class="dropdown">
-                <button onclick="myFunction()" class="dropmenu">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-                <div id="DropDown" class="dropdown-content dropmenu">
-                  <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
-                  <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
-                  <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
-                  <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
-                </div>
-              </div> 
-
-              <!--- MENU BAR FOR 600XP UP --->
-              <div class="menu-inrow hideonmobile">
-                <div class="rowbtn">
-                  <a href="home.html" aria-label="The link leads to home page">Home</a>
-                </div>
-                <div class="rowbtn">
-                  <a href="about.html" aria-label="The link leads to about page">About</a>
-                </div>
-                <div class="rowbtn">
-                  <a href="index.html" aria-label="The link leads to game page">Game</a>
-                </div>
-                <div class="rowbtn">
-                  <a href="contact.html" aria-label="The link leads to contact page">Contact</a> 
-                </div>     
               </div>
-            </nav> 
+          
+              <!--
+              - Code extracted from https://www.w3schools.com/
+              -
+              -
+              - DROP DOWN FOR MOBILE MENU -->
+              <nav class="nav-bar menu-allign" id="menu-allign">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropmenu">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                  <div id="DropDown" class="dropdown-content dropmenu">
+                    <a class="home" href="home.html" aria-label="The link leads to home page">Home</a>
+                    <a class="about" href="about.html" aria-label="The link leads to about page">About</a>
+                    <a class="game" href="index.html" aria-label="The link leads to game page">Game</a>
+                    <a class="contact" href="contact.html" aria-label="The link leads to contact page">Contact</a> 
+                  </div>
+                </div> 
+
+                <!-- MENU BAR FOR 770XP UP -->
+                <div class="menu-inrow hideonmobile">
+                  <div class="rowbtn">
+                    <a href="home.html" aria-label="The link leads to home page">Home</a>
+                  </div>
+                  <div class="rowbtn">
+                    <a href="about.html" aria-label="The link leads to about page">About</a>
+                  </div>
+                  <div class="rowbtn">
+                    <a href="index.html" aria-label="The link leads to game page">Game</a>
+                  </div>
+                  <div class="rowbtn">
+                    <a href="contact.html" aria-label="The link leads to contact page">Contact</a> 
+                  </div>     
+                </div>
+              </nav> 
+            </div>
           </header>
 
-          <!-------------------------- FORM & SUBMISSION POP UP WINDOW ----------------------------->
-          <section class="form">
-            <form class="form" action="contact.html" target="_parent" method="get" onclick="popFunction()">
+          <!-- FORM & SUBMISSION POP UP WINDOW -->
+          <div class="form">
+            <form class="form" action="#" target="_parent" method="get" onclick="popFunction()">
               <fieldset>
                   <legend>Contact us here</legend>
                     <div class="inputbtn">
                       <div>
-                        <input id="name" name="name" type="text" class="formbtn" value="" size="23" tabindex="" placeholder="Full Name">
+                        <input id="name" name="name" type="text" class="formbtn" size="23" placeholder="Full Name">
                       </div>
                       
                       <div>
-                        <input id="email" name="email" type="email" class="formbtn" spellcheck="false" value="" size="23" maxlength="28" tabindex="" placeholder="example@me.ie"> 
+                        <input id="email" name="email" type="email" class="formbtn" spellcheck="false" size="23" maxlength="28" placeholder="example@me.ie"> 
                       </div>
 
                       <div>
-                        <input id="messagehd" name="messagehd" type="text" class="formbtn" value="" size="23" tabindex="" placeholder="Message Heading">
+                        <input id="messagehd" name="messagehd" type="text" class="formbtn" size="23" placeholder="Message Heading">
                       </div>
 
                       <div>
-                        <textarea id="messageare" name="messagearea" class="formbtn" spellcheck="true" rows="5" cols="20" tabindex="" placeholder="Write to us..."></textarea>
+                        <textarea id="messageare" name="messagearea" class="formbtn" spellcheck="true" rows="5" cols="20" placeholder="Write to us..."></textarea>
                       </div>
                     </div>
 
@@ -126,10 +128,10 @@
             <div class="popwindow" id="popup">
               <p>Thank you for your feedback.</p>
             </div>
-          </section>
+          </div>
         </main>
         
-        <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
+        <!--JAVASCRIPT SCRIPT -->
         <script src="/assets/js/script.js"></script>  
     </body>
 </html>

@@ -29,11 +29,12 @@ Welcome to my second project. The project is to showcase what I have learned so 
     3. [Game Page](#game-page)
     4. [Contact Page](#contact-page)
 7. [Technologies](#technologies)
-    1. [Code Language](#technologies)
-    2. [Frameworks and libraries](#technologies)
-    3. [General](#technologies)
+    1. [Code Languages](#code-languages)
+    2. [Frameworks Used](#frmaework-used)
+    3. [Extra Support](#extra-support)
     4. [Technologies used for testing](#technologies-used-for-testing)
 8. [Testing](#testing)
+    1. [Debugging](#debugging)
 13. [Code Validation](#code-validation)
 14. [Acknowledgement](#acknowledgement)
 
@@ -100,7 +101,7 @@ I choose to used **Google Fonts** **Caveat** paired with **Kalam**  and **Cursiv
 
 ## Wireframe 
 There are four platform created for the game. First, it is the landing page with menu options leading **About**, **Game** and **Contact**. Choose not to include the landing page on this menu, as the user would already be on. However other pages with the menu bar, there is an option for the landing page.
-
+ 
 
 ### Landing Page
 * It has icon and name of the game.
@@ -145,16 +146,19 @@ The game is built from mobile up. I have created a responsive breaking points on
 * __Game Page__ - Is the same across all viewports with breaking points to fit each difference. 
 * __Contact Page__ - the mobile has a dropdown menu and **600px** going up has an inline menu bar.
 
-![](assets/wireframe/TabletView-19kb-540x771.png) 
+![ ](assets/wireframe/TabletView-19kb-540x771.png) 
+
+[Table of Content](#table-of-content):arrow_up: 
 
 
 
 ## Features 
-The website site consist of the following features. 
+The website consist of the following features. 
 
 ### Home Page
 
 ### About Page
+![](assets/images) 
 
 ### Game Page
 
@@ -165,32 +169,133 @@ The website site consist of the following features.
 * There is a form for feedback. 
 * On submission there is a pop up window with "Thank you message".
 
-![](assets/images/contactPageLook/contactpage.png) 
+![](assets/images/finishedlook/contactPageLook/contactpage.pngg) 
 
 * There drop down menu changes color on hover.
 * The menu drops on focus.
 * Each menu option lead to a page in the website.
 
-![](assets/images/contactPageLook/dropdownmenu.png) 
+![](assets/images/finishedlook/contactPageLook/dropdownmenu.png) 
 
 * For viewport of **770px** and above, there is a inline menu.
 * Each menu button changes color on hover.
 * Each button lead to it's respective link in the website.
 
-![](assets/images/contactPageLook/inlinemenu.png) 
+![](assets/images/finishedlook/contactPageLook/inlinemenu.png) 
 
 * On form submission there is a pop up message. 
 * The message fade away in 10sec.
 
-![](assets/images/contactPageLook/popupwindow.png) 
+![](assets/images/finishedlook/contactPageLook/popupwindow.png) 
+
+[Table of Content](#table-of-content):arrow_up: 
 
 
 
-### Controls
+### Technologies
+
+#### __Languages Used__
+* __HTML__
+* __CSS__
+* __JavaScript__
+
+#### __Frameworks Used__
+* [Google Fonts](https://fonts.google.com/) - used one of thier fonts as a choice of fonts.
+* [Font Awesome](https://fontawesome.com/) - used to ad social media icons.
+* [Balsamiq](https://balsamiq.com/) - used to create the wireframe.
+* [Git Pages](https://pages.github.com/) - used to deploy the game pages. 
+* [GitHub](https://github.com/Cy-2-30/PP2_XO_game) - used for the repository and progress across the project.  
+* [GotPod](https://gitpod.io/workspaces) - used the platform to build the project.
+
+#### __Extra Support__
+* Code
+    * [w3schools](https:https://www.w3schools.com/)
+    * [Code Pen](https://codepen.io//)
+    * [Stack Overflow](https://stackoverflow.com/) 
+    * [W3](https://www.w3.org/)
+    * [Hobo Web](https://www.hobo-web.co.uk/)
+    * [Geeks For Geeks](https://www.geeksforgeeks.org/)
+    * [CSS Tricks](https://css-tricks.com/)
+    * [Mdn](https://developer.mozilla.org/)
+* Code Game Sample
+    * [JavaScript Academy](https://youtu.be/B3pmT7Cpi24)
+    * [Coding Artist](https://youtu.be/al_AgC2NSCo) 
+    * [Coding With Siphiwo](https://www.youtube.com/watch?v=oZrp3Atkz18) 
+    * [Bro Code](https://www.youtube.com/watch?v=AnmwHjpEhtA) 
+
+
+### Technologies used for testing
+* [Resposive Design Checker](https://ui.dev/)  - Checking Responsiveness
+* [W3C Markup Validator](https://validator.w3.org/) - Checking HTML file.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Checking CSS file.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Testing code, responsiveness and debugging as I build.
+* [CodePen](https://codepen.io//) - Putting different code snippents and trying them out.
+* [jshint](https://jshint.com/) - Checking JavaScript code.
+
+
+[Table of Content](#table-of-content):arrow_up: 
 
 
 
 
+## Testing 
 
+### Debugging Resolutions
+Because of time contrains I did not have enough time to fix all the bugs. Will be fixed on future release. Some of the features could not be impleted and would be implemented on the next release. 
+
+| Bugs                                  | Resolved|  Resolution                 |
+| ---   | --- | --- |
+| The log image margin not the same         | No   |    |
+| ---   | --- | --- |
+| Submission pop up - pop up as you fill the form           | No |  |
+| ---   | --- | --- |
+| Drop down menu not responsive on click        | No |  |
+| ---   | --- | --- |
+| Content (first paragraph including image) from 770px on about me page is not showing   | No |  |
+| ---   | --- | --- |
+| The menu bar could be styled and logo not responsive to selectors styling   | Yes | Had to coment out the css style file and rebuild everyting |
+| ---   | --- | --- |
+| GitHub Pages could not enforce the https to open the page   | Still in progress | Contacted **Student Support** and they could not help but referred me to contact **GitHub**  Had to contact [NameCheap](https://ap.www.namecheap.com/) support to request for help(Not Resolve). I had to contact [GitHub Support](https://support.github.com/) but still waiting for response.  |
+| The form was flickering on the click of submission button   | Yes | Removed the action link |
+| ---   | --- | --- |
+| There is a big gap next to the paragraph image on about page from 1280px  | No |  |
+| ---   | --- | --- |
+| The content on the about page overflows the background container   | No |  |
+| ---   | --- | --- |
+
+
+
+#### Not implemented
+* There supposed to be multiple icons on the landing page but only added 4 icons.
+* On the game page there was meant to be life and time counter but could not be implemented
+
+#### Extra features
+* There are images added on the about page and not in the initial wireframe.
+
+#### Changed implementations 
+* The logo was supposed to be alligned with the image logo but changed it to be on top of the menu bar. 
+* on the game buttons there was supposed to be exit link button and home button link. Because both were leading to the same page, home button was changed to info icon link leading to about page.  
+
+
+
+
+## Code Validation
+
+
+### About Page  
+![](assets/images/validation/aboutpage/aboutpageerror.png)
+
+![](assets/images/validation/aboutpage/aboutpagepass.png)
+
+### Contact Page 
+![](assets/images/validation/contactpage/contactpageerrors.png)
+
+![](assets/images/validation/contactpage/contactpagepass.png)
+
+![](assets/images/validation/contactpage/jserror.png)
+
+![](assets/images/validation/contactpage/internaljspass.png)
+
+14. [Acknowledgement]
 
 
