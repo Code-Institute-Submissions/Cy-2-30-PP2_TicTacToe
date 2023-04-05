@@ -7,7 +7,7 @@
 Welcome to my second project. The project is to showcase what I have learned so far with **HTML** , **CSS** and **JavaScript** programming languages. Is to apply everything learned into pratical live project. For this project I chose to create a **Tic Tac Toe** game. Something so simple and yet many enyoy playing, to distress! The logo above I wanted it to represent all the color combination of the website. And as the game is about **X** and **O**, I thought it would be fitting to create the logo that best represents the game. I saw it fit to display JavaScript functions I have learned so far using this game. I wanted to create something fun and enjoyable for a distressor, while applying my skills
 
 ![Website look]()
-[Github](https:)
+[Github][def]
 
 
 
@@ -299,3 +299,6 @@ Because of time contrains I did not have enough time to fix all the bugs. Will b
 14. [Acknowledgement]
 
 
+
+
+[def]: https:

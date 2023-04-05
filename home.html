@@ -5,44 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-------------------------- GOOGLE FONTS ----------------------------->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@700&display=swap" rel="stylesheet">
-    <!---------------------- FONTAWESOME ICONS ---------------------------->
+    <!-- FONTAWESOME ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!------------------------- CSS STYLE LINK FILE ----------------------->
+    <!-- CSS STYLE LINK FILE -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tic Tac Toe Game</title>
 </head>
 
 <body>
     <main id="background">
-        <!-------------------------- LOGO & TITLE ----------------------------->
+        <!-- LOGO & TITLE -->
         <section class="title">
             <h1>
                 <img class="logo" src="assets/images/logo-6kb-250x250.png" alt="Logo image">
             </h1>
             <p>Tic Tac Toe!</p>
         </section>
-        <!-------------------------- HELP & EXIT BUTTONS ----------------------------->
+        <!-- HELP & EXIT BUTTONS -->
         <section>
             <div class="control-options gamebtn">
                 <a href="about.html" class="menubtn" aria-label="Leads to about page"></a>
                 <i class="fa-solid fa-info fa-bounce"></i>
-                </button>
                 </a>
             </div>
             <div class="exitbtn">
                 <a href="home.html" class="menubtn" aria-label="Leads to page page">
                     <button id="exitbtn" action="home.html" class="gamebtn">
                             <i class="fa-solid fa-arrow-right-from-bracket fa-shake"></i>
-                        </button>
+                    </button>
                 </a>
             </div>
         </section>
 
-        <!-------------------------- GAME CONTAINER & CONTROLS ----------------------------->
+        <!-- GAME CONTAINER & CONTROLS -->
         <div class="tablet-border ">
 
             <section class="playername-holder"></section>
@@ -50,15 +49,15 @@
             <section class="popup hide"></section>
 
             <section class="game-board">
-                <div class="tile" cellindex="0"></div>
-                <div class="tile" cellindex="1"></div>
-                <div class="tile" cellindex="2"></div>
-                <div class="tile" cellindex="3"></div>
-                <div class="tile" cellindex="4"></div>
-                <div class="tile" cellindex="5"></div>
-                <div class="tile" cellindex="6"></div>
-                <div class="tile" cellindex="7"></div>
-                <div class="tile" cellindex="8"></div>
+                <div class="tile" id="0"></div>
+                <div class="tile" id="1"></div>
+                <div class="tile" id="2"></div>
+                <div class="tile" id="3"></div>
+                <div class="tile" id="4"></div>
+                <div class="tile" id="5"></div>
+                <div class="tile" id="6"></div>
+                <div class="tile" id="7"></div>
+                <div class="tile" id="8"></div>
             </section>
 
             <section class="controls">
