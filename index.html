@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-------------------------- GOOGLE FONTS ----------------------------->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!---------------------- FONTAWESOME ICONS ---------------------------->
+    <!-- FONTAWESOME ICONS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <!------------------------- CSS STYLE LINK FILE ----------------------->
+    <!-- CSS STYLE LINK FILE -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Tic Tac Toe Game</title>
   </head>
 
   <body>
     <main id="background">
-      <!-------------------------- LOGO & TITLE ----------------------------->
-      <section class="title">
+      <!--LOGO & TITLE -->
+      <div class="title">
         <h1>
           <img
             class="logo"
@@ -33,76 +33,99 @@
           />
         </h1>
         <p>Tic Tac Toe!</p>
-      </section>
+      </div>
+      <div class="menubackground">
+        <!--MENU BUTTONS -->
+        <div class="menu-bar">
+          <div class="menubtn">
+            <a
+              href="about.html"
+              class="menubtn."
+              aria-label="Leads to about page"
+              >About</a
+            >
+          </div>
 
-      <!-------------------------- MENU BUTTONS ----------------------------->
-      <section class="menu-bar">
-        <div class="menubtn">
-          <a href="about.html" class="menubtn." aria-label="Leads to about page"
-            >About</a
-          >
+          <div class="menubtn" onclick="">
+            <a
+              href="game.html"
+              class="menubtn."
+              aria-label="Leads to game options"
+              >Game</a
+            >
+          </div>
+          <div class="menubtn" onclick="contact.html">
+            <a
+              href="contact.html"
+              class="menubtn."
+              aria-label="Leads to contact page"
+              >Contact</a
+            >
+          </div>
         </div>
 
-        <div class="menubtn" onclick="">
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-media-icons">
           <a
-            href="game.html"
-            class="menubtn."
-            aria-label="Leads to game options"
-            >Game</a
+            href="https://www.linkedin.com/"
+            class="linkedin icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Click to follow us on linkedin (opens a new window)"
           >
-        </div>
-        <div class="menubtn" onclick="contact.html">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
           <a
-            href="contact.html"
-            class="menubtn."
-            aria-label="Leads to contact page"
-            >Contact</a
+            href="https://twitter.com/?lang=en"
+            class="twitter icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Click to follow us on twitter (opens a new window)"
           >
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://slack.com/"
+            class="Slack icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Click to follow us on slack (opens a new window)"
+          >
+            <i class="fa-brands fa-slack" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/"
+            class="github icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Click to follow us on github (opens a new window)"
+          >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            class="facebook icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Click to follow us on facebook (opens a new window)"
+          >
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+            ><span></span>
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            class="youtube icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Click to follow us on youtube (opens a new window)"
+          >
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i><span></span>
+          </a>
         </div>
-      </section>
-
-      <!-------------------------- SOCIAL MEDIA ICONS ----------------------------->
-      <section class="social-media-icons">
-        <a
-          href="https://www.linkedin.com/"
-          class="linkedin icon-button"
-          target="_blank"
-          rel="noopener"
-          aria-label="Click to follow us on linkedin (opens a new window)"
-        >
-          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-        </a>
-        <a
-          href="https://twitter.com/?lang=en"
-          class="twitter icon-button"
-          target="_blank"
-          rel="noopener"
-          aria-label="Click to follow us on twitter (opens a new window)"
-        >
-          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a
-          href="https://slack.com/"
-          class="Slack icon-button"
-          target="_blank"
-          rel="noopener"
-          aria-label="Click to follow us on slack (opens a new window)"
-        >
-          <i class="fa-brands fa-slack" aria-hidden="true"></i>
-        </a>
-        <a
-          href="https://github.com/"
-          class="github icon-button"
-          target="_blank"
-          rel="noopener"
-          aria-label="Click to follow us on github (opens a new window)"
-        >
-          <i class="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
-      </section>
+      </div>
     </main>
 
-    <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
+    <!--JAVASCRIPT SCRIPT -->
     <script src="/assets/js/script.js"></script>
   </body>
 </html>

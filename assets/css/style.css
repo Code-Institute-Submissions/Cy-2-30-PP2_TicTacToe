@@ -149,20 +149,20 @@ body {
 
 /******* MENU BUTTONS STYLE *******/
 
+.menubackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .menu-bar div {
     background-color: #7947d6ff;
-    -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-    box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+    box-shadow: 0px -3px 3px 3px #131313ff, -5px -4px 4px 1px #131313ff;
     border: 1px dotted #f53a91ff;
     border-radius: 5px;
-    margin: 35px;
-    width: 140px;
-    height: 30px;
-    padding: 10px;
-    font-size: 20px;
+    margin: 10px;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 5px;
-    line-height: 1.5;
 }
 
 .menubtn:hover,
@@ -173,42 +173,25 @@ body {
 }
 
 
-/************ SOCIAL MEDIA ICONS *************/
+/*********** SOCIAL MEDIA ICONS *************/
+
+.fa-brands {
+    font-size: 20px;
+}
 
 .icon-button {
     background-color: transparent;
     border-radius: 5px;
     display: inline-block;
-    height: 18px;
+    height: 20px;
     line-height: 1.2;
     margin: 5px;
     text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     width: 25px;
 }
 
-.linkedin:hover,
-.linkedin:focus {
-    color: #0073a4;
-}
-
-.twitter span:hover,
-.twitter span:focus {
-    color: #4099ff;
-}
-
-.slack span:hover,
-.slack span:focus {
-    color: linear-gradient(to right #36C5F0, #2EB67D, #E01E5A, #ECB22E);
-}
-
-.github span:hover,
-.github span:focus {
-    color: #131313ff;
-    font-size: large;
+.fa-brands:hover {
+    font-size: 26px;
 }
 
 Icons .fa-linkedin,
@@ -421,7 +404,7 @@ nav:hover {
     padding-left: 90px;
 }
 
-/ .tablet-border {
+.tablet-border {
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
     border-image-slice: 1;
@@ -438,23 +421,22 @@ nav:hover {
     height: 700px;
     width: 500px;
     margin: auto;
-    padding-left: 20px;
+}
+
+.menubackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu-bar div {
     font-size: 30px;
+    text-align: center;
     background-color: #7947d6ff;
-    -webkit-box-shadow: 18px -12px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;
     box-shadow: 3px -9px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;
-    width: 200px;
-    margin: 60px;
-}
-
-.menubtn {
-    font-size: 40px;
-    line-height: 50px;
-    border-radius: 8px;
-    padding: 20px;
+    width: 160px;
+    margin: 35px;
+    padding: 15px;
 }
 
 
@@ -765,29 +747,13 @@ textarea {
         margin: auto;
     }
     /******* MENU BUTTONS STYLE *******/
-    .menu-bar div {
-        background-color: #7947d6ff;
-        -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-        box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-        border: 1px dotted #f53a91ff;
-        border-radius: 5px;
-        margin: 35px;
-        width: 140px;
-        height: 30px;
-        padding: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: 5px;
-        line-height: 1.5;
-    }
-    .menubtn:hover,
-    .menubtn:focus {
-        background-color: #f53a91ff;
-        border: 1px dotted #6f00ffff;
-        transition-duration: 0.4s;
+    .menubackground {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     /* ABOUT PAGE STYLE
-  ********************/
+  *o******************/
     br {
         display: none;
     }
@@ -1284,32 +1250,11 @@ textarea {
     }
 }
 
-#22222222222222222222222222222222
+
 /******************** LANDING PAGE STYLE **************************
-.content-background{
-  background-color: transparent;
-  height: 300px;
-  width: 200px;
-  margin: auto;
-  padding: 10px;
-  padding-top: 20px;
-}
 
-#changetrasparecy{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  text-align: center;
-  margin: auto;
-  padding: 10px;
-}
-
-
-
-*********POP UP WINDOW BEFORE STARTING THE GAME***********/
-
-
-/**.startgamepopup{
+*********POP UP WINDOW BEFORE STARTING THE GAME***********
+.startgamepopup{
   display: none;
   font-size: 20px;
   font-weight: bold;
@@ -1321,7 +1266,6 @@ textarea {
   margin: auto;
   padding: 10px;
   }
-
   select, option{
   font-family: 'Kalam', cursive;
   background-color: transparent;
@@ -1329,75 +1273,21 @@ textarea {
   font-size: 16px;
   padding: 5px;
 }
-
 .popbtn{
   display: block;
   margin: 5px;
 }
-
 .popbtn button{
   margin: 5px;
   padding: 5px;
 }
-
 .popbtn button:hover, .popbtn button:focus{
   background-color: #f53a91ff;
   border: 1PX dotted #7947d6ff;  
 }
-
 #playertwo{
   display: none;
-}**/
-
-
-/************ SOCIAL MEDIA ICONS *************/
-
-
-/**** WRAPPER *****/
-
-
-/**** .icon-button {
-	background-color:transparent;
-	border-radius: 5px;
-	display: inline-block;
-	height: 18px;
-	line-height: 1.2;
-	margin: 5px;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 25px;
 }
-CHANGE COLOR ON HOVER 
-.linkedin:hover, .linkedin:focus {
-	color: #0073a4;
-}
-
-.twitter span:hover, .twitter span:focus {
-	color: #4099ff;
-}
-
-.slack span:hover, .slack span:focus {
-	color: linear-gradient(to right #36C5F0, #2EB67D, #E01E5A, #ECB22E);
-}
-
-.github span:hover, .github span:focus {
-	color: #131313ff;
-  font-size: large;
-}
-
-Icons 
- .fa-linkedin,
-.fa-square-twitter, 
-.fa-github,
- .fa-slack{
-	color: #131313ff;
-}**/
-
-**/
-/*
 
 
 #btn1 button{
@@ -1408,7 +1298,6 @@ Icons
   padding: 10px;
   width: fit-content;
 }
-
 #btn2 button{
   font-family: 'Kalam', cursive;
   background-color: transparent;
@@ -1417,38 +1306,27 @@ Icons
   padding: 10px;
   width: fit-content;
 }
-
 #btn1:hover{
   background-color: #7947d6ff;
   border-radius: 5px;
   width: 150px;
 }
-
 #btn2:hover{
   background-color: #7947d6ff;
   border-radius: 5px;
   width: 150px;
 }
-
 select:hover{
   background-color: #7947d6ff;
   border-radius: 5px;
   width: 150px;
 }
-
-
 .linebtwn-menu{
   margin: 0 2px 0 5px;
   padding: 0 5px 2px 2px;
   border-right: 1px solid #131313ff;
 }
-*/
-
-
-/********************  GAME PAGE STYLE **************************/
-
-
-/**
+********************  GAME PAGE STYLE **************************
 .popup, .controls{
   display: flex;
   flex-direction: column;
@@ -1457,7 +1335,6 @@ select:hover{
   font-size: 20px;
   padding: 5px
 }
-
 .game-board{
     margin: 0 auto;
     background-color: #04d9faff;
@@ -1467,7 +1344,6 @@ select:hover{
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
 }
-
 .gamebtn button{
   font-family: 'Caveat', cursive;
   background-color: #7947d6ff;
@@ -1478,8 +1354,6 @@ select:hover{
   height: 30px;
   padding: 5px;
 }
-
-
 .gamebtn button:hover, .gamebtn button:focus{
 background-color: #f53a91ff;
 border: px solid #7947d6ff;
@@ -1488,7 +1362,6 @@ transition-duration: 0.4s;
 width: 60px;
 font-size: 20px;
 }
-
 .border{
   background-color: #6f00ffff;
   -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
@@ -1497,7 +1370,6 @@ font-size: 20px;
   width: 350px;
   margin: auto;
 }
-
 .tile {
     border: 4px solid #f53a91ff;
     min-width: 99px;
@@ -1509,210 +1381,33 @@ font-size: 20px;
     cursor: pointer;
     margin: auto;
 }
-
 .tile:nth-child(1) {
   border-top: none;
 }
-
 .tile:nth-child(2) {
   border-top: none;
 }
-
 .tile:nth-child(3) {
   border-top: none;
 } 
-
 .tile:nth-child(odd) {
   border-right: none;
 }
-
 .tile:nth-child(even) {
   border-right: none;
 }
-
 .tile:nth-child(7) {
   border-bottom: none;
 }
-
 .tile:nth-child(8) {
   border-bottom: none;
 }
-
 .tile:nth-child(9) {
   border-bottom: none;
 }
-
 .controls{
   margin: 10px;
   padding: 10px;
   display: flex;
 }
-**/
-
-
-/******************** ABOUT PAGE STYLE **************************/
-
-h1 {
-    font-size: 14px;
-    padding: 5px;
-    text-align: center;
-}
-
-**/
-/***************** CONTACT PAGE ************************/
-
-header h1 {
-    font-size: 16px;
-}
-
-
-/* #game-background{
-    background-color: #7947d6ff;
-    -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
-    box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
-    margin: 80px;
-    padding: 0px;
-    }*/
-
-
-/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
-
-
-/**  .content-background{
-    background-color: transparent;
-    height: 800px;
-    width: 600px;
-    margin: auto;
-    padding: 15px;
-    padding-top: 20px;
-    }
-    
-  .content-background nav{
-    padding-left: 10px;
-  }
-
-
- 
- 
-
-  /*nav{
-    border: 3px solid #f53a91ff;
-    width: 110px;
-    height: 35px;
-    font-size: 20px;
-  }
-  
-  nav:hover{
-    width: 120px;
-    padding: 6px;
-  }
-
-  
-  .tablet-border{
-    border: 10px solid transparent;
-    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
-    border-image-slice: 1;
-    max-width: 500px;
-    margin: auto;
-    padding: 50px;
-  }
-  /*** HOME PAGE STYLE ***
-
-
-
-
-
-/******************** CONTACT PAGE **************************/
-
-
-/** 
-
-
-
- #game-background{
-    background-color: #7947d6ff;
-    -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff; 
-    box-shadow:  12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
-    margin: 80px;
-    padding: 0px;
-    }
-
-  
 */
-
-
-/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
-
-
-/** .content-background{
-    background-color: pink;
-    height: 600px;
-    width: 400px;
-    margin: auto;
-    padding: 15px;
-    padding-top: 20px;
-    }
-    
-  .content-background nav{
-    padding-left: 90px;
-  }
-
-**/
-
-
-/* .tablet-border{
-    border: 10px solid transparent;
-    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
-    border-image-slice: 1;
-    max-width: 700px;
-    margin: auto;
-    padding: 60px;
-  }
-
-  .tile {}*/
-
-
-/******************** LOGO, TITLE & MENU STYLE FOR MOBILE **************************/
-
-
-/*
-  .menubtn{
-    font-size: 40px;
-    line-height: 50px;
-    border-radius: 8px;
-    padding: 20px;
-  }
-*/
-
-
-/******************** CONTACT PAGE **************************/
-
-
-/**
-  .menu-inrow a{
-    display: inline;
-    background-color: #7947d6ff;
-    border-radius: 5px;
-    color: #131313ff;
-    border: 1px dotted #f53a91ff;
-    -webkit-box-shadow: 5px 5px 5px 5px #131313ff;
-    box-shadow: 5px 5px 5px 5px #131313ff;
-  }
-
-  .rowbtn{
-    display: inline;
-    font-size: 20px;
-    padding: 10px; 
-   
-  }
-
-  .rowbtn:hover, .rowbtn:focus {
-    background-color: #f53a91ff;
-    transition-duration: 0.4s;
-  }
-  
-
-}
-**/
-
-gdzsgvskjhiulewl/EFWLUGHFRUILERE
