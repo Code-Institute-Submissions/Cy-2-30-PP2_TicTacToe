@@ -16,35 +16,41 @@
 * {
     padding: 0;
     margin: 0;
-   }
+}
 
-  main{
+main {
     font-family: 'Kalam', 'Caveat', cursive;
     color: #131313ff;
     height: 100vh;
     padding-top: 1px;
-    } 
+}
 
-a{  
+a {
     text-decoration: none;
     color: #131313ff;
-    }
+}
 
-a:hover{
+a:hover {
     cursor: pointer;
-    }
+}
 
-em{
+em {
     font-weight: bold;
-    }
+}
 
-i{
+i {
     font-weight: bolder;
-    }
+}
 
-.contentbox p, .contentbox ul{
+.contentbox p,
+.contentbox ul {
     font-family: Arial, Helvetica, sans-serif;
-    }
+}
+
+br {
+    display: none;
+}
+
 
 /********************************************************
 * BACKGROUND ANIMATION 
@@ -54,135 +60,455 @@ i{
 body {
     background-position: 10px 10px, 10px 10px;
     background-size: 160px 160px;
-    background-image: linear-gradient(35deg, #04dafaff 25%, transparent 75%, transparent 50%, #04dafaff 75%, #04dafaff 100%),linear-gradient(95deg, #04dafaff 25%, #f53a91ff 30%, #f53a91ff 75%, #04dafaff 50%, #04dafaff 100%);
+    background-image: linear-gradient(35deg, #04dafaff 25%, transparent 75%, transparent 50%, #04dafaff 75%, #04dafaff 100%), linear-gradient(95deg, #04dafaff 25%, #f53a91ff 30%, #f53a91ff 75%, #04dafaff 50%, #04dafaff 100%);
     -webkit-animation: AnimateBG 20s ease infinite;
     animation: AnimateBG 20s ease infinite;
-    }
+}
 
 @-webkit-keyframes AnimateBG {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
-      }
-    100% {
-      background-position: 0% 50%;
-      }
+        background-position: 100% 50%;
     }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 @keyframes AnimateBG {
     0% {
-      background-position: 0% 50%;
-      }
-    50% {
-      background-position: 100% 50%;
-      }
-    100% {
-      background-position: 0% 50%;
-      }
+        background-position: 0% 50%;
     }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /*********************************************************************
 * TRANSPARENT BACKGROUND
 * The code is extracted from https://developer.mozilla.org/en-US/
 *********************************************************************/
 
-#background{
+#background {
     background-color: transparent;
-    -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 36px 28px 40px 18px#6f00ffff, -28px -18px 65px 4px #7947d6ff;; 
-    box-shadow:  18px -8px 20px 8px #131313ff, 36px 28px 40px 18px #6f00ffff, -14px -9px 35px 2px #131313ff; 
+    -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 36px 28px 40px 18px#6f00ffff, -28px -18px 65px 4px #7947d6ff;
+    ;
+    box-shadow: 18px -8px 20px 8px #131313ff, 36px 28px 40px 18px #6f00ffff, -14px -9px 35px 2px #131313ff;
     border-radius: 10px;
     height: 500px;
     width: 300px;
     margin: auto;
     padding: 10px;
-    }
+}
+
 
 /****************************************
 ****** RESPOSIVE AS PER VIEWPORT *******
 *****************************************
 
 *** LOGO STYLE ***/
-.logo{
+
+.logo {
     height: 60px;
     width: 75px;
     box-shadow: 2px 2px 2px 2px #7947d6ff;
     border-radius: 5px;
     padding: 0;
     margin-bottom: 20px;
-  }
+}
+
 
 /****************************************
 * HOME PAGE STYLE
 ****************************************/
 
+
 /*** LOGO & TITLE STYLE ***/
-.title{
+
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 30px;
     font-weight: bold;
     padding: 0;
-  }
+}
 
-.title-heading{
+.title-heading {
     font-size: 14px;
     font-weight: bold;
     padding: 0;
-  }
+}
+
 
 /******* MENU BUTTONS STYLE *******/
-.menu-bar{
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    line-height: 1.5;
-  }
 
-.menu-bar div{
+.menu-bar div {
     background-color: #7947d6ff;
-    -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
-    box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-    border: 1px dotted #f53a91ff; 
+    -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+    box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+    border: 1px dotted #f53a91ff;
     border-radius: 5px;
     margin: 35px;
     width: 140px;
     height: 30px;
     padding: 10px;
-  }
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 1.5;
+}
 
-.menubtn:hover, .menubtn:focus{
+.menubtn:hover,
+.menubtn:focus {
     background-color: #f53a91ff;
     border: 1px dotted #6f00ffff;
     transition-duration: 0.4s;
-    }
+}
+
+
+/************ SOCIAL MEDIA ICONS *************/
+
+.icon-button {
+    background-color: transparent;
+    border-radius: 5px;
+    display: inline-block;
+    height: 18px;
+    line-height: 1.2;
+    margin: 5px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 25px;
+}
+
+.linkedin:hover,
+.linkedin:focus {
+    color: #0073a4;
+}
+
+.twitter span:hover,
+.twitter span:focus {
+    color: #4099ff;
+}
+
+.slack span:hover,
+.slack span:focus {
+    color: linear-gradient(to right #36C5F0, #2EB67D, #E01E5A, #ECB22E);
+}
+
+.github span:hover,
+.github span:focus {
+    color: #131313ff;
+    font-size: large;
+}
+
+Icons .fa-linkedin,
+.fa-square-twitter,
+.fa-github,
+.fa-slack {
+    color: #131313ff;
+}
+
+#btn1 button {
+    font-family: 'Kalam', cursive;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    width: fit-content;
+}
+
+#btn2 button {
+    font-family: 'Kalam', cursive;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    width: fit-content;
+}
+
+#btn1:hover {
+    background-color: #7947d6ff;
+    border-radius: 5px;
+    width: 150px;
+}
+
+#btn2:hover {
+    background-color: #7947d6ff;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.linebtwn-menu {
+    margin: 0 2px 0 5px;
+    padding: 0 5px 2px 2px;
+    border-right: 1px solid #131313ff;
+}
+
+
+/********************  GAME PAGE STYLE **************************/
+
+.popup,
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px
+}
+
+.game-board {
+    margin: 0 auto;
+    background-color: #04d9faff;
+    box-shadow: -5px -5px 15px 5px #f53a91ff, 5px 5px 15px 7px #f53a91ff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.gamebtn button {
+    font-family: 'Caveat', cursive;
+    background-color: #7947d6ff;
+    border: 1px solid #f53a91ff;
+    color: #131313ff;
+    border-radius: 4px;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+
+.gamebtn button:hover,
+.gamebtn button:focus {
+    background-color: #f53a91ff;
+    border: px solid #7947d6ff;
+    color: #131313ff;
+    transition-duration: 0.4s;
+    width: 60px;
+    font-size: 20px;
+}
+
+.border {
+    background-color: #6f00ffff;
+    -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+    box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+    height: 80%vh;
+    width: 350px;
+    margin: auto;
+}
+
+.tile {
+    border: 4px solid #f53a91ff;
+    min-width: 99px;
+    min-height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.tile:nth-child(1) {
+    border-top: none;
+}
+
+.tile:nth-child(2) {
+    border-top: none;
+}
+
+.tile:nth-child(3) {
+    border-top: none;
+}
+
+.tile:nth-child(odd) {
+    border-right: none;
+}
+
+.tile:nth-child(even) {
+    border-right: none;
+}
+
+.tile:nth-child(7) {
+    border-bottom: none;
+}
+
+.tile:nth-child(8) {
+    border-bottom: none;
+}
+
+.tile:nth-child(9) {
+    border-bottom: none;
+}
+
+.controls {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+
+/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+
+.content-background {
+    background-color: transparent;
+    height: 800px;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    padding-top: 20px;
+}
+
+.content-background nav {
+    padding-left: 10px;
+}
+
+nav {
+    border: 3px solid #f53a91ff;
+    width: 110px;
+    height: 35px;
+    font-size: 20px;
+}
+
+nav:hover {
+    width: 120px;
+    padding: 6px;
+}
+
+.tablet-border {
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
+    border-image-slice: 1;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+}
+
+
+/******************** CONTACT PAGE **************************/
+
+#game-background {
+    background-color: #7947d6ff;
+    -webkit-box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
+    box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
+    margin: 80px;
+    padding: 0px;
+}
+
+
+/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+
+.content-background {
+    background-color: pink;
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    padding-top: 20px;
+}
+
+.content-background nav {
+    padding-left: 90px;
+}
+
+/ .tablet-border {
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
+    border-image-slice: 1;
+    max-width: 700px;
+    margin: auto;
+    padding: 60px;
+}
+
+
+/*** HOME PAGE STYLE ***/
+
+.content-background {
+    background-color: transparent;
+    height: 700px;
+    width: 500px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.menu-bar div {
+    font-size: 30px;
+    background-color: #7947d6ff;
+    -webkit-box-shadow: 18px -12px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;
+    box-shadow: 3px -9px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;
+    width: 200px;
+    margin: 60px;
+}
+
+.menubtn {
+    font-size: 40px;
+    line-height: 50px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+/******************** CONTACT PAGE **************************/
+
+.menu-inrow a {
+    display: inline;
+    background-color: #7947d6ff;
+    border-radius: 5px;
+    color: #131313ff;
+    border: 1px dotted #f53a91ff;
+    -webkit-box-shadow: 5px 5px 5px 5px #131313ff;
+    box-shadow: 5px 5px 5px 5px #131313ff;
+}
+
+.rowbtn {
+    display: inline;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.rowbtn:hover,
+.rowbtn:focus {
+    background-color: #f53a91ff;
+    transition-duration: 0.4s;
+}
+
 
 /****************************************
 * ABOUT PAGE STYLE
 ****************************************
 
 ************ DROP DOWN MENU ************/
-.menu-allign{
+
+.menu-allign {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    }
+}
 
-.dropdown-content{
+.dropdown-content {
     display: none;
-  }
+}
 
-.hideonmobile{
+.hideonmobile,
+.desktopimg {
     display: none;
-  }
+}
 
-.show{
+.show {
     display: block;
-  }
+}
 
-.dropmenu{
+.dropmenu {
     background-color: #7947d6ff;
     border-radius: 5px;
     color: #131313ff;
@@ -190,19 +516,20 @@ body {
     width: 50px;
     padding: 5px;
     border: 1px solid #f53a91ff;
-  }
+}
 
-.dropmenu:hover, .dropmenu:focus {
+.dropmenu:hover,
+.dropmenu:focus {
     background-color: #f53a91ff;
     border: 1px solid #6f00ffff;
-  }
+}
 
 .dropdown {
     position: relative;
     display: block;
-  }
+}
 
-.dropdown-content{
+.dropdown-content {
     display: inline-block;
     position: absolute;
     background-color: #f53a91ff;
@@ -210,20 +537,22 @@ body {
     min-width: 80px;
     overflow: auto;
     z-index: 1;
-  }
+}
 
 .dropdown-content a {
     text-align: center;
     padding: 5px;
     display: inline-block;
-  }
+}
 
 .dropdown a:hover {
     background-color: #7947d6ff;
-  }
+}
+
 
 /******* CONTENT HOLDER ***********/
-.content{
+
+.content {
     background-color: #f3eaf3ff;
     border: 1px dotted #f53a91ff;
     border-radius: 5px;
@@ -233,16 +562,16 @@ body {
     padding: 5px;
     overflow: hidden;
     overflow-y: scroll;
-  }
+}
 
-.pheading{
+.pheading {
     font-size: 16px;
     padding: 5px;
     text-align: center;
     text-transform: capitalize;
-    }
+}
 
-ul{
+ul {
     border: transparent;
     box-shadow: 2px 2px 2px 2px #6f00ffff;
     border-radius: 5px;
@@ -251,23 +580,23 @@ ul{
     font-size: 12px;
     letter-spacing: 1.5;
     line-height: 1.2;
-  }
+}
 
-  ul .list{
+ul .list {
     font-weight: lighter;
     list-style-position: inside;
     margin: 5px;
     padding: 5px;
-  }
-  
-  .infoimage img{
+}
+
+.infoimage img {
     height: 100px;
     width: 100px;
     margin-left: 80px;
-  }
+}
 
-.contentbox p{
-  border: transparent;
+.contentbox p {
+    border: transparent;
     box-shadow: 2px 2px 2px 2px #6f00ffff;
     border-radius: 5px;
     margin: 5px;
@@ -277,41 +606,60 @@ ul{
     line-height: 1.2;
 }
 
+
 /****************************************
 * GAME PAGE STYLE 
-****************************************
+*****************************************/
 
+.button {
+    border: 3px solid #f53a91ff;
+    width: 60px;
+    height: 35px;
+    padding: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
 
+.button:hover {
+    border: 3px solid #7947d6ff;
+    width: 70px;
+    padding: 6px;
+}
 
 
 /****************************************
 * CONTACT PAGE STYLE
 ****************************************/
 
+
 /*** LOGO & TITLE STYLE ***/
-.heading{
+
+.heading {
     font-size: 25px;
     font-weight: bold;
-  }
+}
+
 
 /********* FORM STYLING *****************/
+
 input,
 textarea,
-button{
+button {
     font-family: 'Kalam', 'Caveat', cursive;
     padding: 3px;
-    margin:3px;
-  }
+    margin: 3px;
+}
 
-input, textarea{
+input,
+textarea {
     width: 180px;
-  }
+}
 
-fieldset{
+fieldset {
     border: none;
-  }
+}
 
-form{
+form {
     background-color: #f3eaf3ff;
     border: 3px solid #f53a91ff;
     border-radius: 5px;
@@ -319,9 +667,9 @@ form{
     width: 200px;
     margin: auto;
     padding: 20px;
-  }
+}
 
-.formbtn button{
+.formbtn button {
     display: inline;
     font-weight: bold;
     background-color: #7947d6ff;
@@ -330,716 +678,613 @@ form{
     height: 30px;
     width: 60px;
     padding: 5px;
-  }
+}
 
-.formbtn button:hover, .formbtn button:focus {
+.formbtn button:hover,
+.formbtn button:focus {
     background-color: #f53a91ff;
     border: 1px solid #6f00ffff;
-  }
+}
 
-input, textarea{
+input,
+textarea {
     border: 1px solid #6f00ffff;
     border-radius: 5px;
-  }
+}
+
 
 /*** POP UP WINDOW STYLE ***/
-  .popwindow{
-  display: none;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #04d9faff;
-  border: 1px dotted #f53a91ff;
-  border-radius: 10px;
-  height: 50px;
-  width: 200px;
-  margin: auto;
-  padding: 10px;
-  }
 
-.alertwindow{
+.popwindow {
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #04d9faff;
+    border: 1px dotted #f53a91ff;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.alertwindow {
     display: block;
-  }
+}
 
 .popup .alertwindow {
     visibility: visible;
     -webkit-animation: fadeIn 10s;
     animation: fadeIn 10s;
-  }
+}
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: .1;}
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .1;
+    }
+}
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: .1 ;}
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .1;
+    }
+}
+
 
 /**********************************************************
 * MEDIA QUERY FOR 480 VIEWPORT
 ***********************************************************/
 
-@media only screen and (min-width: 480px){
-
-  /* LOGO & TITLE STYLING 
-  ************************/
-  .logo{
-      height: 70px;
-      width: 85px;
-      box-shadow: 3px 3px 3px 3px #7947d6ff;
-      border-radius: 6px;
+@media only screen and (min-width: 480px) {
+    /* LOGO & TITLE STYLING 
+    ***********************/
+    .logo {
+        height: 70px;
+        width: 85px;
+        box-shadow: 3px 3px 3px 3px #7947d6ff;
+        border-radius: 6px;
     }
-
-  .title{
-  font-size: 32px;  
+    .title {
+        font-size: 32px;
     }
-
-  .heading{
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-
-  /* TRANSPARENT BACKGROUND
+    .heading {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    /* TRANSPARENT BACKGROUND
   **************************/
-  #background{
-    height: 650px;
-    width: 450px;
-    margin: auto;
+    #background {
+        height: 650px;
+        width: 450px;
+        margin: auto;
     }
-
     /******* MENU BUTTONS STYLE *******/
-.menu-bar{
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  line-height: 1.5;
-}
-
-.menu-bar div{
-  background-color: #7947d6ff;
-  -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff; 
-  box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-  border: 1px dotted #f53a91ff; 
-  border-radius: 5px;
-  margin: 35px;
-  width: 140px;
-  height: 30px;
-  padding: 10px;
-}
-
-.menubtn:hover, .menubtn:focus{
-  background-color: #f53a91ff;
- border: 1px dotted #6f00ffff;
- transition-duration: 0.4s;
-}
-
-  /* ABOUT PAGE STYLE
+    .menu-bar div {
+        background-color: #7947d6ff;
+        -webkit-box-shadow: 6px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+        box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+        border: 1px dotted #f53a91ff;
+        border-radius: 5px;
+        margin: 35px;
+        width: 140px;
+        height: 30px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        line-height: 1.5;
+    }
+    .menubtn:hover,
+    .menubtn:focus {
+        background-color: #f53a91ff;
+        border: 1px dotted #6f00ffff;
+        transition-duration: 0.4s;
+    }
+    /* ABOUT PAGE STYLE
   ********************/
-  .dropdown-content{
-    display: none;
-  }
-
-  .hideonmobile{
-    display: none;
-  }
-
-  .show{
-    display: none;
-  }
-.form{
-  margin-top: 5px;
-}
-  /***** DROP DOWN MENU STYLE FOR MOBILE *****/
-  .dropmenu{
-    border-radius: 6px;
-    height: 40px;
-    width: 60px;
-    padding: 6px;
-    border: 1px solid #f53a91ff;
-  }
-
-   .fa-bars{
-    font-size: 20px;
-  }
-
-  .dropmenu:hover, .dropmenu:focus {
-    background-color: #f53a91ff;
-    border: 1px solid #6f00ffff;
-  }
-
-  /* Content Page Background
-  ***************************/  
-  .content{
-    border: 2px solid #f53a91ff;
-    border-radius: 6px;
-    height: 580px;
-    width: 420px;
-    margin: auto;
-    padding: 6px;
+    br {
+        display: none;
     }
-
-  .pheading{
-    font-size: 18px;
-    padding: 6px;
+    .dropdown-content {
+        display: none;
     }
-
-  ul{
-    border-radius: 6px;
-    margin: 6px;
-    padding: 12px;
-    font-size: 14px;
-    letter-spacing: 2;
-    line-height: 1.5;
-  }
-
-  ul .list{
-    margin: 6px;
-    padding: 6px;
-  }
-
-  .infoimage img{
-    height: 100px;
-    width: 100px;
-    margin-left: 150px;
-  }
-
-  .contentbox p{
-    border: transparent;
-    box-shadow: none;
-    margin: 5px;
-    padding: 5px;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 2;
-  }
-  .flexbox {
-    columns: 2;
-    border: transparent;
-    box-shadow: 2px 2px 2px 2px #6f00ffff;
-    border-radius: 5px;
-  }
-
-
-
-  /* CONTACT PAGE STYLE
+    .hideonmobile,
+    .desktopimg {
+        display: none;
+    }
+    .show {
+        display: none;
+    }
+    .form {
+        margin-top: 5px;
+    }
+    /***** DROP DOWN MENU STYLE FOR MOBILE *****/
+    .dropmenu {
+        border-radius: 6px;
+        height: 40px;
+        width: 60px;
+        padding: 6px;
+        border: 1px solid #f53a91ff;
+    }
+    .fa-bars {
+        font-size: 20px;
+    }
+    .dropmenu:hover,
+    .dropmenu:focus {
+        background-color: #f53a91ff;
+        border: 1px solid #6f00ffff;
+    }
+    /* Content Page Background
+  ***************************/
+    .content {
+        border: 2px solid #f53a91ff;
+        border-radius: 6px;
+        height: 580px;
+        width: 420px;
+        margin: auto;
+        padding: 6px;
+    }
+    .pheading {
+        font-size: 18px;
+        padding: 6px;
+    }
+    ul {
+        border-radius: 6px;
+        margin: 6px;
+        padding: 12px;
+        font-size: 14px;
+        letter-spacing: 2;
+        line-height: 1.5;
+    }
+    ul .list {
+        margin: 6px;
+        padding: 6px;
+    }
+    .infoimage img {
+        height: 100px;
+        width: 100px;
+        margin-left: 150px;
+    }
+    .contentbox p {
+        border: transparent;
+        box-shadow: none;
+        margin: 5px;
+        padding: 5px;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 2;
+    }
+    .flexbox {
+        columns: 2;
+        border: transparent;
+        box-shadow: 2px 2px 2px 2px #6f00ffff;
+        border-radius: 5px;
+    }
+    /* CONTACT PAGE STYLE
   ****************************************/
-  input,
-  textarea,
-  button{
-    padding: 4px;
-    margin: 4px;
+    input,
+    textarea,
+    button {
+        padding: 4px;
+        margin: 4px;
     }
-    
-    input, textarea{
-      width: 200px;
+    input,
+    textarea {
+        width: 200px;
     }
-
-  form{
-    border: 4px solid #f53a91ff;
-    border-radius: 6px;
-    font-size: 14px;
-    height: 320px;
-    width: 240px;
-    padding: 20px;
+    form {
+        border: 4px solid #f53a91ff;
+        border-radius: 6px;
+        font-size: 14px;
+        height: 320px;
+        width: 240px;
+        padding: 20px;
     }
-    
-    .formbtn button{
-      border-radius: 6px;
-      height: 32px;
-      width: 64px;
-      padding: 6px;
+    .formbtn button {
+        border-radius: 6px;
+        height: 32px;
+        width: 64px;
+        padding: 6px;
     }
-    
-    input, textarea{
-      border-radius: 6px;
+    input,
+    textarea {
+        border-radius: 6px;
     }
-    
     /*** POP UP WINDOW STYLE ***/
-    .popwindow{
-    font-size: 18px;
-    border-radius: 11px;
-    height: 55px;
-    width: 210px;
-    padding: 11px;
+    .popwindow {
+        font-size: 18px;
+        border-radius: 11px;
+        height: 55px;
+        width: 210px;
+        padding: 11px;
     }
-
 }
-
 
 
 /***********************************************************
 *MEDIA QUERY FOR 770 VIEWPORT
 ************************************************************/
-@media only screen and (min-width: 770px){
 
- /* TRANSPARENT BACKGROUND
+@media only screen and (min-width: 770px) {
+    /* TRANSPARENT BACKGROUND
  *************************/
- #background{
-  height: 900px;
-  width: 700px;
-  margin: auto;
-  }
-
-.logo{
-    height: 80px;
-    width: 90px;
-    box-shadow: 4px 4px 4px 4px #7947d6ff;
-    border-radius: 7px;
+    #background {
+        height: 900px;
+        width: 700px;
+        margin: auto;
     }
-
-  .title{
-    font-size: 34px;  
+    .logo {
+        height: 80px;
+        width: 90px;
+        box-shadow: 4px 4px 4px 4px #7947d6ff;
+        border-radius: 7px;
     }
-
-/* ABOUT PAGE STYLE
+    .title {
+        font-size: 34px;
+    }
+    /* ABOUT PAGE STYLE
 ********************/
-.title-heading{
-  font-size: 18px;
-}
-
-.dropdown{
-  display: none;
-}
-
-.hideonmobile{
-  display: inline-block;
-}
-
-.show{
-  display: inline-block;
-}
-
-/***** IN LINE MENU STYLE FOR TABLET *****/
-.menu-inrow div{
-  display: inline-block;
-  background-color: #7947d6ff;
-  box-shadow:  0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-  border: 1px dotted #f53a91ff;
-  border-radius: 5px;
-  color: #131313ff;
-}
-
-.rowbtn{
-  text-align: center;
-  margin: 5px;
-  font-size: 20px;
-  padding: 5px;
-  width: 80px; 
-}
-
-.menu-inrow div:hover, .menu-inrow div:focus {
-  background-color: #f53a91ff;
-  border-radius: 1px solid #7947d6ff;
-}
-
-/* Content Page Background
-  ***************************/  
-  .content{
-    border: 2px solid #f53a91ff;
-    border-radius: 6px;
-    height: 660px;
-    width: 500px;
-    margin: auto;
-    padding: 100px;
+    br {
+        display: block;
     }
-
-    .infoimage img{
-      height: 140px;
-      width: 140px;
-      margin-left: 150px;
+    .title-heading {
+        font-size: 18px;
     }
-
-  .flexbox{
-   columns: 2;
-   border-radius: 7px;
-    margin: 8px;
-    padding: 14px;
-  }
-
-  .hideonmobile img{
-    height: 180px;
-    width: 180px;
-  }
-
-  .contentbox p{
-    padding: 8px;
-    font-size: 16px;
-  }
-
-  .flexboxTwo{
-    columns: 2;
-    border: transparent;
-    box-shadow: 2px 2px 2px 2px #6f00ffff;
-    border-radius: 8px;
-    padding: 14px;
-    margin: 8px;
-  }
-
-  .pheading{
-    font-size: 18px;
-    padding: 6px;
+    .dropdown {
+        display: none;
     }
-
-  ul{
-
-    border-radius: 6px;
-    margin: 6px;
-    padding: 12px;
-    font-size: 14px;
-    letter-spacing: 2;
-    line-height: 1.5;
-  }
-
-  ul .list{
-    margin: 6px;
-    padding: 6px;
-  }
-
-  .infoimage img{
-    height: 100px;
-    width: 100px;
-    margin-left: 150px;
-  }
-
-
-/*
-
-.button{
-  border: 3px solid #f53a91ff;
-  width: 60px;
-  height: 35px;
-  padding: 5px;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-
-.button:hover{
-border: 3px solid #7947d6ff;
-width: 70px;
-padding: 6px;
-}
-
-.menu-bar{
-background-color: #6f00ffff;
-box-shadow:5px -5px 5px 5px #f3eaf3ff, -5px -5px 5px 5px #131313ff;
-border-radius: 8px;
-width: 170px;
-padding: 10px;
-margin: auto;
-}
-
-.menu-bar:hover{
-background-color: #f53a91ff;
-box-shadow:2px -2px 1px 1px #f3eaf3ff, -2px -2px 2px 2px #131313ff;
-color: #131313ff;
-}*/
-
-/******** MENU BAR **********/
-.dropdown-content{
-  display: none;
-}
-
-
-
-/* Content holder
+    .hideonmobile {
+        display: inline-block;
+    }
+    .show {
+        display: inline-block;
+    }
+    /***** IN LINE MENU STYLE FOR TABLET *****/
+    .menu-inrow div {
+        display: inline-block;
+        background-color: #7947d6ff;
+        box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+        border: 1px dotted #f53a91ff;
+        border-radius: 5px;
+        color: #131313ff;
+    }
+    .rowbtn {
+        text-align: center;
+        margin: 5px;
+        font-size: 20px;
+        padding: 5px;
+        width: 80px;
+    }
+    .menu-inrow div:hover,
+    .menu-inrow div:focus {
+        background-color: #f53a91ff;
+        border-radius: 1px solid #7947d6ff;
+    }
+    /* Content Page Background
+  ***************************/
+    .content {
+        border: 2px solid #f53a91ff;
+        border-radius: 6px;
+        height: 660px;
+        width: 500px;
+        margin: auto;
+        padding: 100px;
+    }
+    .infoimage img {
+        height: 140px;
+        width: 140px;
+        margin-left: 150px;
+    }
+    .flexbox {
+        columns: 2;
+        border-radius: 7px;
+        margin: 8px;
+        padding: 14px;
+    }
+    .hideonmobile img {
+        height: 180px;
+        width: 180px;
+    }
+    .contentbox p {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .flexboxTwo {
+        columns: 2;
+        border: transparent;
+        box-shadow: 2px 2px 2px 2px #6f00ffff;
+        border-radius: 8px;
+        padding: 14px;
+        margin: 8px;
+    }
+    .pheading {
+        font-size: 18px;
+        padding: 6px;
+    }
+    ul {
+        border-radius: 6px;
+        margin: 6px;
+        padding: 12px;
+        font-size: 14px;
+        letter-spacing: 2;
+        line-height: 1.5;
+    }
+    ul .list {
+        margin: 6px;
+        padding: 6px;
+    }
+    .infoimage img {
+        height: 100px;
+        width: 100px;
+        margin-left: 150px;
+    }
+    .button {
+        border: 3px solid #f53a91ff;
+        width: 60px;
+        height: 35px;
+        padding: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    .button:hover {
+        border: 3px solid #7947d6ff;
+        width: 70px;
+        padding: 6px;
+    }
+    /******** MENU BAR **********/
+    .dropdown-content {
+        display: none;
+    }
+    /* Content holder
 *****************/
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 4px solid #f53a91ff;
-  border-radius: 7px;
-  height: 800px;
-  width: 600px;
-  margin: auto;
-  padding: 7px;
-
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 4px solid #f53a91ff;
+        border-radius: 7px;
+        height: 800px;
+        width: 600px;
+        margin: auto;
+        padding: 7px;
+    }
+    /* CONTACT PAGE STYLE
+  ****************************************/
+    /*** LOGO & TITLE STYLE ***/
+    .heading {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    fieldset {
+        border: 1px solid #6f00ffff;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    input,
+    textarea,
+    button {
+        padding: 5px;
+        margin: 5px;
+    }
+    input,
+    textarea {
+        width: 220px;
+    }
+    form {
+        border-radius: 8px;
+        font-size: 16px;
+        height: 390px;
+        width: 280px;
+        padding: 40px;
+    }
+    .formbtn button {
+        border-radius: 7px;
+        height: 34px;
+        width: 68px;
+        padding: 7px;
+    }
+    input,
+    textarea,
+    legend {
+        border-radius: 7px;
+        font-size: 18px;
+    }
+    /*** POP UP WINDOW STYLE ***/
+    .popwindow {
+        font-size: 20px;
+        border-radius: 12px;
+        height: 60px;
+        width: 220px;
+        padding: 12px;
+    }
 }
 
 
-/* CONTACT PAGE STYLE
-  ****************************************/
-
-  /*** LOGO & TITLE STYLE ***/
-  .heading{
-  font-size: 35px;
-  font-weight: bold;
-  }
-
-
-
-  fieldset{
-    border: 1px solid #6f00ffff;
-    border-radius: 5px;
-    padding: 10px;
-  }
-
-  input,
-  textarea,
-  button{
-    padding: 5px;
-    margin: 5px;
-    }
-    
-    input, textarea{
-      width: 220px;
-    }
-
-  form{
-    border-radius: 8px;
-    font-size: 16px;
-    height: 390px;
-    width: 280px;
-    padding: 40px;
-    }
-    
-    .formbtn button{
-      border-radius: 7px;
-      height: 34px;
-      width: 68px;
-      padding: 7px;
-    }
-    
-    input, textarea, legend{
-      border-radius: 7px;
-      font-size: 18px;
-    }
-    
-    /*** POP UP WINDOW STYLE ***/
-    .popwindow{
-    font-size: 20px;
-    border-radius: 12px;
-    height: 60px;
-    width: 220px;
-    padding: 12px;
-    }
-  
- }
-
- 
 /***********************************************************
 *MEDIA QUERY FOR 1280 VIEWPORT
 ************************************************************/
-@media only screen and (min-width: 1280px){
 
-  /* HOME PAGE
+@media only screen and (min-width: 1280px) {
+    /* HOME PAGE
   *************************/
-  .logo{
-    height: 95px;
-    width: 100px;
-    box-shadow: 5px 5px 5px 5px #7947d6ff;
-    border-radius: 8px;
+    .logo {
+        height: 95px;
+        width: 100px;
+        box-shadow: 5px 5px 5px 5px #7947d6ff;
+        border-radius: 8px;
     }
-
-.title{
-    font-size: 36px;  
+    .title {
+        font-size: 36px;
     }
-
-  /* TRANSPARENT BACKGROUND
+    /* TRANSPARENT BACKGROUND
   *************************/
-  #background{
-      height: 1000px;
-      width: 1100px;
-      margin: auto;
-      }
-
-  /* ABOUT PAGE STYLE
+    #background {
+        height: 1000px;
+        width: 1100px;
+        margin: auto;
+    }
+    /* ABOUT PAGE STYLE
   ****************************************/
-  .title-heading{
-    font-size: 40px;
-  }
-
-  
-  /******** MENU BAR **********/
-  .dropdown{
-    display: none;
-  }
-
-  .hideonmobile{
-    display: inline-block;
-  }
-
-  .show{
-    display: inline-block;
-  }
-  
-
-  /* Content holder
+    .title-heading {
+        font-size: 40px;
+    }
+    /******** MENU BAR **********/
+    .dropdown {
+        display: none;
+    }
+    .hideonmobile {
+        display: inline-block;
+    }
+    .show {
+        display: inline-block;
+    }
+    /* Content holder
   *****************/
-  .content{
-    border: 5px solid #f53a91ff;
-    border-radius: 10px;
-    height: 1000px;
-    width: 1050px;
-    margin: auto;
-    padding: 20px;
-  }
-
-  .hideonmobile img{
-    height: 200px;
-    width: 200px;
-  }
-
-  .flexbox{
-    columns: 3;
-    border-radius: 10px;
-     margin: 10px;
-     padding: 16px;
-   }
- 
-   .hideonmobile img{
-     height: 200px;
-     width: 200px;
-   }
- 
-   .contentbox p{
-    
-     padding: 10px;
-     font-size: 18px;
-   }
- 
-   .flexboxTwo{
-     columns: 3;
-     border: transparent;
-     box-shadow: 2px 2px 2px 2px #6f00ffff;
-     border-radius: 10px;
-     padding: 16px;
-     margin: 10px;
-   }
- 
-   .pheading{
-     font-size: 24px;
-     padding: 10px;
-     }
- 
-   ul{
- 
-     border-radius: 10px;
-     margin: 10px;
-     padding: 14px;
-     font-size: 18px;
-     letter-spacing: 2;
-     line-height: 1.5;
-   }
- 
-   ul .list{
-     margin: 5px;
-     padding: 10px;
-   }
- 
-   .infoimage img{
-     height: 200px;
-     width: 200px;
-     margin-left: 200px;
-   }
- 
-/* CONTACT PAGE STYLE
+    .content {
+        border: 5px solid #f53a91ff;
+        border-radius: 10px;
+        height: 1000px;
+        width: 1050px;
+        margin: auto;
+        padding: 20px;
+    }
+    .hideonmobile img,
+    .desktopimg {
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    .flexbox {
+        columns: 3;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 16px;
+    }
+    .contentbox p {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .flexboxTwo {
+        columns: 3;
+        border: transparent;
+        box-shadow: 2px 2px 2px 2px #6f00ffff;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 10px;
+    }
+    .pheading {
+        font-size: 24px;
+        padding: 10px;
+    }
+    ul {
+        border-radius: 10px;
+        margin: 10px;
+        padding: 14px;
+        font-size: 18px;
+        letter-spacing: 2;
+        line-height: 1.5;
+    }
+    ul .list {
+        margin: 5px;
+        padding: 10px;
+    }
+    .infoimage img {
+        height: 200px;
+        width: 200px;
+        margin-left: 200px;
+    }
+    /* CONTACT PAGE STYLE
   ****************************************/
-  fieldset{
-    border: 2px solid #6f00ffff;
-    border-radius: 10px;
-    padding: 15px;
-  }
-
-  input,
-  textarea,
-  button{
-    padding: 10px;
-    margin: 10px;
+    fieldset {
+        border: 2px solid #6f00ffff;
+        border-radius: 10px;
+        padding: 15px;
     }
-    
-    input, textarea{
-      width: 250px;
+    input,
+    textarea,
+    button {
+        padding: 10px;
+        margin: 10px;
     }
-
-  form{
-    border-radius: 10px;
-    font-size: 18px;
-    height: 600px;
-    width: 380px;
-    padding: 50px;
+    input,
+    textarea {
+        width: 250px;
     }
-    
-    .formbtn button{
-      border-radius: 8px;
-      height: 36px;
-      width: 70px;
-      padding: 8px;
+    form {
+        border-radius: 10px;
+        font-size: 18px;
+        height: 600px;
+        width: 380px;
+        padding: 50px;
     }
-    
-    input, textarea, legend{
-      border-radius: 8px;
-      font-size: 25px;
+    .formbtn button {
+        border-radius: 8px;
+        height: 36px;
+        width: 70px;
+        padding: 8px;
     }
-    
+    input,
+    textarea,
+    legend {
+        border-radius: 8px;
+        font-size: 25px;
+    }
     /*** POP UP WINDOW STYLE ***/
-    .popwindow{
-    font-size: 22px;
-    border-radius: 14px;
-    height: 60px;
-    width: 240px;
-    padding: 14px;
+    .popwindow {
+        font-size: 22px;
+        border-radius: 14px;
+        height: 60px;
+        width: 240px;
+        padding: 14px;
     }
-  
 }
 
 
 /***********************************************************
 *MEDIA QUERY FOR 1600 VIEWPORT
 ************************************************************/
-@media only screen and (min-width: 1600px){
 
-  /* UNIFORM ACROSS ALL PAGES
+@media only screen and (min-width: 1600px) {
+    /* UNIFORM ACROSS ALL PAGES
   ****************************************/
-  .logo{
-    height: 100px;
-    width: 110px;
-    box-shadow: 6px 6px 6px 6px #7947d6ff;
-    border-radius: 9px;
+    .logo {
+        height: 100px;
+        width: 110px;
+        box-shadow: 6px 6px 6px 6px #7947d6ff;
+        border-radius: 9px;
     }
-    
-    .title{
-      font-size: 38px;  
-      }
-    
+    .title {
+        font-size: 38px;
+    }
     /* ABOUT PAGE STYLE
 ****************************************/
-.title-heading{
-  font-size: 22px;
+    .title-heading {
+        font-size: 22px;
+    }
+    /******** MENU BAR **********/
+    .dropdown {
+        display: none;
+    }
+    .hideonmobile {
+        display: inline-block;
+    }
+    .show {
+        display: inline-block;
+    }
+    #background {
+        height: 1400px;
+        width: 1200px;
+        margin: auto;
+    }
 }
-
-/******** MENU BAR **********/
-.dropdown{
-  display: none;
-}
-
-.hideonmobile{
-  display: inline-block;
-}
-
-.show{
-  display: inline-block;
-}
-
-#background{
-  height: 1400px;
-  width: 1200px;
-  margin: auto;
-  }
-
-}
- 
-
-
-
 
 #22222222222222222222222222222222
-
-
-
-
 /******************** LANDING PAGE STYLE **************************
 .content-background{
   background-color: transparent;
@@ -1062,6 +1307,8 @@ color: #131313ff;
 
 
 *********POP UP WINDOW BEFORE STARTING THE GAME***********/
+
+
 /**.startgamepopup{
   display: none;
   font-size: 20px;
@@ -1101,9 +1348,13 @@ color: #131313ff;
 #playertwo{
   display: none;
 }**/
+
+
 /************ SOCIAL MEDIA ICONS *************/
 
+
 /**** WRAPPER *****/
+
 
 /**** .icon-button {
 	background-color:transparent;
@@ -1145,11 +1396,7 @@ Icons
 	color: #131313ff;
 }**/
 
-
-
 **/
-
-
 /*
 
 
@@ -1197,7 +1444,10 @@ select:hover{
 }
 */
 
+
 /********************  GAME PAGE STYLE **************************/
+
+
 /**
 .popup, .controls{
   display: flex;
@@ -1298,39 +1548,36 @@ font-size: 20px;
   display: flex;
 }
 **/
+
+
 /******************** ABOUT PAGE STYLE **************************/
 
-
- h1{
+h1 {
     font-size: 14px;
-   padding: 5px;
-   text-align: center;
-  }
+    padding: 5px;
+    text-align: center;
+}
 
 **/
-
 /***************** CONTACT PAGE ************************/
 
-
-
-  header h1{
+header h1 {
     font-size: 16px;
-  }
-
-  
+}
 
 
-
-
- /* #game-background{
+/* #game-background{
     background-color: #7947d6ff;
     -webkit-box-shadow: 18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
     box-shadow:  18px -8px 20px 8px #131313ff, 18px 14px 20px 9px #6f00ffff, -14px -9px 35px 2px #131313ff; 
     margin: 80px;
     padding: 0px;
     }*/
-  
-  /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+
+
+/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+
+
 /**  .content-background{
     background-color: transparent;
     height: 800px;
@@ -1372,23 +1619,13 @@ font-size: 20px;
   /*** HOME PAGE STYLE ***
 
 
-  .menu-bar div{
-    font-size: 30px;
-    background-color: #7947d6ff;
-    -webkit-box-shadow: 12px -6px 14px 6px #131313ff, -10px -8px 32px 2px #131313ff; 
-    box-shadow:  1px -6px 14px 6px #131313ff, -10px -8px 32px 2px #131313ff;  
-    padding: 15px;
-    width: 180px; 
-  }**/
-
-  /*.menubtn div{
-    font-size: 25px;
-    line-height: 40px;
-  }*/
 
 
-  /******************** CONTACT PAGE **************************/
- /** 
+
+/******************** CONTACT PAGE **************************/
+
+
+/** 
 
 
 
@@ -1402,8 +1639,12 @@ font-size: 20px;
 
   
 */
-  /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
- /** .content-background{
+
+
+/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
+
+
+/** .content-background{
     background-color: pink;
     height: 600px;
     width: 400px;
@@ -1417,10 +1658,9 @@ font-size: 20px;
   }
 
 **/
-  
 
 
- /* .tablet-border{
+/* .tablet-border{
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
     border-image-slice: 1;
@@ -1431,30 +1671,10 @@ font-size: 20px;
 
   .tile {}*/
 
- /******************** LOGO, TITLE & MENU STYLE FOR MOBILE **************************/   
-  
+
+/******************** LOGO, TITLE & MENU STYLE FOR MOBILE **************************/
 
 
-  /*** HOME PAGE STYLE ***/
-  /***.content-background{
-    background-color: transparent;
-    height: 700px;
-    width: 500px;
-    margin: auto;
-    padding-left: 20px;
-    }
-
-
-
-
-  .menu-bar div{
-    font-size: 30px;
-    background-color: #7947d6ff;
-    -webkit-box-shadow: 18px -12px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff; 
-    box-shadow:  3px -9px 21px 12px #131313ff, -15px -12px 48px 3px #131313ff;  
-    width: 200px; 
-    margin: 60px;
-  }***/
 /*
   .menubtn{
     font-size: 40px;
@@ -1463,7 +1683,10 @@ font-size: 20px;
     padding: 20px;
   }
 */
-  /******************** CONTACT PAGE **************************/
+
+
+/******************** CONTACT PAGE **************************/
+
 
 /**
   .menu-inrow a{
@@ -1491,3 +1714,5 @@ font-size: 20px;
 
 }
 **/
+
+gdzsgvskjhiulewl/EFWLUGHFRUILERE
