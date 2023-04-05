@@ -24,51 +24,76 @@
                 </h1> 
                 <p>Tic Tac Toe!</p>
             </section>
-           <!-------------------------- HELP & EXIT BUTTONS ----------------------------->
-            <section>
-                <div class="control-options gamebtn">
-                    <a href="about.html" class="menubtn" aria-label="Leads to about page"></a>
-                            <i class="fa-solid fa-info fa-bounce"></i>
-                        </button>
-                    </a>
+
+            <!-------------------------- MENU BUTTONS ----------------------------->
+            <section class="menu-bar">
+                <div class="menubtn">
+                    <a href="about.html" class="menubtn." aria-label="Leads to about page">About</a>
                 </div>
-                <div class="exitbtn">
-                    <a href="home.html" class="menubtn" aria-label="Leads to page page">
-                        <button id="exitbtn" action="home.html" class="gamebtn">
-                            <i class="fa-solid fa-arrow-right-from-bracket fa-shake"></i>
-                        </button>
-                    </a>
+
+                <div class="menubtn" onclick="">
+                    <a href="#gameoptions" class="menubtn." aria-label="Leads to game options">Game</a>
+
+                        <!------------------------------------------------
+                         - Code extracted from https://codepen.io/
+                        ------------------------------------------------->
+                        <form id="gameoptions" class="player-selection startgamepopup" action="index.html">
+                            <select id="player-option" name="player-option" required>
+                                <option disabled selected hidden>Player Options</option>
+                                <option value="easy">One Player</option>
+                                <option value="medium">Two Player</option>
+                            </select>
+                            <input name="playername" class="popbtn" type="text" placeholder="Player 'X' Name">
+                            <input name="playername" id="playertwo" class="popbtn" type="text" placeholder="Player 'O' Name">
+                            <button class="submitbtn popbtn" type="submit" action>Submit</button>
+                        </form>
+                </div>  
+                <div class="menubtn" onclick="contact.html">
+                    <a href="contact.html" class="menubtn." aria-label="Leads to contact page">Contact</a>
+                </div>     
+                    <!--
+                        
+                    <div class="player-links"> 
+                        <div id="btn1">
+                            <a href="index.html" alt="">
+                                <button id="oneplayer">One Player</button>
+                            </a>
+                        </div>
+                        <div id="btn2">
+                            <a href="index.html" alt="">
+                                <button id="twoplayer">Two Player</button>
+                            </a>
+                        </div>
+                    </div> 
+                    <div class="center" style="visibility: hidden" >
+                    <div id="playerinfo ">
+                        <input class="inputplayer" type="text" placeholder="Player 1 name 🔴" />
+                        <input class="inputplayer" type="text" placeholder="Player 2 name ❌" />
+                        <p style="visibility: hidden" id="input-warning">Player names can't be the same</p>
+                        <button id="playerbtn" onclick="setPlayerName()">Send</button>
+                    </div>
                 </div>
+                -->
+            </section>  
+
+                <!-------------------------- SOCIAL MEDIA ICONS ----------------------------->
+            <section class="social-media-icons">
+                <a href="https://www.linkedin.com/" class="linkedin icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on linkedin (opens a new window)">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/?lang=en" class="twitter icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on twitter (opens a new window)">
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://slack.com/" class="Slack icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on slack (opens a new window)">
+                    <i class="fa-brands fa-slack" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/" class="github icon-button" target="_blank" rel="noopener" aria-label="Click to follow us on github (opens a new window)">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
             </section>
-
-            <!-------------------------- GAME CONTAINER & CONTROLS ----------------------------->
-            <div class="tablet-border ">
-
-                <section class="playername-holder"></section>
-
-                <section class="popup hide"></section>
- 
-                <section class="game-board">
-                    <div class="tile" cellindex="0"></div>
-                    <div class="tile" cellindex="1"></div>
-                    <div class="tile" cellindex="2"></div>
-                    <div class="tile" cellindex="3"></div>
-                    <div class="tile" cellindex="4"></div>
-                    <div class="tile" cellindex="5"></div>
-                    <div class="tile" cellindex="6"></div>
-                    <div class="tile" cellindex="7"></div>
-                    <div class="tile" cellindex="8"></div>
-                </section>
-
-                <section class="controls">
-                    <button id="reset gamebtn">
-                        <i class="fa-solid fa-trash-can-arrow-up"></i>
-                    </button>
-                </section>
-            </div>
-        </main> 
+        </main>
 
         <!-------------------------- JAVASCRIPT SCRIPT ----------------------------->
-        <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/script.js"></script> 
     </body>
 </html>
