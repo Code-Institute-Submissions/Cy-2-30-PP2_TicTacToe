@@ -251,18 +251,28 @@ Because of time contrains I did not have enough time to fix all the bugs. Will b
 | ---   | --- | --- |
 | Drop down menu not responsive on click        | No |  |
 | ---   | --- | --- |
-| Content (first paragraph including image) from 770px on about me page is not showing   | No |  |
+| Content (first paragraph including image) from 770px on about me page is not showing   | Added **br** tag but only fixed 1200px |  |
 | ---   | --- | --- |
 | The menu bar could be styled and logo not responsive to selectors styling   | Yes | Had to coment out the css style file and rebuild everyting |
 | ---   | --- | --- |
 | GitHub Pages could not enforce the https to open the page   | Still in progress | Contacted **Student Support** and they could not help but referred me to contact **GitHub**  Had to contact [NameCheap](https://ap.www.namecheap.com/) support to request for help(Not Resolve). I had to contact [GitHub Support](https://support.github.com/) but still waiting for response.  |
 | The form was flickering on the click of submission button   | Yes | Removed the action link |
 | ---   | --- | --- |
-| There is a big gap next to the paragraph image on about page from 1280px  | No |  |
+| There is a big gap next to the paragraph image on about page from 1280px, on hover the gap appears and the image is not displayed  | No |  |
 | ---   | --- | --- |
 | The content on the about page overflows the background container   | No |  |
 | ---   | --- | --- |
+| Menu Buttons on home page are not showing on the center but from the start. When the view port is big it leaves a big space open  | No |  |
+| ---   | --- | --- |
 
+| Social media icons all move on hover   | No |  |
+| ---   | --- | --- |
+|  Menu on about page and contact are now showing as a block compared to inline row  | No |  |
+| ---   | --- | --- |
+| The names of players are not linked to the commment of player's turns and when it is a players turn the correct name do mot come up.  | No |  |
+| ---   | --- | --- |
+
+[Table of Content](#table-of-content):arrow_up: 
 
 
 #### Not implemented
@@ -283,21 +293,34 @@ Because of time contrains I did not have enough time to fix all the bugs. Will b
 
 
 ### About Page  
+* The ul heading was giving an error and I had to cover it in **h2**
 ![](assets/images/validation/aboutpage/aboutpageerror.png)
 
+* After resolving the issue, the problem was resolved.
 ![](assets/images/validation/aboutpage/aboutpagepass.png)
 
 ### Contact Page 
+
+* Some of the tags were not closed. 
+* The section tag had to heading. 
 ![](assets/images/validation/contactpage/contactpageerrors.png)
 
+* I closed all tags  
+* Changed the section element into a div
 ![](assets/images/validation/contactpage/contactpagepass.png)
 
+* I could not pick up the external JavaScript file and I was getting an error of "function not declared". 
 ![](assets/images/validation/contactpage/jserror.png)
 
+* I moved the JavaScript file internally and the error was resolved. The code passed. 
 ![](assets/images/validation/contactpage/internaljspass.png)
 
-14. [Acknowledgement]
 
+
+
+## Acknowledgement
+* A big thank you to my mentor Marcel who helped with some of the styling and funtionality. 
+* **Youtube** javaScript tutorials.  
 
 
 

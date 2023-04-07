@@ -36,18 +36,14 @@
       </div>
       <!-- HELP & EXIT BUTTONS -->
       <div>
-        <div class="control-options gamebtn">
+        <div class="control-options info gamebtn" id="infobtn">
           <a href="about.html" class="menubtn" aria-label="Leads to about page">
-            <button id="infobtn" class="info'">
-              <i class="fa-solid fa-info"></i>
-            </button>
+            <i class="fa-solid fa-info"></i>
           </a>
         </div>
-        <div class="exitbtn">
+        <div class="exitbtn gamebtn" id="exitbtn">
           <a href="index.html" class="menubtn" aria-label="Leads to page page">
-            <button id="exitbtn" class="gamebtn">
-              <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            </button>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
           </a>
         </div>
       </div>
@@ -55,7 +51,7 @@
       <!-- GAME CONTAINER & CONTROLS -->
       <div class="tablet-border">
         <div class="players">
-          <div id="playerinfo ">
+          <div id="playerinfo">
             <input
               class="inputplayer"
               type="text"
@@ -77,20 +73,20 @@
 
         <div class="popup hide"></div>
 
-        <section class="game-board">
-          <div class="tile" id="0"></div>
-          <div class="tile" id="1"></div>
-          <div class="tile" id="2"></div>
-          <div class="tile" id="3"></div>
-          <div class="tile" id="4"></div>
-          <div class="tile" id="5"></div>
-          <div class="tile" id="6"></div>
-          <div class="tile" id="7"></div>
-          <div class="tile" id="8"></div>
-        </section>
+        <div class="game-board">
+          <div class="tile" cellindex="0"></div>
+          <div class="tile" cellindex="1"></div>
+          <div class="tile" cellindex="2"></div>
+          <div class="tile" cellindex="3"></div>
+          <div class="tile" cellindex="4"></div>
+          <div class="tile" cellindex="5"></div>
+          <div class="tile" cellindex="6"></div>
+          <div class="tile" cellindex="7"></div>
+          <div class="tile" cellindex="8"></div>
+        </div>
 
         <div class="controls">
-          <button id="reset gamebtn">
+          <button id="reset" class="gamebtn">
             <i class="fa-solid fa-trash-can-arrow-up"></i>
           </button>
         </div>

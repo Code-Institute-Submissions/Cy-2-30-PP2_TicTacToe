@@ -112,7 +112,11 @@ body {
 ****** RESPOSIVE AS PER VIEWPORT *******
 *****************************************
 
-*** LOGO STYLE ***/
+****************************************
+* HOME PAGE STYLE
+****************************************
+
+*** LOGO & TITLE STYLE ***/
 
 .logo {
     height: 60px;
@@ -122,14 +126,6 @@ body {
     padding: 0;
     margin-bottom: 20px;
 }
-
-
-/****************************************
-* HOME PAGE STYLE
-****************************************/
-
-
-/*** LOGO & TITLE STYLE ***/
 
 .title {
     display: flex;
@@ -173,7 +169,7 @@ body {
 }
 
 
-/*********** SOCIAL MEDIA ICONS *************/
+/*********** SOCIAL MEDIA ICONS **********/
 
 .fa-brands {
     font-size: 20px;
@@ -194,51 +190,15 @@ body {
     font-size: 26px;
 }
 
-Icons .fa-linkedin,
+.fa-linkedin,
 .fa-square-twitter,
 .fa-github,
 .fa-slack {
     color: #131313ff;
 }
 
-#btn1 button {
-    font-family: 'Kalam', cursive;
-    background-color: transparent;
-    border: 0;
-    font-size: 20px;
-    padding: 10px;
-    width: fit-content;
-}
 
-#btn2 button {
-    font-family: 'Kalam', cursive;
-    background-color: transparent;
-    border: 0;
-    font-size: 20px;
-    padding: 10px;
-    width: fit-content;
-}
-
-#btn1:hover {
-    background-color: #7947d6ff;
-    border-radius: 5px;
-    width: 150px;
-}
-
-#btn2:hover {
-    background-color: #7947d6ff;
-    border-radius: 5px;
-    width: 150px;
-}
-
-.linebtwn-menu {
-    margin: 0 2px 0 5px;
-    padding: 0 5px 2px 2px;
-    border-right: 1px solid #131313ff;
-}
-
-
-/********************  GAME PAGE STYLE **************************/
+/***********  GAME PAGE STYLE ********/
 
 .popup,
 .controls {
@@ -356,18 +316,6 @@ Icons .fa-linkedin,
     padding-left: 10px;
 }
 
-nav {
-    border: 3px solid #f53a91ff;
-    width: 110px;
-    height: 35px;
-    font-size: 20px;
-}
-
-nav:hover {
-    width: 120px;
-    padding: 6px;
-}
-
 .tablet-border {
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
@@ -378,7 +326,7 @@ nav:hover {
 }
 
 
-/******************** CONTACT PAGE **************************/
+/************ CONTACT PAGE **************/
 
 #game-background {
     background-color: #7947d6ff;
@@ -442,28 +390,6 @@ nav:hover {
 
 /******************** CONTACT PAGE **************************/
 
-.menu-inrow a {
-    display: inline;
-    background-color: #7947d6ff;
-    border-radius: 5px;
-    color: #131313ff;
-    border: 1px dotted #f53a91ff;
-    -webkit-box-shadow: 5px 5px 5px 5px #131313ff;
-    box-shadow: 5px 5px 5px 5px #131313ff;
-}
-
-.rowbtn {
-    display: inline;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.rowbtn:hover,
-.rowbtn:focus {
-    background-color: #f53a91ff;
-    transition-duration: 0.4s;
-}
-
 
 /****************************************
 * ABOUT PAGE STYLE
@@ -512,7 +438,7 @@ nav:hover {
 }
 
 .dropdown-content {
-    display: inline-block;
+    display: none;
     position: absolute;
     background-color: #f53a91ff;
     min-height: 140px;
@@ -913,19 +839,15 @@ textarea {
     }
     /***** IN LINE MENU STYLE FOR TABLET *****/
     .menu-inrow div {
-        display: inline-block;
+        display: flex;
+        flex-direction: row-reverse;
         background-color: #7947d6ff;
+        text-align: center;
         box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
         border: 1px dotted #f53a91ff;
         border-radius: 5px;
         color: #131313ff;
-    }
-    .rowbtn {
-        text-align: center;
-        margin: 5px;
-        font-size: 20px;
-        padding: 5px;
-        width: 80px;
+        margin: 10px;
     }
     .menu-inrow div:hover,
     .menu-inrow div:focus {
@@ -1289,43 +1211,6 @@ textarea {
   display: none;
 }
 
-
-#btn1 button{
-  font-family: 'Kalam', cursive;
-  background-color: transparent;
-  border: 0;
-  font-size: 20px;
-  padding: 10px;
-  width: fit-content;
-}
-#btn2 button{
-  font-family: 'Kalam', cursive;
-  background-color: transparent;
-  border: 0;
-  font-size: 20px;
-  padding: 10px;
-  width: fit-content;
-}
-#btn1:hover{
-  background-color: #7947d6ff;
-  border-radius: 5px;
-  width: 150px;
-}
-#btn2:hover{
-  background-color: #7947d6ff;
-  border-radius: 5px;
-  width: 150px;
-}
-select:hover{
-  background-color: #7947d6ff;
-  border-radius: 5px;
-  width: 150px;
-}
-.linebtwn-menu{
-  margin: 0 2px 0 5px;
-  padding: 0 5px 2px 2px;
-  border-right: 1px solid #131313ff;
-}
 ********************  GAME PAGE STYLE **************************
 .popup, .controls{
   display: flex;
