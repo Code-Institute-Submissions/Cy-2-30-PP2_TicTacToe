@@ -7,7 +7,7 @@
 Welcome to my second project. The project is to showcase what I have learned so far with **HTML** , **CSS** and **JavaScript** programming languages. Is to apply everything learned into pratical live project. For this project I chose to create a **Tic Tac Toe** game. Something so simple and yet many enyoy playing, to distress! The logo above I wanted it to represent all the color combination of the website. And as the game is about **X** and **O**, I thought it would be fitting to create the logo that best represents the game. I saw it fit to display JavaScript functions I have learned so far using this game. I wanted to create something fun and enjoyable for a distressor, while applying my skills
 
 ![Website look]()
-[Github][def]
+[Github][http://deecynleb.me/PP2_XO_game/]
 
 
 
@@ -264,12 +264,15 @@ Because of time contrains I did not have enough time to fix all the bugs. Will b
 | ---   | --- | --- |
 | Menu Buttons on home page are not showing on the center but from the start. When the view port is big it leaves a big space open  | No |  |
 | ---   | --- | --- |
-
 | Social media icons all move on hover   | No |  |
 | ---   | --- | --- |
 |  Menu on about page and contact are now showing as a block compared to inline row  | No |  |
 | ---   | --- | --- |
 | The names of players are not linked to the commment of player's turns and when it is a players turn the correct name do mot come up.  | No |  |
+| ---   | --- | --- |
+|  The github page is not HTTPS enforced and I could not get the responsive page sample because the URL is not recognised. Becuase of time constrains, did not have enough time to troubleshoot. | No |  |
+| ---   | --- | ---|
+| The game buttons are not in allined as per initial plan. Because of time contrains will be allined on the next features.  | No | |
 | ---   | --- | --- |
 
 [Table of Content](#table-of-content):arrow_up: 

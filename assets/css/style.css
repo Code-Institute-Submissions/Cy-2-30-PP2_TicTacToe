@@ -73,7 +73,7 @@ body {
         background-position: 100% 80%;
     }
     100% {
-        background-position: 0% 80%;
+        background-position: 0%80%;
     }
 }
 
@@ -301,15 +301,6 @@ body {
     padding-left: 10px;
 }
 
-.tablet-border {
-    border: 10px solid transparent;
-    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
-    border-image-slice: 1;
-    max-width: 500px;
-    margin: auto;
-    padding: 50px;
-}
-
 
 /************ CONTACT PAGE **************/
 
@@ -324,7 +315,7 @@ body {
 /******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
 
 .content-background {
-    background-color: pink;
+    background-color: transparent;
     height: 600px;
     width: 400px;
     margin: auto;
@@ -336,13 +327,27 @@ body {
     padding-left: 90px;
 }
 
+.control-options {
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    background-color: #6f00ffff;
+    border: 1px solid #f53a91ff;
+    border-radius: 3px;
+}
+
+.control-options:hover {
+    background-color: #f53a91ff;
+    border: 1px solid #7947d6ff;
+}
+
 .tablet-border {
+    background-color: #6f00ffff;
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
     border-image-slice: 1;
-    max-width: 700px;
+    max-width: 300px;
     margin: auto;
-    padding: 60px;
 }
 
 
@@ -609,15 +614,6 @@ textarea {
     animation: fadeIn 10s;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: .1;
-    }
-}
-
 
 /**********************************************************
 * MEDIA QUERY FOR 480 VIEWPORT
@@ -651,6 +647,16 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    /*GAME PAGE STYLE
+  *o******************/
+    .tablet-border {
+        background-color: #6f00ffff;
+        border: 10px solid transparent;
+        border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
+        border-image-slice: 1;
+        max-width: 450px;
+        margin: auto;
     }
     /* ABOUT PAGE STYLE
   *o******************/
