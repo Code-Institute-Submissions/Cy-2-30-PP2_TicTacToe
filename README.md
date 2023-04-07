@@ -156,12 +156,30 @@ The game is built from mobile up. I have created a responsive breaking points on
 The website consist of the following features. 
 
 ### Home Page
-
+* Home page is the menu navigation of the game.
+* On the home page there is three buttons with links leading to **About**, **Game** and **Contact** page.
+* Below the buttons there's there are social media links. When you hover over is resposive. 
+* When you hover the buttons they change color. 
+![](assets/images/finishedlook/homepage/homepage.png)
 ### About Page
-![](assets/images) 
+* This page gives information about the game. 
+* There is a menu bar on the top. For mobile there is drop down menu and for desktop there is inline menu.
+* Because of time constrains the menu is displaying in a block and not row. For future release the menu. would be in a row.
+* The information displayed is in paragraphs, image and list. 
+* The page is responsive for all viewport. 
+![](assets/images/finishedlook/aboutpage/aboutinfopage.png) 
+
+* this was the initial setting of the menu and would be applied on the future release. 
+![](assets/images/finishedlook/aboutpage/inlinemenu.png)
+![]()
 
 ### Game Page
-
+* On the game page there is logo on the top and title. 
+* There is two control buttons. One leading to information and one to home page. 
+* Below the game there is a reset button. 
+* The game platform is in the middle. 
+* Above the platform there is name edit input for the player's name. 
+![](assets/images/finishedlook/gamepage/gmapage.png)
 ### Contant Page
 * There is a logo on the top center of the page. Both **About Page** and **Contact Page** have the same heading. 
 * For viewport below **480px** there is a drop down menu on the right coner.
@@ -294,7 +312,12 @@ Because of time contrains I did not have enough time to fix all the bugs. Will b
 
 ## Code Validation
 
+### Home Page
+![](assets/images/validation/homepage/homepagepass.png)
 
+### Game page 
+![](assets/images/validation/gamepage/cssfileerrors.png)
+![](assets/images/validation/gamepage/cssfilepass.png)
 ### About Page  
 * The ul heading was giving an error and I had to cover it in **h2**
 ![](assets/images/validation/aboutpage/aboutpageerror.png)
