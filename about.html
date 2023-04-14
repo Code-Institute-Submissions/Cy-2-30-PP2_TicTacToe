@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,10 +21,11 @@
     <title>Tic Tac Toe</title>
     <script>
       /***************************************************
-       ***************************************************
+       * Code extracted from https://www.w3schools.com/
+       
        ********* DROP DOWN ON HOVER CLICK! **************/
-      function myFunction() {
-        document.getElementById("DropDown").classList.toggle("show");
+      function openDropdown() {
+        document.getElementById("UnfoldMenu").classList.toggle("open");
       }
 
       window.onclick = function (event) {
@@ -133,52 +134,56 @@
         <!--   
             -The content was extracted from https://en.wikipedia.org/wiki/Tic-tac-toe#
             -->
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <br class="firstblock"/>
+        <br class="firstblock"/>
+        <br class="firstblock"/>
+        <br class="firstblock"/>
+        <br class="firstblock"/>
+        <br class="secondblock"/>
+        <br class="secondblock"/>
+        <br class="secondblock"/>
+        <br class="secondblock"/>
+        <br class="secondblock"/>
+        <br class="thirdblock"/>
+        <br class="thirdblock"/>
+        <br class="thirdblock"/>
+        <br class="thirdblock"/>
+        <br class="thirdblock"/>
+        <br class="fouthblock"/>
+        <br class="fouthblock"/>
+        <br class="fouthblock"/>
+        <br class="fouthblock"/>
+        <br class="fouthblock"/>
+        <br class="fifthblock"/>
+        <br class="fifthblock"/>
+        <br class="fifthblock"/>
+        <br class="fifthblock"/>
+        <br class="fifthblock"/>
+        <br class="sixthblock"/>
+        <br class="sixthblock"/>
+        <br class="sixthblock"/>
+        <br class="sixthblock"/>
+        <br class="sixthblock"/>
+        <br class="seventhblock"/>
+        <br class="seventhblock"/>
+        <br class="seventhblock"/>
+        <br class="seventhblock"/>
+        <br class="seventhblock"/>
+        <br class="eigthblock"/>
+        <br class="eigthblock"/>
+        <br class="eigthblock"/>
+        <br class="eigthblock"/>
+        <br class="eigthblock"/>
+        <br class="ninethblock"/>
+        <br class="ninethblock"/>
+        <br class="ninethblock"/>
         <div>
           <div class="infoimage">
             <img src="assets/images/info-3kb-250x250.png" alt="An info icon" />
           </div>
         </div>
 
-        <div class="contentbox">
+        <section class="contentbox">
           <h2 class="pheading">The origin of Tic Tac Toe game</h2>
           <div class="flexbox">
             <p>
@@ -201,9 +206,9 @@
               a game of the Puebloans.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div class="contentbox">
+        <section class="contentbox">
           <h2 class="pheading">The strategy to playing the game</h2>
           <div class="flexbox">
             <p>
@@ -225,9 +230,9 @@
               playing in the centre first.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div class="contentbox">
+        <section class="contentbox">
           <h2 class="pheading">How to win or draw!</h2>
           <div class="flexboxTwo">
             <p>
@@ -281,7 +286,7 @@
             three possible strategically distinct positions to mark during the
             first turn.
           </p>
-        </div>
+        </section>
       </div>
     </main>
 
