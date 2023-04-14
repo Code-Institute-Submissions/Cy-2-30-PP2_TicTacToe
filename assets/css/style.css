@@ -109,7 +109,7 @@ body {
     margin-bottom: 10px;
 }
 
-.title {
+.title, .homemenu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,12 +122,6 @@ body {
 
 
 /******* MENU BUTTONS STYLE *******/
-
-.homemenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .menu-bar div{
     background-color: #7947d6ff;
