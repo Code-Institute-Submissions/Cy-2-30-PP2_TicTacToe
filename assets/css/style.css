@@ -49,7 +49,6 @@ br {
     display: none;
 }
 
-
 /********************************************************
 * BACKGROUND ANIMATION 
 * The code extracted from https://stackoverflow.com/
@@ -90,16 +89,7 @@ body {
     padding: 10px;
 }
 
-
-
-
-
-/****************************************
-****** RESPOSIVE AS PER VIEWPORT *******
-*****************************************
-
-****************************************
-* HOME PAGE STYLE
+/*HOME PAGE STYLE
 ****************************************
 
 *** LOGO & TITLE STYLE ***/
@@ -123,7 +113,6 @@ body {
     font-weight: bold;
 }
 
-
 /******* MENU BUTTONS STYLE *******/
 
 .menu-bar div{
@@ -144,15 +133,6 @@ body {
     background-color: #f53a91ff;
     border: 1px dotted #6f00ffff;
     transition-duration: 0.4s;
-}
-
-/*** HOME PAGE STYLE ***/
-
-.content-background {
-    background-color: transparent;
-    height: 700px;
-    width: 500px;
-    margin: auto;
 }
 
 /*********** SOCIAL MEDIA ICONS **********/
@@ -340,12 +320,7 @@ body {
     margin: auto;
 }
 
-
-
-
-
 /******************** CONTACT PAGE **************************/
-
 
 /****************************************
 * ABOUT PAGE STYLE
@@ -616,6 +591,22 @@ textarea {
     }
    
     /******* MENU BUTTONS STYLE *******/
+    .menu-bar div{
+        font-size: 30px;
+        width: 150px;
+    }
+
+    /*********** SOCIAL MEDIA ICONS **********/
+
+    .icon-button {
+        line-height: 1.2;
+        width: 20px;
+    }
+
+    .fa-brands:hover {
+        font-size: 25px;
+    }
+
     /*GAME PAGE STYLE
   *o******************/
     .tablet-border {
@@ -772,10 +763,26 @@ textarea {
         border-radius: 8px;
     }
 
-    .title {
-        font-size: 34px;
+    .title-heading {
+        font-size: 35px;
     }
 
+    /******* MENU BUTTONS STYLE *******/
+    .menu-bar div{
+        font-size: 30px;
+        width: 160px;
+    }
+
+    /*********** SOCIAL MEDIA ICONS **********/
+
+    .icon-button {
+        width: 20px;
+        font-size: 20px;
+    }
+
+    .fa-brands:hover {
+        font-size: 30px;
+    }
     /* ABOUT PAGE STYLE
 ********************/
     br {
@@ -975,14 +982,12 @@ textarea {
         border-radius: 10px;
     }
 
-    .title-heading {
-        font-size: 36px;
-    }
+   
 
    
     /* ABOUT PAGE STYLE
   ****************************************/
-    .title-heading {
+    .title- {
         font-size: 40px;
     }
     /******** MENU BAR **********/
