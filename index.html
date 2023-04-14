@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,50 +22,49 @@
   </head>
 
   <body>
-    <main id="background">
-      <!--LOGO & TITLE -->
-      <div class="title">
-        <h1>
-          <img
-            class="logo"
-            src="assets/images/logo-6kb-250x250.png"
-            alt="Logo image"
-          />
-        </h1>
-        <p>Tic Tac Toe!</p>
-      </div>
-      <div class="menubackground">
+    <main id="background" class="homemenu">
+        <!--LOGO & TITLE -->
+        <header class="title">
+            <img
+                class="logo"
+                src="assets/images/logo-6kb-250x250.png"
+                alt="Logo image"
+            />
+            <h1 class="title-heading">Tic Tac Toe!</h1>
+        </header>
+
         <!--MENU BUTTONS -->
         <div class="menu-bar">
           <div class="menubtn">
             <a
               href="about.html"
               class="menubtn."
-              aria-label="Leads to about page"
+              aria-label="Link leads to about page"
               >About</a
             >
           </div>
 
-          <div class="menubtn" onclick="">
+          <div class="menubtn">
             <a
               href="game.html"
               class="menubtn."
-              aria-label="Leads to game options"
+              aria-label="Link leads to game options"
               >Game</a
             >
           </div>
-          <div class="menubtn" onclick="contact.html">
+
+          <div class="menubtn">
             <a
               href="contact.html"
               class="menubtn."
-              aria-label="Leads to contact page"
+              aria-label="Link leads to contact page"
               >Contact</a
             >
           </div>
         </div>
 
         <!-- SOCIAL MEDIA ICONS -->
-        <div class="social-media-icons">
+        <footer class="social-media-icons">
           <a
             href="https://www.linkedin.com/"
             class="linkedin icon-button"
@@ -73,7 +72,9 @@
             rel="noopener"
             aria-label="Click to follow us on linkedin (opens a new window)"
           >
-            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            <i class="fa-brands fa-linkedin-in fa-xl" 
+            aria-hidden="true"></i
+            >
           </a>
           <a
             href="https://twitter.com/?lang=en"
@@ -82,7 +83,9 @@
             rel="noopener"
             aria-label="Click to follow us on twitter (opens a new window)"
           >
-            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            <i class="fa-brands fa-twitter fa-xl" 
+            aria-hidden="true"></i
+            >
           </a>
           <a
             href="https://slack.com/"
@@ -91,7 +94,9 @@
             rel="noopener"
             aria-label="Click to follow us on slack (opens a new window)"
           >
-            <i class="fa-brands fa-slack" aria-hidden="true"></i>
+            <i class="fa-brands fa-slack fa-xl" 
+            aria-hidden="true"></i
+            >
           </a>
           <a
             href="https://github.com/"
@@ -100,7 +105,9 @@
             rel="noopener"
             aria-label="Click to follow us on github (opens a new window)"
           >
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <i class="fa-brands fa-github fa-xl" 
+            aria-hidden="true"></i
+            >
           </a>
           <a
             href="https://www.facebook.com/"
@@ -109,8 +116,9 @@
             rel="noopener"
             aria-label="Click to follow us on facebook (opens a new window)"
           >
-            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-            ><span></span>
+            <i class="fa-brands fa-facebook-f fa-xl" 
+            aria-hidden="true"></i
+            >
           </a>
           <a
             href="https://www.youtube.com/"
@@ -119,13 +127,11 @@
             rel="noopener"
             aria-label="Click to follow us on youtube (opens a new window)"
           >
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i><span></span>
+            <i class="fa-brands fa-youtube fa-xl" 
+            aria-hidden="true"></i
+            >
           </a>
-        </div>
-      </div>
+        </footer>
     </main>
-
-    <!--JAVASCRIPT SCRIPT -->
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
