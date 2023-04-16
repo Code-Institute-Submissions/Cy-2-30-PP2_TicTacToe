@@ -49,10 +49,11 @@ br {
     display: none;
 }
 
-/********************************************************
+
+/****************************************************
 * BACKGROUND ANIMATION 
 * The code extracted from https://stackoverflow.com/
-*********************************************************/
+****************************************************/
 
 body {
     background-position: 10px 10px, 10px 10px;
@@ -74,10 +75,11 @@ body {
     }
 }
 
-/*********************************************************************
+
+/****************************************************************
 * TRANSPARENT BACKGROUND
 * The code is extracted from https://developer.mozilla.org/en-US/
-*********************************************************************/
+*****************************************************************/
 
 #background {
     background-color: transparent;
@@ -89,7 +91,9 @@ body {
     padding: 10px;
 }
 
-/*HOME PAGE STYLE
+
+/***************************************
+*HOME PAGE STYLE
 ****************************************
 
 *** LOGO & TITLE STYLE ***/
@@ -102,7 +106,8 @@ body {
     margin-bottom: 20px;
 }
 
-.title, .homemenu {
+.title,
+.homemenu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,9 +118,10 @@ body {
     font-weight: bold;
 }
 
-/******* MENU BUTTONS STYLE *******/
 
-.menu-bar div{
+/*** MENU BUTTONS STYLE ***/
+
+.menu-bar div {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
@@ -135,7 +141,8 @@ body {
     transition-duration: 0.4s;
 }
 
-/*********** SOCIAL MEDIA ICONS **********/
+
+/*** SOCIAL MEDIA ICONS ***/
 
 .icon-button {
     background-color: transparent;
@@ -153,21 +160,34 @@ body {
 .fa-linkedin,
 .fa-square-twitter,
 .fa-github,
-.fa-slack {
+.fa-slack,
+.fa-facebook,
+.fa-instagram {
     color: #131313ff;
 }
 
-/***********  GAME PAGE STYLE ********/
 
-.popup,
-.controls {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/***************************************
+* GAME PAGE STYLE 
+****************************************/
+
+.button {
+    border: 3px solid #f53a91ff;
+    width: 60px;
+    height: 35px;
+    padding: 5px;
+    padding-bottom: 5px;
     font-size: 20px;
-    padding: 5px
 }
+
+.button:hover {
+    border: 3px solid #7947d6ff;
+    width: 70px;
+    padding: 6px;
+}
+
+
+/*** GAME PAGE STYLE ***/
 
 .game-board {
     margin: 0 auto;
@@ -177,6 +197,62 @@ body {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
+}
+
+.border {
+    background-color: #6f00ffff;
+    box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+    height: 800px;
+    width: 350px;
+    margin: auto;
+}
+
+#game-background {
+    background-color: #7947d6ff;
+    box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
+    margin: 80px;
+    padding: 0px;
+}
+
+.tablet-border {
+    background-color: #6f00ffff;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
+    border-image-slice: 1;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+/*** GAME BUTTONS STYLE ***/
+
+.control-options {
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    background-color: #6f00ffff;
+    border: 1px solid #f53a91ff;
+    border-radius: 3px;
+}
+
+.control-options:hover {
+    background-color: #f53a91ff;
+    border: 1px solid #7947d6ff;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px
+}
+
+.controls {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
 }
 
 .gamebtn button {
@@ -200,13 +276,8 @@ body {
     font-size: 20px;
 }
 
-.border {
-    background-color: #6f00ffff;
-    box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-    height: 800px;
-    width: 350px;
-    margin: auto;
-}
+
+/*** GAME PLATFORM STYLE ***/
 
 .tile {
     border: 4px solid #f53a91ff;
@@ -252,144 +323,83 @@ body {
     border-bottom: none;
 }
 
-.controls {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-}
 
-
-/******* LOGO, TITLE & MENU STYLE FOR MOBILE *******/
-
-.content-background {
-    background-color: transparent;
-    height: 800px;
-    width: 600px;
-    margin: auto;
-    padding: 15px;
-    padding-top: 20px;
-}
-
-.content-background nav {
-    padding-left: 10px;
-}
-
-#game-background {
-    background-color: #7947d6ff;
-    box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
-    margin: 80px;
-    padding: 0px;
-}
-/************ CONTACT PAGE **************
-
-** LOGO, TITLE & MENU STYLE FOR MOBILE **/
-
-.content-background {
-    background-color: transparent;
-    height: 700px;
-    width: 400px;
-    margin: auto;
-    padding: 15px;
-    padding-top: 20px;
-}
-
-.content-background nav {
-    padding-left: 90px;
-}
-
-.control-options {
-    text-align: center;
-    height: 30px;
-    width: 40px;
-    background-color: #6f00ffff;
-    border: 1px solid #f53a91ff;
-    border-radius: 3px;
-}
-
-.control-options:hover {
-    background-color: #f53a91ff;
-    border: 1px solid #7947d6ff;
-}
-
-.tablet-border {
-    background-color: #6f00ffff;
-    border: 10px solid transparent;
-    border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
-    border-image-slice: 1;
-    max-width: 300px;
-    margin: auto;
-}
-
-/******************** CONTACT PAGE **************************/
-
-/****************************************
+/***************************************
 * ABOUT PAGE STYLE
 ****************************************
 
-************ DROP DOWN MENU ************/
+*** LOGO & TITLE STYLE ***/
 
-.menu-allign {
+.t-heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#menu-allign {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.dropdown-content {
-    display: none;
-}
 
+/*** DROP DOWN MENU ***/
+
+.dropdown-content,
 .hideonmobile,
 .desktopimg {
     display: none;
 }
 
-.show {
-    display: block;
-}
-
-.dropmenu {
+.dropmenubtn {
     background-color: #7947d6ff;
+    border: 1px solid #f53a91ff;
     border-radius: 5px;
     color: #131313ff;
-    height: 30px;
-    width: 50px;
-    padding: 5px;
-    border: 1px solid #f53a91ff;
+    min-height: fit-content;
+    max-width: 60px;
+    padding: 8px;
 }
 
-.dropmenu:hover,
-.dropmenu:focus {
+.dropmenubtn:hover,
+.dropmenubtn:focus {
     background-color: #f53a91ff;
     border: 1px solid #6f00ffff;
 }
 
-.dropdown {
+.dropdownmenu {
     position: relative;
-    display: block;
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f53a91ff;
-    min-height: 140px;
-    min-width: 80px;
+    border-radius: 5px;
+    min-width: 100%;
     overflow: auto;
     z-index: 1;
 }
 
 .dropdown-content a {
-    text-align: center;
-    padding: 5px;
-    display: inline-block;
+    background-color: #f53a91ff;
+    padding: 5px 8px;
 }
 
-.dropdown a:hover {
+.dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
     background-color: #7947d6ff;
 }
 
+.open {
+    display: block;
+}
 
-/******* CONTENT HOLDER ***********/
+
+/*** CONTENT HOLDER ***/
 
 .content {
     background-color: #f3eaf3ff;
@@ -405,7 +415,6 @@ body {
 
 .pheading {
     font-size: 16px;
-    padding: 5px;
     text-align: center;
     text-transform: capitalize;
 }
@@ -447,39 +456,10 @@ ul .list {
 
 
 /****************************************
-* GAME PAGE STYLE 
-*****************************************/
-
-.button {
-    border: 3px solid #f53a91ff;
-    width: 60px;
-    height: 35px;
-    padding: 5px;
-    padding-bottom: 5px;
-    font-size: 20px;
-}
-
-.button:hover {
-    border: 3px solid #7947d6ff;
-    width: 70px;
-    padding: 6px;
-}
-
-
-/****************************************
 * CONTACT PAGE STYLE
-****************************************/
+****************************************
 
-
-/*** LOGO & TITLE STYLE ***/
-
-.heading {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-
-/********* FORM STYLING *****************/
+*** FORM STYLING ***/
 
 input,
 textarea,
@@ -567,48 +547,38 @@ textarea {
 
      TRANSPARENT BACKGROUND
   **************************/
-
     #background {
         height: 650px;
         width: 450px;
     }
-
-     /* LOGO & TITLE STYLING 
+    /* LOGO & TITLE STYLING 
     ***********************/
-
     .logo {
         height: 70px;
         width: 85px;
     }
-
     .title-heading {
         font-size: 32px;
     }
-
     .heading {
         font-size: 30px;
         font-weight: bold;
     }
-   
-    /******* MENU BUTTONS STYLE *******/
-    .menu-bar div{
+    /*** MENU BUTTONS STYLE ***/
+    .menu-bar div {
         font-size: 30px;
         width: 150px;
     }
-
-    /*********** SOCIAL MEDIA ICONS **********/
-
+    /*** SOCIAL MEDIA ICONS ***/
     .icon-button {
         line-height: 1.2;
         width: 20px;
     }
-
     .fa-brands:hover {
         font-size: 25px;
     }
-
     /*GAME PAGE STYLE
-  *o******************/
+    *******************/
     .tablet-border {
         background-color: #6f00ffff;
         border: 10px solid transparent;
@@ -618,7 +588,7 @@ textarea {
         margin: auto;
     }
     /* ABOUT PAGE STYLE
-  *o******************/
+    *******************/
     br {
         display: none;
     }
@@ -635,7 +605,7 @@ textarea {
     .form {
         margin-top: 5px;
     }
-    /***** DROP DOWN MENU STYLE FOR MOBILE *****/
+    /*** DROP DOWN MENU STYLE FOR MOBILE ***/
     .dropmenu {
         border-radius: 6px;
         height: 40px;
@@ -652,7 +622,7 @@ textarea {
         border: 1px solid #6f00ffff;
     }
     /* Content Page Background
-  ***************************/
+    ***************************/
     .content {
         border: 2px solid #f53a91ff;
         border-radius: 6px;
@@ -698,7 +668,7 @@ textarea {
         border-radius: 5px;
     }
     /* CONTACT PAGE STYLE
-  ****************************************/
+    *********************/
     input,
     textarea,
     button {
@@ -743,48 +713,40 @@ textarea {
 ************************************************************/
 
 @media only screen and (min-width: 770px) {
-     /* HOME PAGE
-  *************************
+    /* HOME PAGE
+    *************************
 
      TRANSPARENT BACKGROUND
- *************************/
-
+    *************************/
     #background {
         height: 900px;
         width: 700px;
     }
-
-       /* LOGO & TITLE STYLING 
+    /* LOGO & TITLE STYLING 
     ***********************/
-
     .logo {
         height: 80px;
         width: 90px;
         border-radius: 8px;
     }
-
     .title-heading {
         font-size: 35px;
     }
-
-    /******* MENU BUTTONS STYLE *******/
-    .menu-bar div{
+    /*** MENU BUTTONS STYLE ***/
+    .menu-bar div {
         font-size: 30px;
         width: 160px;
     }
-
-    /*********** SOCIAL MEDIA ICONS **********/
-
+    /*** SOCIAL MEDIA ICONS ***/
     .icon-button {
         width: 20px;
         font-size: 20px;
     }
-
     .fa-brands:hover {
         font-size: 30px;
     }
     /* ABOUT PAGE STYLE
-********************/
+    ********************/
     br {
         display: block;
     }
@@ -800,7 +762,7 @@ textarea {
     .show {
         display: inline-block;
     }
-    /***** IN LINE MENU STYLE FOR TABLET *****/
+    /*** IN LINE MENU STYLE FOR TABLET ***/
     .menu-inrow div {
         display: flex;
         flex-direction: row-reverse;
@@ -818,7 +780,7 @@ textarea {
         border: 1px solid #7947d6ff;
     }
     /* Content Page Background
-  ***************************/
+    ***************************/
     .content {
         border: 2px solid #f53a91ff;
         border-radius: 6px;
@@ -888,12 +850,12 @@ textarea {
         width: 70px;
         padding: 6px;
     }
-    /******** MENU BAR **********/
+    /*** MENU BAR ***/
     .dropdown-content {
         display: none;
     }
     /* Content holder
-*****************/
+    *****************/
     .content {
         display: flex;
         flex-direction: column;
@@ -906,8 +868,9 @@ textarea {
         padding: 7px;
     }
     /* CONTACT PAGE STYLE
-  ****************************************/
-    /*** LOGO & TITLE STYLE ***/
+    **********************
+
+    *** LOGO & TITLE STYLE ***/
     .heading {
         font-size: 35px;
         font-weight: bold;
@@ -963,34 +926,27 @@ textarea {
 
 @media only screen and (min-width: 1280px) {
     /* HOME PAGE
-  *************************
+    *************************
 
       TRANSPARENT BACKGROUND
-  *************************/
-
+    *************************/
     #background {
         height: 1000px;
         width: 1100px;
     }
-    
-     /* LOGO & TITLE STYLING 
+    /* LOGO & TITLE STYLING 
     ***********************/
-
     .logo {
         height: 95px;
         width: 100px;
         border-radius: 10px;
     }
-
-   
-
-   
     /* ABOUT PAGE STYLE
-  ****************************************/
+    *******************/
     .title- {
         font-size: 40px;
     }
-    /******** MENU BAR **********/
+    /*** MENU BAR ***/
     .dropdown {
         display: none;
     }
@@ -1001,7 +957,7 @@ textarea {
         display: inline-block;
     }
     /* Content holder
-  *****************/
+    *****************/
     .content {
         border: 5px solid #f53a91ff;
         border-radius: 10px;
@@ -1056,7 +1012,7 @@ textarea {
         margin-left: 200px;
     }
     /* CONTACT PAGE STYLE
-  ****************************************/
+    *********************/
     fieldset {
         border: 2px solid #6f00ffff;
         border-radius: 10px;
@@ -1107,28 +1063,24 @@ textarea {
 ************************************************************/
 
 @media only screen and (min-width: 1600px) {
-   /* HOME PAGE
-  *************************
+    /* HOME PAGE
+    *************************
 
       TRANSPARENT BACKGROUND
-  *************************/
-
-  #background {
-    height: 1400px;
-    width: 1200px;
-}
-
-     /* LOGO & TITLE STYLING 
-  ***********************/
-
-    .title-heading {
-    font-size: 38px;
+    *************************/
+    #background {
+        height: 1400px;
+        width: 1200px;
     }
-
+    /* LOGO & TITLE STYLING 
+    ***********************/
+    .title-heading {
+        font-size: 38px;
+    }
     /* ABOUT PAGE STYLE
-****************************************/
+    *******************
 
-    /******** MENU BAR **********/
+    *** MENU BAR ***/
     .dropdown {
         display: none;
     }
@@ -1138,5 +1090,4 @@ textarea {
     .show {
         display: inline-block;
     }
-
 }
