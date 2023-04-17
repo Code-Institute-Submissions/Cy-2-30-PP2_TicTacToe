@@ -263,34 +263,34 @@ Because of time contrains I did not have enough time to fix all the bugs. Will b
 
 | Bugs                                  | Resolved|  Resolution                 |
 | ---   | --- | --- |
-| The log image margin not the same         | No   |    |
+| The logo image margin not the same         | yes   |  Cleaned the code to resolve it.  |
 | ---   | --- | --- |
 | Submission pop up - pop up as you fill the form           | No |  |
 | ---   | --- | --- |
-| Drop down menu not responsive on click        | No |  |
+| Drop down menu not responsive on click        | Yes | Cleaned code to resolve it and restyled it again |
 | ---   | --- | --- |
-| Content (first paragraph including image) from 770px on about me page is not showing   | Added **br** tag but only fixed 1200px |  |
+| Content (first paragraph including image) from 770px on about home page is not showing   | Yes | There was double styling for the background page. I cleaned the code to resolve it |
 | ---   | --- | --- |
-| The menu bar could be styled and logo not responsive to selectors styling   | Yes | Had to coment out the css style file and rebuild everyting |
+| The menu bar could be styled and logo not responsive to selectors styling   | Yes | Had to comment out the css style file and rebuild everything |
 | ---   | --- | --- |
 | GitHub Pages could not enforce the https to open the page   | Still in progress | Contacted **Student Support** and they could not help but referred me to contact **GitHub**  Had to contact [NameCheap](https://ap.www.namecheap.com/) support to request for help(Not Resolve). I had to contact [GitHub Support](https://support.github.com/) but still waiting for response.  |
-| The form was flickering on the click of submission button   | Yes | Removed the action link |
+| The form was flickering on the click of submission button   | No | Removed the action link |
 | ---   | --- | --- |
-| There is a big gap next to the paragraph image on about page from 1280px, on hover the gap appears and the image is not displayed  | No |  |
+| There is a big gap next to the paragraph image on about page from 1280px, on hover the gap appears and the image is not displayed  | Yes | Cleaned code and retyled |
 | ---   | --- | --- |
-| The content on the about page overflows the background container   | No |  |
+| The content on the about page overflows the background container   | No | LEft it as a style for the page |
 | ---   | --- | --- |
-| Menu Buttons on home page are not showing on the center but from the start. When the view port is big it leaves a big space open  | No |  |
+| Menu Buttons on home page are not showing on the center but from the start. When the view port is big it leaves a big space open  |Yes | Cleaned the code to resolve |
 | ---   | --- | --- |
-| Social media icons all move on hover   | No |  |
+| Social media icons all move on hover   | Yes | Resized the icons |
 | ---   | --- | --- |
-|  Menu on about page and contact are now showing as a block compared to inline row  | No |  |
+|  Menu on about page and contact are now showing as a block compared to inline row  | Yes | Resolved by removing some of the styling and crating new style |
 | ---   | --- | --- |
-| The names of players are not linked to the commment of player's turns and when it is a players turn the correct name do mot come up.  | No |  |
+| The names of players are not linked to the commment of player's turns and when it is a players turn the correct name do not come up.  | No |  |
 | ---   | --- | --- |
 |  The github page is not HTTPS enforced and I could not get the responsive page sample because the URL is not recognised. Becuase of time constrains, did not have enough time to troubleshoot. | No |  |
 | ---   | --- | ---|
-| The game buttons are not in allined as per initial plan. Because of time contrains will be allined on the next features.  | No | |
+| The game buttons are not in allined as per initial plan. Because of time contrains will be alligned on the next features.  | No | |
 | ---   | --- | --- |
 
 [Table of Content](#table-of-content):arrow_up: 
