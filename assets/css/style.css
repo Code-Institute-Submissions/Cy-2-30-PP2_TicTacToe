@@ -396,6 +396,12 @@ body {
 
 /*** CONTENT HOLDER ***/
 
+.infoimage img {
+    height: 100px;
+    width: 100px;
+    margin-left: 80px;
+}
+
 .content {
     background-color: #f3eaf3ff;
     border: 1px dotted #f53a91ff;
@@ -441,12 +447,6 @@ ul {
 ul .list {
     font-weight: lighter;
     list-style-position: inside;
-}
-
-.infoimage img {
-    height: 100px;
-    width: 100px;
-    margin-left: 80px;
 }
 
 
@@ -540,14 +540,12 @@ textarea {
     /* HOME PAGE
   *************************
 
-     TRANSPARENT BACKGROUND
-  **************************/
+    *** TRANSPARENT BACKGROUND ***/
     #background {
         height: 650px;
         width: 450px;
     }
-    /* LOGO & TITLE STYLING 
-    ***********************/
+    /*** LOGO & TITLE STYLING ***/
     .logo {
         height: 70px;
         width: 85px;
@@ -599,8 +597,7 @@ textarea {
         width: 100px;
         font-size: 20px;
     }
-    /* Content Page Background
-    ***************************/
+    /*** CONTENT STYLE ***/
     .content {
         height: 580px;
         width: 420px;
@@ -680,20 +677,19 @@ textarea {
     /* HOME PAGE
     *************************
 
-     TRANSPARENT BACKGROUND
-    *************************/
+    *** TRANSPARENT BACKGROUND ***/
     #background {
         height: 900px;
         width: 700px;
     }
-    /* LOGO & TITLE STYLING 
-    ***********************/
+    /*** LOGO & TITLE STYLING ***/
     .logo {
         height: 80px;
         width: 90px;
         border-radius: 8px;
     }
-    .title-heading {
+    .title-heading,
+    .t-heading {
         font-size: 35px;
     }
     /*** MENU BUTTONS STYLE ***/
@@ -711,37 +707,46 @@ textarea {
     }
     /* ABOUT PAGE STYLE
     ********************/
-    br {
-        display: block;
-    }
-    .title-heading {
-        font-size: 18px;
-    }
-    .dropdown {
+    .dropdownmenu {
         display: none;
     }
-    .hideonmobile {
-        display: inline-block;
-    }
-    .show {
-        display: inline-block;
+    .menu-inrow {
+        display: inline;
     }
     /*** IN LINE MENU STYLE FOR TABLET ***/
-    .menu-inrow div {
+    .menu-allign {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu-inrow {
+        display: flex;
+        flex-direction: row;
+    }
+    .rowbtn {
         background-color: #7947d6ff;
+        font-size: 20px;
         text-align: center;
-        box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
+        box-shadow: 0px -3px 3px 3px #131313ff, -3px -3px 3px 0px #131313ff;
         border: 1px dotted #f53a91ff;
         border-radius: 5px;
         color: #131313ff;
+        width: 70px;
         margin: 10px;
+        padding: 5px;
     }
-    .menu-inrow div:hover,
-    .menu-inrow div:focus {
+    .rowbtn:hover,
+    .rowbtn:focus {
         background-color: #f53a91ff;
         border: 1px solid #7947d6ff;
+    }
+    br {
+        display: block;
+    }
+    .infoimage img {
+        height: 200px;
+        width: 210px;
+        margin-left: 180px;
     }
     /* Content Page Background
     ***************************/
@@ -752,11 +757,6 @@ textarea {
         width: 500px;
         margin: auto;
         padding: 100px;
-    }
-    .infoimage img {
-        height: 140px;
-        width: 140px;
-        margin-left: 150px;
     }
     .flexbox {
         columns: 2;
@@ -795,11 +795,6 @@ textarea {
     ul .list {
         margin: 6px;
         padding: 6px;
-    }
-    .infoimage img {
-        height: 100px;
-        width: 100px;
-        margin-left: 150px;
     }
     .button {
         border: 3px solid #f53a91ff;
