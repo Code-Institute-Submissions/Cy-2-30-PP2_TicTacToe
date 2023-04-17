@@ -412,30 +412,8 @@ body {
     font-size: 16px;
     text-align: center;
     text-transform: capitalize;
-}
-
-ul {
-    border: transparent;
-    box-shadow: 2px 2px 2px 2px #6f00ffff;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    line-height: 1.2;
-}
-
-ul .list {
-    font-weight: lighter;
-    list-style-position: inside;
     margin: 5px;
     padding: 5px;
-}
-
-.infoimage img {
-    height: 100px;
-    width: 100px;
-    margin-left: 80px;
 }
 
 .contentbox p {
@@ -446,7 +424,29 @@ ul .list {
     padding: 10px;
     font-size: 12px;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 1.5;
+}
+
+ul {
+    border: transparent;
+    box-shadow: 2px 2px 2px 2px #6f00ffff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+ul .list {
+    font-weight: lighter;
+    list-style-position: inside;
+}
+
+.infoimage img {
+    height: 100px;
+    width: 100px;
+    margin-left: 80px;
 }
 
 
@@ -587,74 +587,43 @@ textarea {
     br {
         display: none;
     }
-    .dropdown-content {
-        display: none;
-    }
-    .hideonmobile,
-    .desktopimg {
-        display: none;
-    }
-    .show {
-        display: none;
-    }
-    .form {
-        margin-top: 5px;
-    }
     /*** DROP DOWN MENU STYLE FOR MOBILE ***/
-    .dropmenu {
-        border-radius: 6px;
-        height: 40px;
-        width: 60px;
-        padding: 6px;
-        border: 1px solid #f53a91ff;
-    }
     .fa-bars {
-        font-size: 20px;
+        font-size: 25px;
     }
-    .dropmenu:hover,
-    .dropmenu:focus {
-        background-color: #f53a91ff;
-        border: 1px solid #6f00ffff;
+    .dropmenubtn {
+        height: 50px;
+        width: 50px;
+    }
+    .dropdown-content {
+        width: 100px;
+        font-size: 20px;
     }
     /* Content Page Background
     ***************************/
     .content {
-        border: 2px solid #f53a91ff;
-        border-radius: 6px;
         height: 580px;
         width: 420px;
-        margin: auto;
-        padding: 6px;
+        overflow: hidden;
+        overflow-y: scroll;
     }
     .pheading {
         font-size: 18px;
-        padding: 6px;
+        margin: 8px;
+        padding: 10px;
+    }
+    .contentbox p {
+        box-shadow: none;
+        font-size: 14px;
     }
     ul {
-        border-radius: 6px;
-        margin: 6px;
-        padding: 12px;
         font-size: 14px;
         letter-spacing: 2px;
-        line-height: 1.5;
-    }
-    ul .list {
-        margin: 6px;
-        padding: 6px;
     }
     .infoimage img {
         height: 100px;
         width: 100px;
         margin-left: 150px;
-    }
-    .contentbox p {
-        border: transparent;
-        box-shadow: none;
-        margin: 5px;
-        padding: 5px;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 2px;
     }
     .flexbox {
         columns: 2;
