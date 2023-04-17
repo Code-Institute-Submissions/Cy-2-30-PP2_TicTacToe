@@ -32,16 +32,18 @@
             alt="Logo image"
           />
         </div>
-        <p>Tic Tac Toe!</p>
       </div>
       <!-- HELP & EXIT BUTTONS -->
       <div class="control-options">
-        <div class="info control-options gamebtn" id="infobtn">
+        <div class="info gamebtn" id="infobtn">
           <a href="about.html" class="menubtn" aria-label="Leads to about page">
             <i class="fa-solid fa-info"></i>
           </a>
         </div>
-        <div class="exitbtn control-options gamebtn" id="exitbtn">
+
+        <h1 class="t-heading">Tic Tac Toe!</h1>
+
+        <div class="exitbtn gamebtn" id="exitbtn">
           <a href="index.html" class="menubtn" aria-label="Leads to page page">
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
           </a>
@@ -53,23 +55,17 @@
         <div class="players">
           <div id="playerinfo">
             <input
-              class="inputplayer"
+              class="playerOne"
               type="text"
               placeholder="Player 1 name 🔴"
             />
             <input
-              class="inputplayer"
+              class="playerTwo"
               type="text"
               placeholder="Player 2 name ❌"
             />
-            <p style="visibility: hidden" id="input-warning">
-              Player names can't be the same
-            </p>
-            <button id="playerbtn" onclick="setPlayerName()">Start</button>
           </div>
         </div>
-
-        <div class="playername-holder"></div>
 
         <div class="popup hide"></div>
 
@@ -85,11 +81,9 @@
           <div class="tile" cellindex="8"></div>
         </div>
 
-        <div class="control-options">
-          <button id="reset" class="gamebtn control-options">
-            <i class="fa-solid fa-trash-can-arrow-up"></i>
-          </button>
-        </div>
+        <button id="reset" class="gamebtn control-options">
+          <i class="fa-solid fa-trash-can-arrow-up"></i>
+        </button>
       </div>
     </main>
 

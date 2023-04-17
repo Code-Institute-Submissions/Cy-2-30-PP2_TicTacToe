@@ -167,23 +167,31 @@ body {
 * GAME PAGE STYLE 
 ****************************************/
 
-.button {
-    border: 3px solid #f53a91ff;
-    width: 60px;
-    height: 35px;
-    padding: 5px;
-    padding-bottom: 5px;
+.control-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gamebtn {
+    background-color: #7947d6ff;
+    border: 1px solid #f53a91ff;
     font-size: 20px;
+    text-align: center;
+    color: #131313ff;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
 }
 
-.button:hover {
-    border: 3px solid #7947d6ff;
-    width: 70px;
-    padding: 6px;
+.gamebtn:hover,
+.gamebtn:focus {
+    background-color: #f53a91ff;
+    border: 1px solid #7947d6ff;
+    color: #131313ff;
 }
-
-
-/*** GAME PAGE STYLE ***/
 
 .game-board {
     margin: 0 auto;
@@ -198,78 +206,19 @@ body {
 .border {
     background-color: #6f00ffff;
     box-shadow: 0px -3px 7px 3px #131313ff, -5px -4px 16px 1px #131313ff;
-    height: 800px;
+    height: 600px;
     width: 350px;
     margin: auto;
 }
 
-#game-background {
-    background-color: #7947d6ff;
-    box-shadow: 12px -5px 15px 5px #131313ff, 12px 10px 15px 7px #6f00ffff, -10px -7px 27px 1px #131313ff;
-    margin: 80px;
-    padding: 0px;
-}
-
 .tablet-border {
+    text-align: center;
     background-color: #6f00ffff;
     border: 10px solid transparent;
     border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
     border-image-slice: 1;
     max-width: 300px;
     margin: auto;
-}
-
-
-/*** GAME BUTTONS STYLE ***/
-
-.control-options {
-    text-align: center;
-    height: 30px;
-    width: 40px;
-    background-color: #6f00ffff;
-    border: 1px solid #f53a91ff;
-    border-radius: 3px;
-}
-
-.control-options:hover {
-    background-color: #f53a91ff;
-    border: 1px solid #7947d6ff;
-}
-
-.controls {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    padding: 5px
-}
-
-.controls {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-}
-
-.gamebtn button {
-    font-family: 'Caveat', cursive;
-    background-color: #7947d6ff;
-    border: 1px solid #f53a91ff;
-    color: #131313ff;
-    border-radius: 4px;
-    width: 50px;
-    height: 30px;
-    padding: 5px;
-}
-
-.gamebtn button:hover,
-.gamebtn button:focus {
-    background-color: #f53a91ff;
-    border: 1px solid #7947d6ff;
-    color: #131313ff;
-    transition-duration: 0.4s;
-    width: 60px;
-    font-size: 20px;
 }
 
 
@@ -570,12 +519,8 @@ textarea {
     /*GAME PAGE STYLE
     *******************/
     .tablet-border {
-        background-color: #6f00ffff;
-        border: 10px solid transparent;
-        border-image: linear-gradient(to bottom right, #f53a91ff 25%, #6f00ffff 50%, #04d9faff 75%, #f3eaf3ff 100%);
-        border-image-slice: 1;
+        font-size: 30px;
         max-width: 450px;
-        margin: auto;
     }
     /* ABOUT PAGE STYLE
     *******************
@@ -697,25 +642,6 @@ textarea {
     }
     .fa-brands:hover {
         font-size: 30px;
-    }
-    /* GAME PAGE
-    ************/
-    .button {
-        border: 3px solid #f53a91ff;
-        width: 60px;
-        height: 35px;
-        padding: 5px;
-        padding-bottom: 5px;
-        font-size: 20px;
-    }
-    .button:hover {
-        border: 3px solid #7947d6ff;
-        width: 70px;
-        padding: 6px;
-    }
-    /*** MENU BAR ***/
-    .dropdown-content {
-        display: none;
     }
     /* ABOUT PAGE STYLE
     ********************/

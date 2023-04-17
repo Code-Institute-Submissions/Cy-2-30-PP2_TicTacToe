@@ -21,28 +21,28 @@
     <title>Tic Tac Toe</title>
     <script>
       /***************************************************
-                                                                                                                                * Code extracted from https://www.w3schools.com/
-                                                                                                                                ****************************************************
+       * Code extracted from https://www.w3schools.com/
+       ****************************************************
+       ********** DROP DOWN ON HOVER CLICK! **************/
 
-                                                                                                                                ********** DROP DOWN ON HOVER CLICK! **************/
-      function myFunction() {
-        document.getElementById("DropDown").classList.toggle("show");
+      function openDropdown() {
+        document.getElementById("UnfoldMenu").classList.toggle("open");
       }
 
       window.onclick = function (event) {
-        if (!event.target.matches(".dropmenu")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
+        if (!event.target.matches(".dropdownbtn")) {
+          var openMenu = document.getElementsByClassName("dropdown-content");
           var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
+          for (i = 0; i < dropMenu.length; i++) {
+            var openDropdown = dropMenu[i];
+            if (openDropdown.classList.contains("open")) {
+              openDropdown.classList.remove("open");
             }
           }
         }
       };
 
-      /********** POP UP MESSAGE AFTER FORM SUBMISSION **************/
+      /*** POP UP MESSAGE AFTER FORM SUBMISSION ***/
       function popFunction() {
         document.getElementById("popup").classList.toggle("alertwindow");
       }
@@ -61,79 +61,80 @@
           />
         </div>
 
-        <div class="menu-allign">
-          <div class="title menu-allign">
-            <p class="title-heading heading">Tic Tac Toe!</p>
+        <nav class="nav-bar menu-allign" id="menu-allign">
+          <div class="title">
+            <h1 class="t-heading">Tic Tac Toe!</h1>
           </div>
 
           <!--
-              - Code extracted from https://www.w3schools.com          -
-              -
-              - DROP DOWN FOR MOBILE MENU -->
-          <nav class="nav-bar menu-allign" id="menu-allign">
-            <div class="dropdown">
-              <button
-                name="dropdownmenu"
-                onclick="myFunction()"
-                class="dropmenu"
-              >
-                <i class="fa-solid fa-bars"></i>
-              </button>
-              <div id="DropDown" class="dropdown-content dropmenu">
-                <a
-                  class="home"
-                  href="index.html"
-                  aria-label="The link leads to home page"
-                  >Home
-                </a>
-                <a
-                  class="about"
-                  href="about.html"
-                  aria-label="The link leads to about page"
-                  >About
-                </a>
-                <a
-                  class="game"
-                  href="game.html"
-                  aria-label="The link leads to game page"
-                  >Game
-                </a>
-                <a
-                  class="contact"
-                  href="contact.html"
-                  aria-label="The link leads to contact page"
-                  >Contact
-                </a>
-              </div>
+          - Code extracted from https://www.w3schools.com/
+          -
+          - DROP DOWN FOR MOBILE MENU -->
+
+          <div class="dropdownmenu">
+            <button
+              name="dropdownbtn"
+              onclick="openDropdown()"
+              class="dropmenubtn"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+
+            <div id="UnfoldMenu" class="dropdown-content">
+              <a
+                class="home"
+                href="index.html"
+                aria-label="The link leads to home page"
+                >Home
+              </a>
+              <a
+                class="about"
+                href="about.html"
+                aria-label="The link leads to about page"
+                >About
+              </a>
+              <a
+                class="game"
+                href="game.html"
+                aria-label="The link leads to game page"
+                >Game
+              </a>
+              <a
+                class="contact"
+                href="#"
+                aria-label="The link leads to contact page"
+                >Contact
+              </a>
+            </div>
+          </div>
+
+          <!-- MENU BAR FOR 770XP UP -->
+          <div class="menu-inrow">
+            <div class="rowbtn">
+              <a href="index.html" aria-label="The link leads to home page"
+                >Home
+              </a>
             </div>
 
-            <!-- MENU BAR FOR 770XP UP -->
-            <div class="menu-inrow hideonmobile">
-              <div class="rowbtn">
-                <a href="index.html" aria-label="The link leads to home page"
-                  >Home
-                </a>
-              </div>
-              <div class="rowbtn">
-                <a href="about.html" aria-label="The link leads to about page"
-                  >About
-                </a>
-              </div>
-              <div class="rowbtn">
-                <a href="game.html" aria-label="The link leads to game page"
-                  >Game
-                </a>
-              </div>
-              <div class="rowbtn">
-                <a
-                  href="contact.html"
-                  aria-label="The link leads to contact page"
-                  >Contact
-                </a>
-              </div>
+            <div class="rowbtn">
+              <a href="about.html" aria-label="The link leads to about page"
+                >About
+              </a>
             </div>
-          </nav>
-        </div>
+
+            <div class="rowbtn">
+              <a href="game.html" aria-label="The link leads to game page"
+                >Game
+              </a>
+            </div>
+
+            <div class="rowbtn">
+              <a href="#" aria-label="The link leads to contact page"
+                >Contact
+              </a>
+            </div>
+          </div>
+        </nav>
       </header>
 
       <!-- FORM & SUBMISSION POP UP WINDOW -->
@@ -215,8 +216,5 @@
         </div>
       </div>
     </main>
-
-    <!--JAVASCRIPT SCRIPT -->
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
